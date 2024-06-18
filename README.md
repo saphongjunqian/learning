@@ -37,11 +37,3 @@ Example 5 is `Work with Threads`, main JS file named `threads.mjs`. This example
 
 To run it: `node streams.mjs`.
 
-## Angular
-
-The following projects are built on Angular 17.3.
-
-### first-app
-
-A `first-app` built on Angular platform.
-
