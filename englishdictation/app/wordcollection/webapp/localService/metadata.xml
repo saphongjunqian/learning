@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="WordCollectionService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="WordCollection" EntityType="WordCollectionService.WordCollection">
+                    <NavigationPropertyBinding Path="texts" Target="WordCollection_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="WordCollection_texts"/>
+                </EntitySet>
+                <EntitySet Name="WordCollection_texts" EntityType="WordCollectionService.WordCollection_texts"/>
+            </EntityContainer>
+            <EntityType Name="WordCollection">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="Details" Type="Edm.Stream"/>
+                <NavigationProperty Name="texts" Type="Collection(WordCollectionService.WordCollection_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="WordCollectionService.WordCollection_texts">
+                    <ReferentialConstraint Property="ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+            </EntityType>
+            <EntityType Name="WordCollection_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+            </EntityType>
+            <Annotations Target="WordCollectionService.WordCollection">
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="name"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="WordCollectionService.WordCollection/createdAt">
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                <Annotation Term="Core.Immutable" Bool="true"/>
+                <Annotation Term="Core.Computed" Bool="true"/>
+                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                </Annotations>
+                <Annotations Target="WordCollectionService.WordCollection/createdBy">
+                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                    <Annotation Term="Core.Immutable" Bool="true"/>
+                    <Annotation Term="Core.Computed" Bool="true"/>
+                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                        </Annotations>
+                        <Annotations Target="WordCollectionService.WordCollection/modifiedAt">
+                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                            <Annotation Term="Core.Computed" Bool="true"/>
+                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                            </Annotations>
+                            <Annotations Target="WordCollectionService.WordCollection/modifiedBy">
+                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                <Annotation Term="Core.Computed" Bool="true"/>
+                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                    </Annotations>
+                                    <Annotations Target="WordCollectionService.WordCollection/name">
+                                        <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                        </Annotations>
+                                        <Annotations Target="WordCollectionService.WordCollection/descr">
+                                            <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                            </Annotations>
+                                            <Annotations Target="WordCollectionService.WordCollection/Details">
+                                                <Annotation Term="Core.MediaType" String="application/json"/>
+                                            </Annotations>
+                                            <Annotations Target="WordCollectionService.WordCollection_texts/locale">
+                                                <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                </Annotations>
+                                                <Annotations Target="WordCollectionService.WordCollection_texts/name">
+                                                    <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                    </Annotations>
+                                                    <Annotations Target="WordCollectionService.WordCollection_texts/descr">
+                                                        <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                        </Annotations>
+                                                    </Schema>
+                                                </edmx:DataServices>
+                                            </edmx:Edmx>

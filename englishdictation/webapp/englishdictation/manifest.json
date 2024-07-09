@@ -1,0 +1,13 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "ac.englishdict_ui",
+    "applicationVersion": {
+      "version": "1.0.1"
+    }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "ac"
+  }
+}

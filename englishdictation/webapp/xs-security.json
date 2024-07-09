@@ -1,0 +1,13 @@
+{
+  "xsappname": "ac-webapp-englishdict_router",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "https://*.authentication.hana.ondemand.com/login/callback",
+      "https://*.authentication.us10.hana.ondemand.com/login/callback",
+      "https://*.cfapps.us10.hana.ondemand.com/login/callback",
+      "https://*.authentication.us10-001.hana.ondemand.com/login/callback",
+      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback"    ]
+  }
+}

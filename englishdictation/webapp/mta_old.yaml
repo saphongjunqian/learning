@@ -1,0 +1,63 @@
+ID: webapp-englishdictation
+_schema-version: "3.1"
+version: 1.0.1
+parameters:
+  enable-parallel-deployments: true
+
+modules:
+  - name: ac-toolset-webapp
+    type: html5
+    path: englishdictation
+    build-parameters:
+      builder: custom
+      commands:
+        - npm run build:cf
+      supported-platforms: []
+  - name: ac-toolset-webapp_deployer
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: ac-toolset-webapp_repo_host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - artifacts:
+            - englishdictationapp.zip
+          name: ac-toolset-webapp
+          target-path: resources/
+  - name: ac-toolset-webapp_router
+    type: approuter.nodejs
+    path: router
+    parameters:
+      disk-quota: 100M
+      memory: 100M
+    requires:
+      - name: ac-toolset-webapp_repo_runtime
+      - name: ac-toolset-webapp_destination
+      - name: ac-toolset-webapp_uaa
+
+resources:
+  - name: ac-toolset-webapp_repo_host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+  - name: ac-toolset-webapp_repo_runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime
+  - name: ac-toolset-webapp_uaa
+    parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+    type: org.cloudfoundry.managed-service
+  - name: ac-toolset-webapp_destination
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: lite
+      service: destination
+      path: ./destination.json

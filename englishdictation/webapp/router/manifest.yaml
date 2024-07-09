@@ -1,0 +1,10 @@
+---
+applications:
+- name: webapp_englishdict-approuter
+  routes:
+  - route: https://i035707_englishdict.cfapps.us10-001.hana.ondemand.com
+  buildpacks:
+  - https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+  - webapp_englishdict-xsuaa
+  - webapp_englishdict-dest

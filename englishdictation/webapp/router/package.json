@@ -1,0 +1,13 @@
+{
+    "name": "webapp_englishdict-approuter",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "start": "node node_modules/@sap/approuter/approuter.js",
+        "deploy": "cf push"
+    },
+    "dependencies": {
+        "@sap/approuter": "^16.6.0"
+    }
+}

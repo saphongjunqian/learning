@@ -1,0 +1,87 @@
+_schema-version: "3.2"
+ID: englishdictapp
+version: 0.0.1
+
+# Refer to https://github.tools.sap/I323878/Playgroud-AI-Days/blob/main/mta.yaml
+
+parameters:
+  enable-parallel-deployments: true
+
+modules:
+  # --------------------------- UI MODULE -------------------------
+  - name: englishdictapp-ui
+    # ------------------------------------------------------------
+    type: html5
+    path: englishdictation
+    build-parameters:
+      builder: custom
+      commands:
+        - npm run build:cf
+      supported-platforms: []
+
+  # -------------------- WEBAPP DEPLOYER MODULE ------------------
+  - name: englishdictapp_deployer
+    # ------------------------------------------------------------
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: englishdictapp_repo_host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - artifacts:
+            - webapp-content.zip
+          name: englishdictapp-ui
+          target-path: resources/
+
+  # ------------------ APP ROUTER MODULE -----------------------
+  - name: englishdictapp-router
+    # ------------------------------------------------------------
+    type: approuter.nodejs
+    path: router
+    routes:
+      route: https://ac-englishdictapp.cfapps.us10-001.hana.ondemand.com/
+    parameters:
+      memory: 256M
+      disk-quota: 1024M
+    requires:
+      - name: englishdictapp-uaa
+      - name: englishdictapp_repo_runtime
+      - name: englishdictapp-dest
+
+resources:
+  # ----------------------- UAA SERVICE ------------------------
+  - name: englishdictapp-uaa
+    # ------------------------------------------------------------
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+
+  # -------------------- DESTINATION SERVICE -------------------
+  - name: englishdictapp-dest
+    # ------------------------------------------------------------
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-plan: lite
+      path: ./destination.json
+
+  # -------------------- HTML5 REPO HOST SERVICE --------------
+  - name: englishdictapp_repo_host
+    # ------------------------------------------------------------
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+
+  # -------------------- HTML5 REPO RUNTIME SERVICE --------------
+  - name: englishdictapp_repo_runtime
+    # ------------------------------------------------------------
+    parameters:
+      service-plan: app-runtime
+      service: html5-apps-repo
+    type: org.cloudfoundry.managed-service
