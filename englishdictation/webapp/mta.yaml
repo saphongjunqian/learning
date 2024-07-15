@@ -41,11 +41,11 @@ modules:
     # ------------------------------------------------------------
     type: approuter.nodejs
     path: router
-    routes:
-      route: https://ac-englishdictapp.cfapps.us10-001.hana.ondemand.com/
     parameters:
       memory: 256M
       disk-quota: 1024M
+      routes:
+        - route: "https://ac-englishdictapp.cfapps.us10-001.hana.ondemand.com"
     requires:
       - name: englishdictapp-uaa
       - name: englishdictapp_repo_runtime

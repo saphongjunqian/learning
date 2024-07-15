@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Junior High School",
+        "file": "juniorschool.json"
+    }, {
+        "name": "Senior High School",
+        "file": "highschool.json"
+    }, {
+        "name": "TOEFL",
+        "file": "TOEFL.json"
+    }
+]
