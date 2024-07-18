@@ -1,12 +1,12 @@
 {
   "name": "englishdictation",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --deploy-url /englishdictation/dist/browser/",
     "build:prod": "ng build --configuration production",
-    "build:cf": "ng build --configuration production && cd dist/browser/ && bestzip ../../webapp-content.zip *.* ../../manifest.json",
+    "zipforcf": "cd dist/ && bestzip ../webapp-content.zip *.* ../manifest.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

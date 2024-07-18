@@ -16,7 +16,7 @@ modules:
     build-parameters:
       builder: custom
       commands:
-        - npm run build:cf
+        - npm run zipforcf
       supported-platforms: []
 
   # -------------------- WEBAPP DEPLOYER MODULE ------------------

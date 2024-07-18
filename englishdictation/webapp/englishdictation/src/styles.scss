@@ -1,12 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@use '@angular/material' as mat;
+@use './app-theme';
+@use './styles/api';
+@use './styles/markdown';
+@use './styles/tables';
+@use './styles/general';
 
-.toolbar-spacer {
-  flex: 1 1 auto;
-}
+$theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  )
+));
 
-.control-full-width {
-  width: 100%;
+// Include material core styles.
+@include mat.core();
+@include mat.color-variants-backwards-compatibility($theme);
+@include app-theme.theme($theme);
+
+:root {
+  @include mat.all-component-themes($theme);
 }

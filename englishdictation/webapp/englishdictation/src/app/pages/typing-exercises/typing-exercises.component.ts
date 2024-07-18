@@ -5,64 +5,73 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
+import { MatCheckboxModule } from '@angular/material/checkbox'
 import { FormsModule } from '@angular/forms';
 
-import { TypingQueue, TypingWord, TypingDataFile, TypingWordList } from '../../interfaces';
+import { TypingQueue, TypingWord, TypingDataFile, TypingWordList, TypingQueueResult } from '../../interfaces';
 import { AudioService } from '../../services';
+import { Footer } from "../../shared/footer/footer";
 
 @Component({
   selector: 'app-typing-exercises',
   standalone: true,
-  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, MatIconModule],
+  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, MatIconModule, MatTableModule, 
+    MatCheckboxModule,
+    Footer],
   templateUrl: './typing-exercises.component.html',
   styleUrl: './typing-exercises.component.scss'
 })
 export class TypingExercisesComponent {
   private wordqueues: TypingQueue[] = [];
   private _arwords: TypingWord[] = [];
+  private _queueidx = -1;
   private _wordidx = -1;
-  private _keyidx = -1;
   isQueueCompleted = false;
-  // dataSource = new MatTableDataSource<any>(sentences);
-  allCollections: string[] = [];
-  selectedCollection = '';
   allFiles: TypingDataFile[] = [];
   selectedFile?: TypingDataFile;
   countOfItems = 10;
   sourceAudioFile = '';
+  // Table for result
+  dataSourceResult: TypingQueueResult[] = [];
+  displayedColumns: string[] = ['word', 'correct'];
 
   get chararray(): TypingWord[] {
     return this._arwords;
   }
   get wordExplain(): string {
-    if (this._wordidx >= 0 && this._wordidx < this.wordqueues.length) {
-      return this.wordqueues[this._wordidx].cnword;
+    if (this._queueidx >= 0 && this._queueidx < this.wordqueues.length) {
+      return this.wordqueues[this._queueidx].cnword;
     }
     return '';
+  }
+  get wordQueueCount(): number {
+    return this.wordqueues.length;
   }
 
   @HostListener('document:keyup', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if (this._keyidx >= 0 && this._keyidx < this._arwords.length) {
+    if (this._wordidx >= 0 && this._wordidx < this._arwords.length) {
       if (event.key === 'Backspace') {
-        this._keyidx--;
-        if (this._keyidx >= 0) {
-          this._arwords[this._keyidx].visible = false;
+        this._wordidx--;
+        if (this._wordidx >= 0) {
+          this._arwords[this._wordidx].visible = false;
         } else {
-          this._keyidx = 0;
+          this._wordidx = 0;
         }
       } else {
-        if (event.key === this._arwords[this._keyidx].letter) {
-          this._arwords[this._keyidx].visible = true;
+        if (event.key === this._arwords[this._wordidx].letter) {
+          this._arwords[this._wordidx].visible = true;
           this.audiosrv.playSound('Default.wav');
 
-          this._keyidx++;
-          if (this._keyidx === this._arwords.length) {
-            this.setWordQueueIndex(this._wordidx + 1);
+          this._wordidx++;
+          if (this._wordidx === this._arwords.length) {
+            this.setWordQueueIndex(this._queueidx + 1);
           }
         } else {
           // Sending the error indicator.
+          this.dataSourceResult[this._queueidx].correct = false;
           this.audiosrv.playSound('beep.wav');
         }
       }
@@ -79,9 +88,8 @@ export class TypingExercisesComponent {
 
     // 3. subscribe Observable
     datafile$.subscribe(df => {
-      console.log(df);
+      // console.log(df);
       this.allFiles = df;
-      // this.onRestart();
     });
   }
 
@@ -93,7 +101,7 @@ export class TypingExercisesComponent {
     // Read the file.
     const datafile$ = this.http.get<TypingWordList[]>(`data/${event.value.file}`);
     datafile$.subscribe(df => {
-      console.log(df);
+      // console.log(df);
 
       // Empty the wordqueues
       this.wordqueues = [];
@@ -117,17 +125,33 @@ export class TypingExercisesComponent {
       this.wordqueues = this.wordqueues.slice(0, this.countOfItems);
     }
 
-    this._wordidx = -1;
+    this.dataSourceResult = [];
+    this.wordqueues.forEach((val) => {
+      this.dataSourceResult.push({
+        enword: val.enword,
+        correct: true,
+      });
+    });
+
+    this._queueidx = -1;
     this.setWordQueueIndex();
+  }
+
+  onNeedHint() {
+
+  }
+
+  onPlaySound() {
+    
   }
 
   setWordQueueIndex(idx = 0) {
     if (idx >= 0 && idx < this.wordqueues.length) {
-      if (this._wordidx !== -1) {
-        this.wordqueues[this._wordidx].completed = true;
+      if (this._queueidx !== -1) {
+        this.wordqueues[this._queueidx].completed = true;
       }
 
-      this._wordidx = idx;
+      this._queueidx = idx;
       this._arwords = [];
 
       const archars = this.wordqueues[idx].enword.split('');
@@ -157,16 +181,15 @@ export class TypingExercisesComponent {
           letter: val,
         });
       });
-      this._keyidx = 0;
+      this._wordidx = 0;
     } else if (idx === this.wordqueues.length) {
-      if (this._wordidx !== -1) {
-        this.wordqueues[this._wordidx].completed = true;
+      if (this._queueidx !== -1) {
+        this.wordqueues[this._queueidx].completed = true;
       }
 
       this.isQueueCompleted = this.wordqueues.findIndex((que) => que.completed === false) === -1 ? true : false;
 
       this.audiosrv.playSound('correct.wav');
-      // Gone through the queues already
     }
   }
 }

@@ -1,18 +1,20 @@
 import { Routes } from '@angular/router';
-import { WelcomeComponent } from './pages/welcome/welcome.component';
-import { TypingExercisesComponent } from './pages/typing-exercises';
 
 const routeConfig: Routes = [
   {
     path: '',
-    component: WelcomeComponent,
-    title: 'Welcome page',
+    pathMatch: 'full',
+    loadComponent: () => import('./pages/homepage').then(m => m.Homepage)
   },
   {
     path: 'typing',
-    component: TypingExercisesComponent,
-    title: 'Typing Exercises',
+    loadComponent: () => import('./pages/typing-exercises').then(m => m.TypingExercisesComponent)
   },
+  {
+    path: '404',
+    loadComponent: () => import('./pages/not-found').then(m => m.NotFound)
+  },
+  {path: '**', redirectTo: '/404'},
 ];
 
 export default routeConfig;

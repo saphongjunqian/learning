@@ -26,7 +26,7 @@ if (Test-Path ".\router\resources") {
         exit 1
     }
 }
-Copy-Item -Path ".\englishdictation\dist\browser\" -Destination ".\router\resources\" -Recurse -Force
+Copy-Item -Path ".\englishdictation\dist\" -Destination ".\router\resources\" -Recurse -Force
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Copy resources failed. Exiting..."
     exit 1

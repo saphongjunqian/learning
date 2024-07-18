@@ -3,3 +3,8 @@ export interface TypingQueue {
     cnword: string;
     completed: boolean;    
 }
+
+export interface TypingQueueResult {
+    enword: string;
+    correct: boolean;
+}
