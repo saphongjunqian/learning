@@ -1,14 +1,18 @@
-import {HttpClientTestingModule} from '@angular/common/http/testing';
-import {inject, TestBed} from '@angular/core/testing';
-import {StyleManager} from './style-manager';
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { inject, TestBed } from '@angular/core/testing';
+import { StyleManager } from './style-manager';
 
 
 describe('StyleManager', () => {
   let styleManager: StyleManager;
 
   beforeEach(() => TestBed.configureTestingModule({
-    imports: [HttpClientTestingModule],
-    providers: [StyleManager]
+    providers: [
+      StyleManager,
+      provideHttpClient(),
+      provideHttpClientTesting(),
+    ]
   }));
 
   beforeEach(inject([StyleManager], (sm: StyleManager) => {

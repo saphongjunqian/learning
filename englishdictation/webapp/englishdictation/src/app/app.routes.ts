@@ -14,8 +14,7 @@ const routeConfig: Routes = [
     path: '404',
     loadComponent: () => import('./pages/not-found').then(m => m.NotFound)
   },
-  {path: '**', redirectTo: '/404'},
+  { path: '**', redirectTo: '/404' },
 ];
 
 export default routeConfig;
-

@@ -10,16 +10,15 @@ import { HttpClient } from '@angular/common/http';
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { FormsModule } from '@angular/forms';
 
-import { TypingQueue, TypingWord, TypingDataFile, TypingWordList, TypingQueueResult } from '../../interfaces';
+import { TypingQueue, TypingWord, TypingDataFile, TypingWordList, TypingQueueResult, TypingStatusEnum, TypingStatus } from '../../interfaces';
 import { AudioService } from '../../services';
 import { Footer } from "../../shared/footer/footer";
 
 @Component({
   selector: 'app-typing-exercises',
   standalone: true,
-  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, MatIconModule, MatTableModule, 
-    MatCheckboxModule,
-    Footer],
+  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, 
+    MatIconModule, MatTableModule, MatCheckboxModule, Footer],
   templateUrl: './typing-exercises.component.html',
   styleUrl: './typing-exercises.component.scss'
 })
@@ -28,7 +27,14 @@ export class TypingExercisesComponent {
   private _arwords: TypingWord[] = [];
   private _queueidx = -1;
   private _wordidx = -1;
-  isQueueCompleted = false;
+  currentStatus: TypingStatus = { 
+    status: TypingStatusEnum.NotStarted,
+    correctWordCount: 0,
+    incorrectWordCount: 0,
+    totalWordCount: 0,
+    startTime: new Date(),
+    endTime: new Date(),
+  };
   allFiles: TypingDataFile[] = [];
   selectedFile?: TypingDataFile;
   countOfItems = 10;
@@ -37,6 +43,15 @@ export class TypingExercisesComponent {
   dataSourceResult: TypingQueueResult[] = [];
   displayedColumns: string[] = ['word', 'correct'];
 
+  get isTypingNotStarted(): boolean { 
+    return this.currentStatus.status === TypingStatusEnum.NotStarted;
+  }
+  get isTypingInProgress(): boolean {
+    return this.currentStatus.status === TypingStatusEnum.InProgress;
+  }
+  get isTypingCompleted(): boolean {
+    return this.currentStatus.status === TypingStatusEnum.Completed;
+  }  
   get chararray(): TypingWord[] {
     return this._arwords;
   }
@@ -115,9 +130,7 @@ export class TypingExercisesComponent {
     });
   }
 
-  onRestart() {
-    this.isQueueCompleted = false;
-
+  onStart() {
     if (this.wordqueues.length > this.countOfItems) {
       // Randomize the array `this.wordqueues`
       this.wordqueues = this.wordqueues.sort(() => Math.random() - 0.5);
@@ -133,16 +146,35 @@ export class TypingExercisesComponent {
       });
     });
 
+    this.currentStatus.totalWordCount = this.wordqueues.length;
+    this.currentStatus.startTime = new Date();
+    this.currentStatus.status = TypingStatusEnum.InProgress;
+
     this._queueidx = -1;
     this.setWordQueueIndex();
   }
 
   onNeedHint() {
-
+    this.dataSourceResult[this._queueidx].correct = false;
+    this._arwords[this._wordidx].visible = true;
+    this._wordidx++;
+    if (this._wordidx === this._arwords.length) {
+      this.setWordQueueIndex(this._queueidx + 1);
+    }
   }
 
   onPlaySound() {
-    
+    if (this.sourceAudioFile.length > 0) {
+      let existingsrc = this.sourceAudioFile;
+      this.sourceAudioFile = '';
+      this.sourceAudioFile = existingsrc;
+    }
+  }
+
+  onNextWord() {
+    // Give up current word
+    this.dataSourceResult[this._queueidx].correct = false;
+    this.setWordQueueIndex(this._queueidx + 1);
   }
 
   setWordQueueIndex(idx = 0) {
@@ -187,7 +219,13 @@ export class TypingExercisesComponent {
         this.wordqueues[this._queueidx].completed = true;
       }
 
-      this.isQueueCompleted = this.wordqueues.findIndex((que) => que.completed === false) === -1 ? true : false;
+      let iscompled = this.wordqueues.findIndex((que) => que.completed === false) === -1 ? true : false;
+      if (iscompled) {
+        this.currentStatus.status = TypingStatusEnum.Completed;
+        this.currentStatus.endTime = new Date();
+        this.currentStatus.correctWordCount = this.dataSourceResult.filter((val) => val.correct === true).length;
+        this.currentStatus.incorrectWordCount = this.dataSourceResult.filter((val) => val.correct === false).length;
+      }
 
       this.audiosrv.playSound('correct.wav');
     }

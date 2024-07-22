@@ -366,5 +366,2566 @@
     {
         "enword": "unhealthy",
         "cnword": "adj. 不健康的，对健康有害的"
+    },
+    {
+        "enword": "bad",
+        "cnword": "adj. 坏的；有害的；不利的；严重的"
+    },
+    {
+        "enword": "life",
+        "cnword": "n. 生命；生涯；生活；人生；（总称）生物"
+    },
+    {
+        "enword": "experience",
+        "cnword": "vt. 经历，体验; n. 经验，经历"
+    },
+    {
+        "enword": "happen",
+        "cnword": "v. （偶然）发生，碰巧"
+    },
+    {
+        "enword": "brother",
+        "cnword": "n. 兄弟"
+    },
+    {
+        "enword": "kill",
+        "cnword": "vt. 杀死，弄死；消磨（时间）等"
+    },
+    {
+        "enword": "drunk",
+        "cnword": "adj. 醉的"
+    },
+    {
+        "enword": "driving",
+        "cnword": "n. 驾驶，行车"
+    },
+    {
+        "enword": "business",
+        "cnword": "n. 企业；商业，生意；职业，事业"
+    },
+    {
+        "enword": "seek",
+        "cnword": "v. (sought, sought, seeking) 试图；寻找；寻求"
+    },
+    {
+        "enword": "profit",
+        "cnword": "n. 利润，益处；v. 盈利；获益于"
+    },
+    {
+        "enword": "make",
+        "cnword": "vt. (made, made, making) 制造，做，使成为"
+    },
+    {
+        "enword": "aim",
+        "cnword": "n. 目的\nv. 计划；瞄准；针对"
+    },
+    {
+        "enword": "achieve",
+        "cnword": "vt. 达到，取得"
+    },
+    {
+        "enword": "income",
+        "cnword": "n. 收入；所得"
+    },
+    {
+        "enword": "cost",
+        "cnword": "n. 成本，代价; vt. (cost, cost, costing) 花费，使付出（代价）"
+    },
+    {
+        "enword": "operate",
+        "cnword": "v. 动手术；操作；运转；经营"
+    },
+    {
+        "enword": "yellow",
+        "cnword": "n. 黄色\nadj. 黄色的"
+    },
+    {
+        "enword": "orange",
+        "cnword": "n. 橘子，橙子；橘汁，橙汁；橙色\nadj. 橙色的；橘色的"
+    },
+    {
+        "enword": "stone fruit",
+        "cnword": "核果"
+    },
+    {
+        "enword": "peach",
+        "cnword": "n. 桃子"
+    },
+    {
+        "enword": "carotenoid",
+        "cnword": "n. 类胡萝卜素"
+    },
+    {
+        "enword": "vitamin",
+        "cnword": "n. 维生素"
+    },
+    {
+        "enword": "antioxidant",
+        "cnword": "n. 抗氧剂；抗氧化剂"
+    },
+    {
+        "enword": "build-it-yourself",
+        "cnword": "adj. 自制的，自己建造的"
+    },
+    {
+        "enword": "solar",
+        "cnword": "adj. 太阳的"
+    },
+    {
+        "enword": "still",
+        "cnword": "n. 蒸馏器; adj. 静止的，平静的; adv. 仍然，还"
+    },
+    {
+        "enword": "way",
+        "cnword": "n. 道路；方法；作风"
+    },
+    {
+        "enword": "obtain",
+        "cnword": "vt. 获得，得到"
+    },
+    {
+        "enword": "drinking water",
+        "cnword": "饮用水"
+    },
+    {
+        "enword": "area",
+        "cnword": "n. 面积；地域；地方；区域；范围；领域"
+    },
+    {
+        "enword": "liquid",
+        "cnword": "n. 液体; adj. 液体的"
+    },
+    {
+        "enword": "readily",
+        "cnword": "adv. 快捷地；轻而易举地；便利地"
+    },
+    {
+        "enword": "available",
+        "cnword": "adj. 有空的；可得到的；可用的"
+    },
+    {
+        "enword": "lead",
+        "cnword": "v. (led, led, leading) 领导，带领"
+    },
+    {
+        "enword": "growth",
+        "cnword": "n. 生长；增长"
+    },
+    {
+        "enword": "leisure",
+        "cnword": "n. 空闲；休闲；闲暇"
+    },
+    {
+        "enword": "industry",
+        "cnword": "n. 产业，工业"
+    },
+    {
+        "enword": "capital",
+        "cnword": "n. 首都；省会；大写；资本"
+    },
+    {
+        "enword": "suburb",
+        "cnword": "n. 郊区；城外"
+    },
+    {
+        "enword": "unreachable",
+        "cnword": "adj. 不能达到的；不能得到的"
+    },
+    {
+        "enword": "ordinary",
+        "cnword": "adj. 普通的，平常的"
+    },
+    {
+        "enword": "since",
+        "cnword": "conj. 从...以来；由于; prep./adv. 从...以来"
+    },
+    {
+        "enword": "hot",
+        "cnword": "adj. 热的；辣的"
+    },
+    {
+        "enword": "studio",
+        "cnword": "n. 工作室；演播室"
+    },
+    {
+        "enword": "surprise",
+        "cnword": "vt. 使惊奇，使诧异；n. 惊奇，诧异"
+    },
+    {
+        "enword": "see",
+        "cnword": "v. (saw, seen, seeing) 看见，看到；领会"
+    },
+    {
+        "enword": "actor",
+        "cnword": "n. 男演员"
+    },
+    {
+        "enword": "put",
+        "cnword": "vt. (put, put, putting) 放，摆"
+    },
+    {
+        "enword": "heavy",
+        "cnword": "adj. 重的；大量的；（心情的）沉重的"
+    },
+    {
+        "enword": "overcoat",
+        "cnword": "n. 大衣"
+    },
+    {
+        "enword": "start",
+        "cnword": "n./v. 开始，着手；出发"
+    },
+    {
+        "enword": "walk",
+        "cnword": "n. 散步; v. 走路；步行"
+    },
+    {
+        "enword": "along",
+        "cnword": "adv. 向前；和...在一起；一同; prep. 沿着；顺着"
+    },
+    {
+        "enword": "training",
+        "cnword": "n. 训练，培训"
+    },
+    {
+        "enword": "become",
+        "cnword": "v. (became, become, becoming) 变得，成为"
+    },
+    {
+        "enword": "effective",
+        "cnword": "adj. 产生预期效果的；有效的，起作用的"
+    },
+    {
+        "enword": "public",
+        "cnword": "adj. 公共的，公众的；国家的; n. 公众"
+    },
+    {
+        "enword": "speaking",
+        "cnword": "n. 演讲，讲话"
+    },
+    {
+        "enword": "should",
+        "cnword": "v. 应当，应该"
+    },
+    {
+        "enword": "focus on",
+        "cnword": "集中；致力于"
+    },
+    {
+        "enword": "positive",
+        "cnword": "adj. 积极的，肯定的"
+    },
+    {
+        "enword": "aspect",
+        "cnword": "n. 方面；外表"
+    },
+    {
+        "enword": "already",
+        "cnword": "adv. 已经"
+    },
+    {
+        "enword": "well",
+        "cnword": "adv. 好；充分地; adj. 健康的; n. 井；int. 好吧"
+    },
+    {
+        "enword": "in all",
+        "cnword": "总之"
+    },
+    {
+        "enword": "stem",
+        "cnword": "n. （花草的）茎；(花或叶的)梗，柄"
+    },
+    {
+        "enword": "cell",
+        "cnword": "n. 细胞；蜂房；电池"
+    },
+    {
+        "enword": "harvest",
+        "cnword": "n./v. 收割；收获（物）"
+    },
+    {
+        "enword": "donor",
+        "cnword": "n. 捐献者"
+    },
+    {
+        "enword": "implant",
+        "cnword": "vt. 将（人造器官等）置入；将...植入; vi. 被移植到"
+    },
+    {
+        "enword": "at most",
+        "cnword": "最多"
+    },
+    {
+        "enword": "alive",
+        "cnword": "adj. 活着的；存在的"
+    },
+    {
+        "enword": "wildlife",
+        "cnword": "n. 野生生物"
+    },
+    {
+        "enword": "on the other hand",
+        "cnword": "另一方面"
+    },
+    {
+        "enword": "believe",
+        "cnword": "vt. 相信；认为"
+    },
+    {
+        "enword": "completely",
+        "cnword": "adv. 完全地"
+    },
+    {
+        "enword": "heaven-sent",
+        "cnword": "adj. 天赐的；正合事宜的"
+    },
+    {
+        "enword": "hope",
+        "cnword": "n./v. 希望"
+    },
+    {
+        "enword": "accomplish",
+        "cnword": "vt. 完成，实现"
+    },
+    {
+        "enword": "young",
+        "cnword": "adj. 年轻的"
+    },
+    {
+        "enword": "understand",
+        "cnword": "v. (understood, understood, understanding) 懂得，理解"
+    },
+    {
+        "enword": "intelligent",
+        "cnword": "adj. 聪明的，智能的"
+    },
+    {
+        "enword": "ape",
+        "cnword": "n. 类人猿"
+    },
+    {
+        "enword": "dolphin",
+        "cnword": "n. 海豚"
+    },
+    {
+        "enword": "recognize",
+        "cnword": "vt. 认出，承认"
+    },
+    {
+        "enword": "image",
+        "cnword": "n. 比喻；印象；形象；影像；映像；图像"
+    },
+    {
+        "enword": "mirror",
+        "cnword": "n. 镜子"
+    },
+    {
+        "enword": "sure",
+        "cnword": "adj. 确信，肯定; adv. 的确，一定，当然"
+    },
+    {
+        "enword": "tourist",
+        "cnword": "n. 旅行者，观光者，旅客"
+    },
+    {
+        "enword": "attraction",
+        "cnword": "n. 吸引；吸引力；魅力；有吸引力的事物"
+    },
+    {
+        "enword": "local",
+        "cnword": "adj. 当地的，地方的"
+    },
+    {
+        "enword": "museum",
+        "cnword": "n. 博物馆，博物院"
+    },
+    {
+        "enword": "hour",
+        "cnword": "n. [pl.] （工作、办公等的）固定时间"
+    },
+    {
+        "enword": "correct",
+        "cnword": "vt. 改正；纠正; adj. 正确的，对的；恰当的"
+    },
+    {
+        "enword": "ruin",
+        "cnword": "v. (使)毁坏；（使）毁灭；n. [pl.] 废墟，遗迹"
+    },
+    {
+        "enword": "vacation",
+        "cnword": "n. 假期，休假"
+    },
+    {
+        "enword": "while",
+        "cnword": "conj. 正当...的时候；然而; n. 一小会儿；一段时间"
+    },
+    {
+        "enword": "may",
+        "cnword": "v. 可以，也许，可能"
+    },
+    {
+        "enword": "tall",
+        "cnword": "adj. 高的"
+    },
+    {
+        "enword": "just",
+        "cnword": "adv. 刚才，恰好；只是，仅; adj. 公正的"
+    },
+    {
+        "enword": "uncomfortable",
+        "cnword": "adj. 不舒服的，不安的"
+    },
+    {
+        "enword": "seem",
+        "cnword": "v. 似乎，好像"
+    },
+    {
+        "enword": "particularly",
+        "cnword": "adv. 特别地"
+    },
+    {
+        "enword": "stay",
+        "cnword": "v. 停留，逗留; n. 逗留（时间）"
+    },
+    {
+        "enword": "hotel",
+        "cnword": "n. 旅馆，饭店；宾馆"
+    },
+    {
+        "enword": "eat",
+        "cnword": "v. 吃饭；用餐；吃"
+    },
+    {
+        "enword": "restaurant",
+        "cnword": "n. 饭馆，饭店"
+    },
+    {
+        "enword": "when it comes to",
+        "cnword": "（引出与刚提及的事物相关的事）说起...来，既然如此，加入那样的话"
+    },
+    {
+        "enword": "container",
+        "cnword": "n. 容器"
+    },
+    {
+        "enword": "full",
+        "cnword": "adj. 满的，充满的；完全的; adv. 完整地；十分地"
+    },
+    {
+        "enword": "suck",
+        "cnword": "v. 吸，吮"
+    },
+    {
+        "enword": "refreshment",
+        "cnword": "n. 饮料；小食"
+    },
+    {
+        "enword": "tube",
+        "cnword": "n. 管子"
+    },
+    {
+        "enword": "have to",
+        "cnword": "不得不，必须"
+    },
+    {
+        "enword": "break",
+        "cnword": "v. (broke, broken, breaking)打破，弄坏；撕开; n. 间歇；休息"
+    },
+    {
+        "enword": "with respect to",
+        "cnword": "关于，就...而言"
+    },
+    {
+        "enword": "natural",
+        "cnword": "adj. 自然的；天然的，天生的"
+    },
+    {
+        "enword": "approach",
+        "cnword": "v. 接近；靠近; n. 方式，方法"
+    },
+    {
+        "enword": "gardening",
+        "cnword": "n. 园艺"
+    },
+    {
+        "enword": "populate",
+        "cnword": "v. 居住于；生活于，构成...的人口；迁移，移居；增添数据"
+    },
+    {
+        "enword": "hunter-gatherer",
+        "cnword": "n. (多指原始社会) 依靠狩猎和采集生活的人"
+    },
+    {
+        "enword": "knit",
+        "cnword": "v. (使) 紧密结合；编织; n. 编织的衣服，针织衫"
+    },
+    {
+        "enword": "group",
+        "cnword": "n. 组，群，团队"
+    },
+    {
+        "enword": "develop",
+        "cnword": "v. (使)发展；(使)发育；开发；冲洗（照片）"
+    },
+    {
+        "enword": "pattern",
+        "cnword": "n. 式样；模式"
+    },
+    {
+        "enword": "speech",
+        "cnword": "n. 演讲；说话的能力"
+    },
+    {
+        "enword": "independent",
+        "cnword": "adj. 独立的，有主见的"
+    },
+    {
+        "enword": "building",
+        "cnword": "n. 建筑物，房屋，大楼"
+    },
+    {
+        "enword": "land",
+        "cnword": "n. 陆地，土地；v. 登陆；降落"
+    },
+    {
+        "enword": "development",
+        "cnword": "n. 发展，发育；开发"
+    },
+    {
+        "enword": "firm",
+        "cnword": "n. 公司，企业; adj. 坚固的；坚定的"
+    },
+    {
+        "enword": "plan",
+        "cnword": "n. 计划；方案; v. (planned, planned, planning)计划，打算"
+    },
+    {
+        "enword": "build",
+        "cnword": "v. (built, built, building)建造；创建"
+    },
+    {
+        "enword": "shopping",
+        "cnword": "n. 买东西，购物"
+    },
+    {
+        "enword": "locate",
+        "cnword": "vt. 坐落于，位于；定位；找出...位置"
+    },
+    {
+        "enword": "cross",
+        "cnword": "vt. 越过；穿过；n. 十字形的东西；十字架"
+    },
+    {
+        "enword": "river",
+        "cnword": "n. 江，河；水道；巨流"
+    },
+    {
+        "enword": "bank",
+        "cnword": "n. （江、海、湖的）岸，堤；银行；库"
+    },
+    {
+        "enword": "roar",
+        "cnword": "v. 吼叫；咆哮；叫喊；大声地说"
+    },
+    {
+        "enword": "calf",
+        "cnword": "n. （象、鲸等大型动物的）崽，幼兽；小牛；牛犊"
+    },
+    {
+        "enword": "brand",
+        "cnword": "n. 商标，牌子"
+    },
+    {
+        "enword": "feel",
+        "cnword": "vt. (felt, felt, feeling)感觉；触摸；认为；vi. 摸索，寻求; v. 觉得，摸起来"
+    },
+    {
+        "enword": "rely",
+        "cnword": "vi. 依赖（于），依靠；信任"
+    },
+    {
+        "enword": "each",
+        "cnword": "adj./pron. 每人，每个，每件"
+    },
+    {
+        "enword": "as",
+        "cnword": "conj. 当...时；正如；因为；尽管; prep. 作为；以...身份; adv. 像...一样"
+    },
+    {
+        "enword": "computer",
+        "cnword": "n. 电脑，计算机"
+    },
+    {
+        "enword": "programmer",
+        "cnword": "n. 程序员"
+    },
+    {
+        "enword": "game",
+        "cnword": "n. 游戏；运动；比赛"
+    },
+    {
+        "enword": "ready",
+        "cnword": "adj. 准备就绪的"
+    },
+    {
+        "enword": "credit card",
+        "cnword": "信用卡"
+    },
+    {
+        "enword": "serious",
+        "cnword": "adj. 严肃的，严重的，认真的"
+    },
+    {
+        "enword": "plant",
+        "cnword": "n. 植物; vt. 种植；播种；"
+    },
+    {
+        "enword": "neighbor",
+        "cnword": "n. 邻居"
+    },
+    {
+        "enword": "relatively",
+        "cnword": "adv. 相当程度上；相当地；相对地"
+    },
+    {
+        "enword": "safe",
+        "cnword": "adj. 安全的"
+    },
+    {
+        "enword": "hear",
+        "cnword": "v. (heard, heard, hearing)听见；听说，得知"
+    },
+    {
+        "enword": "alarm",
+        "cnword": "n. 警报"
+    },
+    {
+        "enword": "popularity",
+        "cnword": "n. 流行；普及"
+    },
+    {
+        "enword": "au pair",
+        "cnword": "换工互惠生（住在外国家庭里学习外语并帮助照看孩子）"
+    },
+    {
+        "enword": "strengthen",
+        "cnword": "v. 加强，增强"
+    },
+    {
+        "enword": "learn",
+        "cnword": "v. 学，学习，学会；（与of, about连用）得知，获悉"
+    },
+    {
+        "enword": "afraid",
+        "cnword": "adj. 害怕的；担心的"
+    },
+    {
+        "enword": "policeman",
+        "cnword": "n. 警察"
+    },
+    {
+        "enword": "around",
+        "cnword": "adv. 在周围，在附近；大约；掉头; prep. 在...周围；绕着"
+    },
+    {
+        "enword": "certainly",
+        "cnword": "adv. 无疑，当然，肯定"
+    },
+    {
+        "enword": "danger",
+        "cnword": "n. 危险"
+    },
+    {
+        "enword": "go",
+        "cnword": "v. (went, gone, going)去，走；进行；进展；v. 变得；变成"
+    },
+    {
+        "enword": "member",
+        "cnword": "n. 成员，会员"
+    },
+    {
+        "enword": "culture",
+        "cnword": "n. 文化"
+    },
+    {
+        "enword": "emotion",
+        "cnword": "n. 情感；情绪；感情"
+    },
+    {
+        "enword": "openly",
+        "cnword": "adv. 公开地"
+    },
+    {
+        "enword": "exhibition",
+        "cnword": "n. 展览，展览会，展品"
+    },
+    {
+        "enword": "replica",
+        "cnword": "n. 复制品，仿制品"
+    },
+    {
+        "enword": "real",
+        "cnword": "adj. 真实的，确实的"
+    },
+    {
+        "enword": "remains",
+        "cnword": "n. 剩余物，残余物；遗迹；遗体"
+    },
+    {
+        "enword": "lock",
+        "cnword": "n. 锁; vt. 锁，锁上"
+    },
+    {
+        "enword": "secret",
+        "cnword": "n. 秘密，内情; adj. 秘密的，机密的"
+    },
+    {
+        "enword": "storeroom",
+        "cnword": "n. 储藏室"
+    },
+    {
+        "enword": "tour",
+        "cnword": "n. 参观，观光，旅行"
+    },
+    {
+        "enword": "church",
+        "cnword": "n. 教堂，教会"
+    },
+    {
+        "enword": "unbelievable",
+        "cnword": "adj. 难以置信的"
+    },
+    {
+        "enword": "lamp",
+        "cnword": "n. 灯，油灯；光源"
+    },
+    {
+        "enword": "wolf",
+        "cnword": "n. 狼"
+    },
+    {
+        "enword": "valuable",
+        "cnword": "adj. 宝贵的；值钱的；贵重的"
+    },
+    {
+        "enword": "experiment",
+        "cnword": "n. 实验"
+    },
+    {
+        "enword": "biologist",
+        "cnword": "n. 生物学家"
+    },
+    {
+        "enword": "decide",
+        "cnword": "v. 决定，下决心"
+    },
+    {
+        "enword": "reintroduce",
+        "cnword": "v. 再次使用；重新引入；将...放归自然栖息地"
+    },
+    {
+        "enword": "part",
+        "cnword": "n. 部分；角色; v. 分离；分别"
+    },
+    {
+        "enword": "country",
+        "cnword": "n. 国家；农村，乡下"
+    },
+    {
+        "enword": "as well",
+        "cnword": "也，又，同样"
+    },
+    {
+        "enword": "further",
+        "cnword": "adv. 进一步；而且；较远"
+    },
+    {
+        "enword": "require",
+        "cnword": "vt. 需求；要求"
+    },
+    {
+        "enword": "opinion",
+        "cnword": "n. 看法，见解"
+    },
+    {
+        "enword": "opposite",
+        "cnword": "n. 相反，对面；对立面，对立物; adj. 相反的，对面的"
+    },
+    {
+        "enword": "overreact",
+        "cnword": "v. 反应过激"
+    },
+    {
+        "enword": "might",
+        "cnword": "v. 可能，可以"
+    },
+    {
+        "enword": "prevent",
+        "cnword": "v. 防止，阻止"
+    },
+    {
+        "enword": "fellow",
+        "cnword": "adj. 同类的；同事的；同伴的"
+    },
+    {
+        "enword": "voice",
+        "cnword": "v. 表示；表达; n. 说话声；语态"
+    },
+    {
+        "enword": "because",
+        "cnword": "conj. 因为"
+    },
+    {
+        "enword": "daughter",
+        "cnword": "n. 女儿"
+    },
+    {
+        "enword": "donate",
+        "cnword": "v. 捐献，赠送"
+    },
+    {
+        "enword": "large",
+        "cnword": "adj. 大的，巨大的"
+    },
+    {
+        "enword": "bag",
+        "cnword": "n. 书包；提包，袋子"
+    },
+    {
+        "enword": "little",
+        "cnword": "adj. (less, least)小的，少的"
+    },
+    {
+        "enword": "girl",
+        "cnword": "n. 女孩"
+    },
+    {
+        "enword": "whose",
+        "cnword": "pron./conj. 谁的"
+    },
+    {
+        "enword": "mother",
+        "cnword": "n. 母亲"
+    },
+    {
+        "enword": "unable",
+        "cnword": "adj. 不能的，不能胜任的"
+    },
+    {
+        "enword": "pay",
+        "cnword": "v. (paid, paid, paying)付钱，给...报酬; n. 工资"
+    },
+    {
+        "enword": "holiday",
+        "cnword": "n. 假期，假日，节日"
+    },
+    {
+        "enword": "due",
+        "cnword": "adj. 预期的；约定的"
+    },
+    {
+        "enword": "illness",
+        "cnword": "n. 疾病"
+    },
+    {
+        "enword": "theatre",
+        "cnword": "n. 剧场，戏院；戏剧界"
+    },
+    {
+        "enword": "uninvited",
+        "cnword": "adj. 未经要求的，未获邀请的，不请自来的"
+    },
+    {
+        "enword": "belief",
+        "cnword": "n. 信条，信念，信仰；信任，相信"
+    },
+    {
+        "enword": "everyone",
+        "cnword": "pron. 每人，人人"
+    },
+    {
+        "enword": "right",
+        "cnword": "n. 权利"
+    },
+    {
+        "enword": "perform",
+        "cnword": "v. 表演；表现；履行"
+    },
+    {
+        "enword": "house",
+        "cnword": "n. 房子；住宅"
+    },
+    {
+        "enword": "disused",
+        "cnword": "adj. 不用的；废弃的"
+    },
+    {
+        "enword": "Monday",
+        "cnword": "n. 星期一"
+    },
+    {
+        "enword": "flying",
+        "cnword": "adj. 能飞的; n. 乘飞机；飞行"
+    },
+    {
+        "enword": "flight",
+        "cnword": "n. 飞行；航班；（楼梯的）一段"
+    },
+    {
+        "enword": "close",
+        "cnword": "adj. 近的；亲密的; adv. 近；靠近; v. 关，关闭"
+    },
+    {
+        "enword": "goal",
+        "cnword": "n. 目标；进球得分；（足球）球门"
+    },
+    {
+        "enword": "sell",
+        "cnword": "v. 卖，售"
+    },
+    {
+        "enword": "successful",
+        "cnword": "adj. 成功的；有成就的"
+    },
+    {
+        "enword": "trust",
+        "cnword": "vt./n. 相信，信任，信赖"
+    },
+    {
+        "enword": "result",
+        "cnword": "n. 结果, 效果"
+    },
+    {
+        "enword": "action",
+        "cnword": "n. 行动"
+    },
+    {
+        "enword": "wrongdoer",
+        "cnword": "n. 做坏事的人，违法的犯罪者，作恶者"
+    },
+    {
+        "enword": "responsibility",
+        "cnword": "n. 责任"
+    },
+    {
+        "enword": "fix",
+        "cnword": "v. 修理，安装；确定，决定"
+    },
+    {
+        "enword": "mistake",
+        "cnword": "v. (mistook, mistaken, mistaking) 弄错; n. 错误"
+    },
+    {
+        "enword": "simple",
+        "cnword": "adj. 简单的；简易的"
+    },
+    {
+        "enword": "adobe",
+        "cnword": "n. (建筑用) 黏土，黏土坯"
+    },
+    {
+        "enword": "dwelling",
+        "cnword": "n. 住宅，住所，公寓"
+    },
+    {
+        "enword": "admirable",
+        "cnword": "adj. 令人钦佩的，绝妙的"
+    },
+    {
+        "enword": "condition",
+        "cnword": "n. 条件，状况"
+    },
+    {
+        "enword": "without",
+        "cnword": "prep. 没有，不"
+    },
+    {
+        "enword": "electric",
+        "cnword": "adj. 电的"
+    },
+    {
+        "enword": "equipment",
+        "cnword": "n. 装备，设备"
+    },
+    {
+        "enword": "wall",
+        "cnword": "n. 墙"
+    },
+    {
+        "enword": "once",
+        "cnword": "n./adv. 一次，曾经; conj. 一旦"
+    },
+    {
+        "enword": "ugly",
+        "cnword": "adj. 丑陋的；难看的"
+    },
+    {
+        "enword": "graffiti",
+        "cnword": "n. （在公众场所墙上等处的）涂鸦，胡写乱画"
+    },
+    {
+        "enword": "cover",
+        "cnword": "n. 盖子；罩；封面; vt. 覆盖；掩盖；包括；报道"
+    },
+    {
+        "enword": "historical",
+        "cnword": "adj. (有关)历史的"
+    },
+    {
+        "enword": "hero",
+        "cnword": "n. 英雄，勇士；男主角"
+    },
+    {
+        "enword": "modern",
+        "cnword": "adj. 现代的，近代的；时尚的"
+    },
+    {
+        "enword": "thanks to",
+        "cnword": "幸亏；由于；因为"
+    },
+    {
+        "enword": "mural",
+        "cnword": "n. 壁画"
+    },
+    {
+        "enword": "program",
+        "cnword": "n. 计划，方案，节目"
+    },
+    {
+        "enword": "confident",
+        "cnword": "adj. 自信的；确信的"
+    },
+    {
+        "enword": "gifted",
+        "cnword": "adj. 有天赋的；有才华的"
+    },
+    {
+        "enword": "Australian",
+        "cnword": "adj. 澳大利亚的；n. 澳大利亚人"
+    },
+    {
+        "enword": "photographer",
+        "cnword": "n. 摄影师"
+    },
+    {
+        "enword": "Antarctic",
+        "cnword": "adj. 南极的; n. 南极地区"
+    },
+    {
+        "enword": "hire",
+        "cnword": "vt. 租用；雇佣"
+    },
+    {
+        "enword": "publish",
+        "cnword": "v. 出版；刊登；发表"
+    },
+    {
+        "enword": "tend",
+        "cnword": "vt. 照管，护理 vi. 趋向，往往是"
+    },
+    {
+        "enword": "share",
+        "cnword": "v. 分享，共同使用 n. 一份；股份；"
+    },
+    {
+        "enword": "exciting",
+        "cnword": "adj. 令人兴奋的"
+    },
+    {
+        "enword": "funny",
+        "cnword": "adj. 有趣的，滑稽可笑的"
+    },
+    {
+        "enword": "inspire",
+        "cnword": "v. 鼓舞，激励，启示"
+    },
+    {
+        "enword": "negative",
+        "cnword": "adj. 消极的，负面的；坏的；有害的"
+    },
+    {
+        "enword": "anger",
+        "cnword": "n. 愤怒"
+    },
+    {
+        "enword": "anxiety",
+        "cnword": "n. 忧虑，焦急"
+    },
+    {
+        "enword": "merely",
+        "cnword": "adv. 仅仅，只不过"
+    },
+    {
+        "enword": "sad",
+        "cnword": "adj. （使人）悲伤的，难过的"
+    },
+    {
+        "enword": "myself",
+        "cnword": "pron. 我自己（反身代词）"
+    },
+    {
+        "enword": "go through",
+        "cnword": "通过，经历；全面检查"
+    },
+    {
+        "enword": "searching",
+        "cnword": "adj. 深挖细究的；认真彻底的"
+    },
+    {
+        "enword": "college",
+        "cnword": "n. 学院；专科学校"
+    },
+    {
+        "enword": "discover",
+        "cnword": "vt. 发现；找到；发觉"
+    },
+    {
+        "enword": "sign language",
+        "cnword": "手语"
+    },
+    {
+        "enword": "among",
+        "cnword": "prep. 在...中间；在（三者或以上）之间"
+    },
+    {
+        "enword": "growing",
+        "cnword": "adj. 成长的；增加的"
+    },
+    {
+        "enword": "American",
+        "cnword": "adj. 美国的；n. 美国人"
+    },
+    {
+        "enword": "drive",
+        "cnword": "v. 驱动；驱使；驾驶；开（车）；驱赶"
+    },
+    {
+        "enword": "high",
+        "cnword": "adj. 高的；高度的 adv. 高；高度地"
+    },
+    {
+        "enword": "living",
+        "cnword": "n. 生计；生活"
+    },
+    {
+        "enword": "falling",
+        "cnword": "adj. 下降的；下落的"
+    },
+    {
+        "enword": "economy",
+        "cnword": "n. 经济"
+    },
+    {
+        "enword": "take up",
+        "cnword": "开始从事；占据"
+    },
+    {
+        "enword": "vegetable",
+        "cnword": "n. 蔬菜"
+    },
+    {
+        "enword": "for the first time",
+        "cnword": "第一次"
+    },
+    {
+        "enword": "popular",
+        "cnword": "adj. 流行的，受欢迎的，大众的"
+    },
+    {
+        "enword": "silent",
+        "cnword": "adj. 无声的；沉默的"
+    },
+    {
+        "enword": "spring",
+        "cnword": "n. 春天，春季；泉水，泉；"
+    },
+    {
+        "enword": "raise",
+        "cnword": "vt. 举起；提高；使升高；饲养；养育；筹募；提及"
+    },
+    {
+        "enword": "awareness",
+        "cnword": "n. 认识；意识"
+    },
+    {
+        "enword": "pollution",
+        "cnword": "n. 污染"
+    },
+    {
+        "enword": "harmful",
+        "cnword": "adj. 有害的；致伤的"
+    },
+    {
+        "enword": "effect",
+        "cnword": "n. 效果；作用；影响"
+    },
+    {
+        "enword": "chemical",
+        "cnword": "adj. 化学的"
+    },
+    {
+        "enword": "lake",
+        "cnword": "n. 湖；湖泊"
+    },
+    {
+        "enword": "ocean",
+        "cnword": "n. 海洋；大海"
+    },
+    {
+        "enword": "almost",
+        "cnword": "adv. 几乎，差不多"
+    },
+    {
+        "enword": "grandparent",
+        "cnword": "n. 祖父母；外祖父母"
+    },
+    {
+        "enword": "be with somebody",
+        "cnword": "和某人在一起"
+    },
+    {
+        "enword": "grandchild",
+        "cnword": "n. 孙子，孙女；外孙；外孙女"
+    },
+    {
+        "enword": "willing",
+        "cnword": "adj. 情愿的，乐意的"
+    },
+    {
+        "enword": "sacrifice",
+        "cnword": "n./v. 牺牲，奉献"
+    },
+    {
+        "enword": "wise",
+        "cnword": "adj. 聪明的；明智的"
+    },
+    {
+        "enword": "visit",
+        "cnword": "n./v. 参观，访问，拜访"
+    },
+    {
+        "enword": "frequently",
+        "cnword": "adv. 频繁地；经常"
+    },
+    {
+        "enword": "instead",
+        "cnword": "adv. 代替，顶替"
+    },
+    {
+        "enword": "environment",
+        "cnword": "n. 环境"
+    },
+    {
+        "enword": "encourage",
+        "cnword": "vt. 鼓励，激励"
+    },
+    {
+        "enword": "overeating",
+        "cnword": "n. 吃的过量"
+    },
+    {
+        "enword": "self-conscious",
+        "cnword": "adj. 局促不安的，难为情的，不自然的，自觉的，自己意识到的"
+    },
+    {
+        "enword": "light",
+        "cnword": "n. 光，灯，灯光 vi. (lit/lighted, lit/lighted, lighting) 点（火），变亮 adj. 明亮的；轻的；浅色的"
+    },
+    {
+        "enword": "such as",
+        "cnword": "例如"
+    },
+    {
+        "enword": "present",
+        "cnword": "adj. 当前的，出席的；n. 礼物，赠品 vt. 赠送，介绍"
+    },
+    {
+        "enword": "purpose",
+        "cnword": "n. 目的，意图"
+    },
+    {
+        "enword": "allow",
+        "cnword": "vt. 允许，准许"
+    },
+    {
+        "enword": "forward",
+        "cnword": "adv. 提前；向前，前进  adj. 早的；前进的"
+    },
+    {
+        "enword": "Mother's Day",
+        "cnword": "母亲节"
+    },
+    {
+        "enword": "pick",
+        "cnword": "v. 拾起，采集"
+    },
+    {
+        "enword": "price",
+        "cnword": "n. 价格，价钱"
+    },
+    {
+        "enword": "charity",
+        "cnword": "n. 慈善机构；慈善"
+    },
+    {
+        "enword": "possess",
+        "cnword": "vt. 占有，拥有"
+    },
+    {
+        "enword": "a large number of",
+        "cnword": "许多，大量"
+    },
+    {
+        "enword": "different",
+        "cnword": "adj. 不同的，有差异的"
+    },
+    {
+        "enword": "skill",
+        "cnword": "n. 技能，技巧"
+    },
+    {
+        "enword": "open",
+        "cnword": "adj. 公开的，开着的 v. 打开，公开"
+    },
+    {
+        "enword": "opportunity",
+        "cnword": "n. 机会"
+    }, 
+    {
+        "enword": "knock",
+        "cnword": "n./v. 敲，打，击"
+    },
+    {
+        "enword": "execuse",
+        "cnword": "n. 借口，理由；vt. 原谅，宽恕"
+    },
+    {
+        "enword": "busy",
+        "cnword": "adj. 忙碌的"
+    },
+    {
+        "enword": "hint",
+        "cnword": "n. 暗示；提示；示意"
+    },
+    {
+        "enword": "door",
+        "cnword": "n. 门；门口"
+    },
+    {
+        "enword": "disturb",
+        "cnword": "v. 打扰，扰乱"
+    },
+    {
+        "enword": "newspaper",
+        "cnword": "n. 报纸"
+    },
+    {
+        "enword": "advertiser",
+        "cnword": "n. 广告人"
+    },
+    {
+        "enword": "market",
+        "cnword": "n. 市场，集市"
+    },
+    {
+        "enword": "case",
+        "cnword": "n. 情况；病例；案件；容器"
+    },
+    {
+        "enword": "at a speed",
+        "cnword": "以某一速度"
+    },
+    {
+        "enword": "imaginable",
+        "cnword": "adj. 可想象的"
+    },
+    {
+        "enword": "buy",
+        "cnword": "vt. 买，购买"
+    },
+    {
+        "enword": "fish",
+        "cnword": "n. 鱼，鱼肉; vi. 钓鱼；捕鱼"
+    },
+    {
+        "enword": "arrive",
+        "cnword": "vi. 到达，达到"
+    },
+    {
+        "enword": "had better (do)",
+        "cnword": "最好（做）"
+    },
+    {
+        "enword": "store",
+        "cnword": "v. 储存，储藏；保存; n. 商店，店铺"
+    },
+    {
+        "enword": "refrigerator",
+        "cnword": "n. 冰箱"
+    },
+    {
+        "enword": "cook",
+        "cnword": "n. 厨师，炊事员; v. 烹调，做饭"
+    },
+    {
+        "enword": "immediately",
+        "cnword": "adv. 立即"
+    },
+    {
+        "enword": "fresh",
+        "cnword": "adj. 新鲜的；不熟练的"
+    },
+    {
+        "enword": "fridge",
+        "cnword": "n. 冰箱"
+    },
+    {
+        "enword": "lesson",
+        "cnword": "n. 课；功课；教训"
+    },
+    {
+        "enword": "personal",
+        "cnword": "adj. 个人的，私人的"
+    },
+    {
+        "enword": "meaningful",
+        "cnword": "adj. 严肃的，重要的，重大的；意味深长的，意在言外的；意义明显的，易于理解的"
+    },
+    {
+        "enword": "own",
+        "cnword": "adj. 自己的; vt. 拥有"
+    },
+    {
+        "enword": "speak",
+        "cnword": "v. （spoke, spoken, speaking）说，讲，谈话，发言"
+    },
+    {
+        "enword": "suddenly",
+        "cnword": "adv. 突然地"
+    },
+    {
+        "enword": "maybe",
+        "cnword": "adv. 可能，大概，也许"
+    },
+    {
+        "enword": "imply",
+        "cnword": "v. 暗示，暗指"
+    },
+    {
+        "enword": "listener",
+        "cnword": "n. 听者；听众"
+    },
+    {
+        "enword": "consider",
+        "cnword": "vt. 考虑，认为"
+    },
+    {
+        "enword": "continue",
+        "cnword": "v. 延伸；继续"
+    },
+    {
+        "enword": "swamp",
+        "cnword": "n. 沼泽（地）"
+    },
+    {
+        "enword": "at a time",
+        "cnword": "一次，每次"
+    },
+    {
+        "enword": "similiar",
+        "cnword": "adj. 相似的，像的"
+    },
+    {
+        "enword": "adapt",
+        "cnword": "v. (使)适应，改编，改写"
+    },
+    {
+        "enword": "study",
+        "cnword": "v. 学习；研究; n. 研究；学习；书房"
+    },
+    {
+        "enword": "variety",
+        "cnword": "n. 品种，种类"
+    },
+    {
+        "enword": "quality",
+        "cnword": "n. 质量；品质"
+    },
+    {
+        "enword": "warm",
+        "cnword": "adj. 暖和的；热情的; v. (使)暖和"
+    },
+    {
+        "enword": "sheltered",
+        "cnword": "adj. 有遮蔽物（不受恶劣天气侵袭）的"
+    },
+    {
+        "enword": "perfect",
+        "cnword": "adj. 完美的，极好的"
+    },
+    {
+        "enword": "soil",
+        "cnword": "n. 土壤；土地"
+    },
+    {
+        "enword": "pipe dream",
+        "cnword": "脱离实际的愿望，白日梦"
+    },
+    {
+        "enword": "fall for",
+        "cnword": "爱上"
+    },
+    {
+        "enword": "old",
+        "cnword": "adj. 年代久远的；较老的；年老的"
+    },
+    {
+        "enword": "floor",
+        "cnword": "n. 地面；地板；（楼房的）层"
+    },
+    {
+        "enword": "reach",
+        "cnword": "v. 到达；（伸手）够到；被...看到"
+    },
+    {
+        "enword": "through",
+        "cnword": "prep. 穿过；通过\nadv. 通过；直达；自始至终"
+    },
+    {
+        "enword": "main",
+        "cnword": "adj. 主要的"
+    },
+    {
+        "enword": "east",
+        "cnword": "adj. 东方的；东部的\nadv. 在东方；向东方；从东方\nn. 东方，东；东部"
+    },
+    {
+        "enword": "wing",
+        "cnword": "n. 侧翼部分；侧厅"
+    },
+    {
+        "enword": "easily",
+        "cnword": "adv. 容易地；轻易地；不费力地"
+    },
+    {
+        "enword": "square",
+        "cnword": "n. 广场；正方形\nadj. 平方的；方形的"
+    },
+    {
+        "enword": "ground",
+        "cnword": "n. 地面；场；场地"
+    },
+    {
+        "enword": "another",
+        "cnword": "adj. 另一；再一；别的；\npron. 另一个"
+    },
+    {
+        "enword": "unplanned",
+        "cnword": "adj. 未计划的；意外的"
+    },
+    {
+        "enword": "short",
+        "cnword": "adj. 短的，矮的，不足的，不够的"
+    },
+    {
+        "enword": "go on",
+        "cnword": "发生；继续"
+    },
+    {
+        "enword": "lecture",
+        "cnword": "n. 讲课，演讲"
+    },
+    {
+        "enword": "hall",
+        "cnword": "n. 大厅，礼堂；门厅；过道"
+    },
+    {
+        "enword": "awake",
+        "cnword": "v. (awoke, awoken, awaking)唤醒\nadj. 醒着的"
+    },
+    {
+        "enword": "loudly",
+        "cnword": "adv. 大声地"
+    },
+    {
+        "enword": "professor",
+        "cnword": "n. 教授"
+    },
+    {
+        "enword": "shake",
+        "cnword": "vt. (shook, shaken, shaking)使摇动；振动"
+    },
+    {
+        "enword": "sleeper",
+        "cnword": "n. 睡觉者；睡眠者"
+    },
+    {
+        "enword": "snore",
+        "cnword": "v. 打鼾；打呼噜"
+    },
+    {
+        "enword": "freezing",
+        "cnword": "adj. 冻结的，极冷的"
+    },
+    {
+        "enword": "northeast",
+        "cnword": "n. 东北（部）"
+    },
+    {
+        "enword": "terribly",
+        "cnword": "adv. 非常，很；很厉害地"
+    },
+    {
+        "enword": "fun",
+        "cnword": "n. 乐趣，娱乐"
+    },
+    {
+        "enword": "spend",
+        "cnword": "vt. (spent, spent, spending)度过；花费（钱、时间等）"
+    },
+    {
+        "enword": "winter",
+        "cnword": "n. 冬天，冬季"
+    },
+    {
+        "enword": "weekend",
+        "cnword": "n. 周末"
+    },
+    {
+        "enword": "say",
+        "cnword": "v. (said, said, saying)说，讲"
+    },
+    {
+        "enword": "sunshine",
+        "cnword": "n. 阳光"
+    },
+    {
+        "enword": "upset",
+        "cnword": "adj. 心烦的，苦恼的 vt. (upset, upset, upsetting)使苦恼"
+    },
+    {
+        "enword": "no end",
+        "cnword": "非常，许多"
+    },
+    {
+        "enword": "expert",
+        "cnword": "n. 专家，能手"
+    },
+    {
+        "enword": "about",
+        "cnword": "adv. 大约，到处，周围 prep. 关于，在附近，在周围"
+    },
+    {
+        "enword": "which",
+        "cnword": "pron. 哪一个，哪一些"
+    },
+    {
+        "enword": "option",
+        "cnword": "n. 选择"
+    },
+    {
+        "enword": "want",
+        "cnword": "v. 想要，需要"
+    },
+    {
+        "enword": "improve",
+        "cnword": "v. 改进，更新"
+    },
+    {
+        "enword": "confuse",
+        "cnword": "vt. 使糊涂，使迷惑；捣乱"
+    },
+    {
+        "enword": "conflict",
+        "cnword": "n. 斗争，冲突"
+    },
+    {
+        "enword": "city",
+        "cnword": "n. 市，城市，都市"
+    },
+    {
+        "enword": "crowded",
+        "cnword": "adj. 拥挤的"
+    },
+    {
+        "enword": "disappointed",
+        "cnword": "adj. 失望的"
+    },
+    {
+        "enword": "interest",
+        "cnword": "n. 兴趣，趣味；利息 vt. 使产生兴趣"
+    },
+    {
+        "enword": "settle",
+        "cnword": "vi. 安家，安居 vt. 解决（问题）"
+    },
+    {
+        "enword": "new",
+        "cnword": "adj. 新的；新鲜的"
+    },
+    {
+        "enword": "gold",
+        "cnword": "n. 黄金 adj. 金的；金色的；黄金做的"
+    },
+    {
+        "enword": "discovery",
+        "cnword": "n. 发现"
+    },
+    {
+        "enword": "quickly",
+        "cnword": "adv. 迅速地；很快地；不久，立即"
+    },
+    {
+        "enword": "come",
+        "cnword": "vi. (came, come, coming)来，来到 v. 变成"
+    },
+    {
+        "enword": "admiration",
+        "cnword": "n. 钦佩；赞赏；羡慕"
+    },
+    {
+        "enword": "powerful",
+        "cnword": "adj. 强有力的，强大的；有影响力的"
+    },
+    {
+        "enword": "personality",
+        "cnword": "n. 个性，人物"
+    },
+    {
+        "enword": "bring",
+        "cnword": "vt. (brought, brought, bringing)拿来，带来，取来"
+    },
+    {
+        "enword": "together",
+        "cnword": "adv. 一起，共同"
+    },
+    {
+        "enword": "clearly",
+        "cnword": "adv. 清楚地，明白地；清晰地"
+    },
+    {
+        "enword": "what",
+        "cnword": "pron. 什么"
+    },
+    {
+        "enword": "train",
+        "cnword": "v. 培训，训练; n. 火车"
+    },
+    {
+        "enword": "pass",
+        "cnword": "v. 传递；经过；通过"
+    },
+    {
+        "enword": "make it one's business to do sth.",
+        "cnword": "把某事当作自己应做的事情"
+    },
+    {
+        "enword": "stand",
+        "cnword": "vi. (stood, stood, standing)站立; vt. 承担，忍受; n. 站；台"
+    },
+    {
+        "enword": "wave",
+        "cnword": "v. 挥手；摇动; n. 波；波浪"
+    },
+    {
+        "enword": "stranger",
+        "cnword": "n. 陌生人；奇怪的人"
+    },
+    {
+        "enword": "rush",
+        "cnword": "vi. 冲，奔跑"
+    },
+    {
+        "enword": "multiplication",
+        "cnword": "n. 乘，相乘；增加"
+    },
+    {
+        "enword": "exception",
+        "cnword": "n. 例外"
+    },
+    {
+        "enword": "general",
+        "cnword": "adj. 大体的，总的；一般的，普通的"
+    },
+    {
+        "enword": "rule",
+        "cnword": "n. 规则，规定；统治; vt. 统治；支配"
+    },
+    {
+        "enword": "rather",
+        "cnword": "adv. 相当，宁可"
+    },
+    {
+        "enword": "thing",
+        "cnword": "n. 东西；物品，用品；事情；事件"
+    },
+    {
+        "enword": "school",
+        "cnword": "n. 学校"
+    },
+    {
+        "enword": "overlearn",
+        "cnword": "v. 过度学习"
+    },
+    {
+        "enword": "childhood",
+        "cnword": "n. 幼年时代；童年"
+    },
+    {
+        "enword": "village",
+        "cnword": "n. 村庄，乡村"
+    },
+    {
+        "enword": "mountain",
+        "cnword": "n. 山，山脉"
+    },
+    {
+        "enword": "beach",
+        "cnword": "n. 海滨，海滩"
+    },
+    {
+        "enword": "wooden",
+        "cnword": "adj. 木制的"
+    },
+    {
+        "enword": "artwork",
+        "cnword": "n. 艺术作品"
+    },
+    {
+        "enword": "speical",
+        "cnword": "adj. 特别的，专门的"
+    },
+    {
+        "enword": "anywhere",
+        "cnword": "adv. 任何地方"
+    },
+    {
+        "enword": "educational",
+        "cnword": "adj. 教育的"
+    },
+    {
+        "enword": "scientific",
+        "cnword": "adj. 科学的"
+    },
+    {
+        "enword": "organization",
+        "cnword": "n. 组织，机构，团体"
+    },
+    {
+        "enword": "recently",
+        "cnword": "adv. 不久前，最近"
+    },
+    {
+        "enword": "set",
+        "cnword": "vt. (set, set, setting)设置，调整，树立；摆放; vi. 日落; n. 一套；设备"
+    },
+    {
+        "enword": "jazz",
+        "cnword": "n. 爵士音乐，爵士舞曲"
+    },
+    {
+        "enword": "music",
+        "cnword": "n. 音乐，乐曲"
+    },
+    {
+        "enword": "significance",
+        "cnword": "n. 意义，重要性"
+    },
+    {
+        "enword": "unify",
+        "cnword": "vt. 统一；使成一体；使一元化"
+    },
+    {
+        "enword": "across",
+        "cnword": "prep. 横过，穿过"
+    },
+    {
+        "enword": "globe",
+        "cnword": "n. 地球，地球仪"
+    },
+    {
+        "enword": "enjoy",
+        "cnword": "v. 欣赏，享受...之乐趣；喜欢"
+    },
+    {
+        "enword": "play",
+        "cnword": "v. 玩，打（球）；播放; n. 玩耍，戏剧"
+    },
+    {
+        "enword": "within",
+        "cnword": "prep. 在...里，在...内部； adv. 在里面；在内部"
+    },
+    {
+        "enword": "architecture",
+        "cnword": "n. 建筑，建筑学"
+    },
+    {
+        "enword": "live",
+        "cnword": "vi. 生活，居住; vt. 过着，经历; adj. 活着；直播的"
+    },
+    {
+        "enword": "like",
+        "cnword": "n. 爱好; prep. 像，跟...一样; v. 喜欢，喜爱"
+    },
+    {
+        "enword": "leaf",
+        "cnword": "n. 叶，叶子"
+    },
+    {
+        "enword": "stomach",
+        "cnword": "n. 胃，胃部"
+    },
+    {
+        "enword": "claw",
+        "cnword": "n. 爪"
+    },
+    {
+        "enword": "wing",
+        "cnword": "n. 机翼；翅膀"
+    },
+    {
+        "enword": "given",
+        "cnword": "prep. 考虑到，鉴于"
+    },
+    {
+        "enword": "many",
+        "cnword": "pron. 许多人（或物）；adj. 许多的"
+    },
+    {
+        "enword": "mood",
+        "cnword": "n. 情绪，心情"
+    },
+    {
+        "enword": "regulate",
+        "cnword": "v. 调节；控制；管理"
+    },
+    {
+        "enword": "chocolate",
+        "cnword": "n. 巧克力"
+    },
+    {
+        "enword": "probably",
+        "cnword": "adv. 很可能，大概"
+    },
+    {
+        "enword": "matter",
+        "cnword": "n. 问题；事情；物资；原因; vi. 要紧，有重大关系"
+    },
+    {
+        "enword": "time",
+        "cnword": "n. 时间；时刻；时期；次，回; vt. 测定...的时间，记录...的时间"
+    },
+    {
+        "enword": "somebody",
+        "cnword": "pron. 某人；重要人物"
+    },
+    {
+        "enword": "shop",
+        "cnword": "n. 商店；车间; v. 去商店买"
+    },
+    {
+        "enword": "drugstore",
+        "cnword": "n. (兼售化妆品等的)药店"
+    },
+    {
+        "enword": "Chinese",
+        "cnword": "adj. 中国的; n. 中国人"
+    },
+    {
+        "enword": "medicine",
+        "cnword": "n. 药"
+    },
+    {
+        "enword": "help",
+        "cnword": "v. 帮助，帮忙；有帮助，有用; n. 帮助"
+    },
+    {
+        "enword": "federal",
+        "cnword": "adj. 中央（政府等）的，联邦的"
+    },
+    {
+        "enword": "aviation",
+        "cnword": "n. 航空"
+    },
+    {
+        "enword": "administration",
+        "cnword": "n. 管理；行政部门"
+    },
+    {
+        "enword": "decision",
+        "cnword": "n. 决定，决议"
+    },
+    {
+        "enword": "separate",
+        "cnword": "v. (使)分开，（使）分离; adj. 单独的，分开的"
+    },
+    {
+        "enword": "a set of",
+        "cnword": "一组，一套"
+    },
+    {
+        "enword": "standard",
+        "cnword": "n. 标准，规格; adj. 标准的"
+    },
+    {
+        "enword": "sport",
+        "cnword": "n. 体育运动，锻炼；运动会"
+    },
+    {
+        "enword": "low",
+        "cnword": "adj. 低的；矮的；低于通常数量（或水平、价值）的；低下的; adv. 低；低于通常水平；低声地"
+    },
+    {
+        "enword": "friendship",
+        "cnword": "n. 友谊，友情"
+    },
+    {
+        "enword": "film",
+        "cnword": "n. 电影；影片；胶卷; vt. 拍摄，把...拍摄为电影"
+    },
+    {
+        "enword": "root",
+        "cnword": "n. 根，根源，起源"
+    },
+    {
+        "enword": "although",
+        "cnword": "conj. 虽然，尽管"
+    },
+    {
+        "enword": "difference",
+        "cnword": "n. 不同"
+    },
+    {
+        "enword": "tradition",
+        "cnword": "n. 传统，惯例"
+    },
+    {
+        "enword": "baby",
+        "cnword": "n. 婴儿"
+    },
+    {
+        "enword": "repeatedly",
+        "cnword": "adv. 反复地，重复地"
+    },
+    {
+        "enword": "spot",
+        "cnword": "n. 斑点，污点；场所，地点; vt. (spotted, spotted, spotting)沾上污迹，弄脏，认出，发现"
+    },
+    {
+        "enword": "excited",
+        "cnword": "adj. 兴奋的"
+    },
+    {
+        "enword": "drumbeat",
+        "cnword": "n. 鼓声"
+    },
+    {
+        "enword": "likewise",
+        "cnword": "adv. 同样，也"
+    },
+    {
+        "enword": "researcher",
+        "cnword": "n. 研究人员"
+    },
+    {
+        "enword": "move",
+        "cnword": "v. 移动；搬动；搬家"
+    },
+    {
+        "enword": "university",
+        "cnword": "n. 大学"
+    },
+    {
+        "enword": "wealth",
+        "cnword": "n. 财富"
+    },
+    {
+        "enword": "material",
+        "cnword": "n. 材料，原料；物质"
+    },
+    {
+        "enword": "including",
+        "cnword": "prep. 包括"
+    },
+    {
+        "enword": "recording",
+        "cnword": "n. 录音带"
+    },
+    {
+        "enword": "field",
+        "cnword": "n. 现场，实地；田野；运动场；（研究或工作的）领域，范围"
+    },
+    {
+        "enword": "note",
+        "cnword": "n. 笔记；钞票，纸币"
+    },
+    {
+        "enword": "remain",
+        "cnword": "vi. 余下，留下; v. 保持，仍是"
+    },
+    {
+        "enword": "badly",
+        "cnword": "adv. 非常，在很大程度上"
+    },
+    {
+        "enword": "need",
+        "cnword": "vt. 需要; n. 需要，需求"
+    },
+    {
+        "enword": "care",
+        "cnword": "v. 关注；喜爱；照顾； n. 照料；小心"
+    },
+    {
+        "enword": "protection",
+        "cnword": "n. 保护"
+    },
+    {
+        "enword": "grill",
+        "cnword": "n. （烧烤食物的）烤架；烤肉；v. 烧烤；追问，盘问"
+    },
+    {
+        "enword": "guest",
+        "cnword": "n. 客人，宾客"
+    },
+    {
+        "enword": "sofa",
+        "cnword": "n. （长）沙发"
+    },
+    {
+        "enword": "storm",
+        "cnword": "n. 风暴；暴风雨；（群情迸发的）浪潮"
+    },
+    {
+        "enword": "role",
+        "cnword": "n. 角色；作用"
+    },
+    {
+        "enword": "prepare",
+        "cnword": "v. 准备；配制"
+    },
+    {
+        "enword": "delicious",
+        "cnword": "adj. 美味的，可口的"
+    },
+    {
+        "enword": "nutritious",
+        "cnword": "adj. 有营养的；营养丰富的"
+    },
+    {
+        "enword": "meal",
+        "cnword": "n. 膳食；一餐，一顿（饭）"
+    },
+    {
+        "enword": "tight",
+        "cnword": "adj. 紧的；adv. 紧地"
+    },
+    {
+        "enword": "budget",
+        "cnword": "n. 预算"
+    },
+    {
+        "enword": "monkey-pox",
+        "cnword": "n. 猴痘；"
+    },
+    {
+        "enword": "African",
+        "cnword": "adj. 非洲的，非洲人的; n. 非洲人"
+    },
+    {
+        "enword": "forest",
+        "cnword": "n. 森林"
+    },
+    {
+        "enword": "turn up",
+        "cnword": "出现，到来"
+    },
+    {
+        "enword": "the Midwest",
+        "cnword": "（美国）中西部，中西部地区"
+    },
+    {
+        "enword": "hard",
+        "cnword": "adv. 努力地；使劲地；猛烈地; adj. 硬的；困难的；艰难的"
+    },
+    {
+        "enword": "foreign",
+        "cnword": "adj. 外国的；外来的"
+    },
+    {
+        "enword": "home in on",
+        "cnword": "朝向，移向，导向（目标）；把（思想，注意力）集中于"
+    },
+    {
+        "enword": "human being",
+        "cnword": "人，人类"
+    },
+    {
+        "enword": "police",
+        "cnword": "n. （集合名词）警察，警务人员；"
+    },
+    {
+        "enword": "lose",
+        "cnword": "vt. (lost, lost, losing)失去，丢失；迷失"
+    },
+    {
+        "enword": "lonely",
+        "cnword": "adj. 孤独的，寂寞的"
+    },
+    {
+        "enword": "strange",
+        "cnword": "adj. 奇怪的，奇特的；陌生的"
+    },
+    {
+        "enword": "think",
+        "cnword": "v. (thought, thought, thinking)想，思索；认为；考虑"
+    },
+    {
+        "enword": "terrible",
+        "cnword": "adj. 可怕的，糟糕的"
+    },
+    {
+        "enword": "trouble",
+        "cnword": "n. 问题；疾病；麻烦; vt. 使苦恼；使忧虑；使麻烦"
+    },
+    {
+        "enword": "paperwork",
+        "cnword": "n. 文书工作；资料；文件"
+    },
+    {
+        "enword": "organize",
+        "cnword": "v. 整理，组织"
+    },
+    {
+        "enword": "distant",
+        "cnword": "adj. 远的；遥远的"
+    },
+    {
+        "enword": "down",
+        "cnword": "prep. 沿着，沿...而下; adv. 向下"
+    },
+    {
+        "enword": "trend",
+        "cnword": "n. 倾向，趋势；时尚"
+    },
+    {
+        "enword": "community",
+        "cnword": "n. 社区；社会；团体；社团；界"
+    },
+    {
+        "enword": "fight",
+        "cnword": "n./v. (fought, fought, fighting)打仗，打架；争论"
+    },
+    {
+        "enword": "heart",
+        "cnword": "n. 心；心脏；（纸牌中的）红桃"
+    },
+    {
+        "enword": "disease",
+        "cnword": "n. 病，疾病"
+    },
+    {
+        "enword": "unintended",
+        "cnword": "adj. 非计划的；无意的；无心的"
+    },
+    {
+        "enword": "side effect",
+        "cnword": "(药物的)副作用；意外的连带后果"
+    },
+    {
+        "enword": "overweight",
+        "cnword": "adj. 过重的，超重的"
+    },
+    {
+        "enword": "very",
+        "cnword": "adv. 很，非常; adj. 恰好的；正好的（用来加强语气）"
+    },
+    {
+        "enword": "transport",
+        "cnword": "n. 运输；传送器; vt. 运输，传送"
+    },
+    {
+        "enword": "team",
+        "cnword": "n. 队；组"
+    },
+    {
+        "enword": "turn",
+        "cnword": "v. 旋转；转变；转弯; n. 轮流"
+    },
+    {
+        "enword": "mobile",
+        "cnword": "adj. 活动的，可移动的"
+    },
+    {
+        "enword": "laboratory",
+        "cnword": "n. 实验室，化验室"
+    },
+    {
+        "enword": "in order to",
+        "cnword": "目的是...，为了..."
+    },
+    {
+        "enword": "challenge",
+        "cnword": "n. 挑战；挑战性; vt. 挑战"
+    },
+    {
+        "enword": "key",
+        "cnword": "n. 钥匙；答案；键；关键（常和to连用）"
+    },
+    {
+        "enword": "point",
+        "cnword": "v. 指，指向; n. 点，要点；观点；分数"
+    },
+    {
+        "enword": "beautician",
+        "cnword": "n. 美容师"
+    },
+    {
+        "enword": "bartender",
+        "cnword": "n. 酒吧服务员，酒保"
+    },
+    {
+        "enword": "piano",
+        "cnword": "n. 钢琴"
+    },
+    {
+        "enword": "player",
+        "cnword": "n. 选手；表演者"
+    },
+    {
+        "enword": "purple",
+        "cnword": "n. 紫色 adj. 紫的，紫色的"
+    },
+    {
+        "enword": "street",
+        "cnword": "n. 街，街道"
+    },
+    {
+        "enword": "native",
+        "cnword": "adj. 本土的，本国的"
+    },
+    {
+        "enword": "overhear",
+        "cnword": "v. 偶然听到；无意中听到"
+    },
+    {
+        "enword": "data",
+        "cnword": "n. 资料，数据"
+    },
+    {
+        "enword": "explore",
+        "cnword": "v. 探险；探索"
+    },
+    {
+        "enword": "consumer",
+        "cnword": "n. 消费者"
+    },
+    {
+        "enword": "replace",
+        "cnword": "vt. 取代，代替；把...放回原处"
+    },
+    {
+        "enword": "product",
+        "cnword": "n. 产品，产物"
+    },
+    {
+        "enword": "electronic",
+        "cnword": "adj. 电子的"
+    },
+    {
+        "enword": "serve",
+        "cnword": "vt. 上菜；服务；招待；服役"
+    },
+    {
+        "enword": "word",
+        "cnword": "n. 单词；言语；消息，音讯"
+    },
+    {
+        "enword": "processing",
+        "cnword": "n. 加工"
+    },
+    {
+        "enword": "accept",
+        "cnword": "v. 接受"
+    },
+    {
+        "enword": "place",
+        "cnword": "n. 入学名额；求学机会；进修机会"
+    },
+    {
+        "enword": "higher education",
+        "cnword": "高等教育"
+    },
+    {
+        "enword": "put off",
+        "cnword": "推迟"
+    },
+    {
+        "enword": "entry",
+        "cnword": "n. 进入，入口"
+    },
+    {
+        "enword": "according to",
+        "cnword": "根据，按照"
+    },
+    {
+        "enword": "statistics",
+        "cnword": "n. 统计表；数学；数据"
+    },
+    {
+        "enword": "admission",
+        "cnword": "n. 准许进入（或加入）；承认"
+    },
+    {
+        "enword": "service",
+        "cnword": "n. 服务；服务机构；公共设施"
+    },
+    {
+        "enword": "power",
+        "cnword": "n. 力量；动力；能力；权力；电力"
+    },
+    {
+        "enword": "pet",
+        "cnword": "n. 宠物、爱畜"
+    },
+    {
+        "enword": "blood",
+        "cnword": "n. 血，血液"
+    },
+    {
+        "enword": "chance",
+        "cnword": "n. 机会；可能性"
+    },
+    {
+        "enword": "recover",
+        "cnword": "vi. 痊愈 vt. 恢复；重新获得"
+    },
+    {
+        "enword": "attack",
+        "cnword": "v./n. 攻击，袭击"
+    },
+    {
+        "enword": "loneliness",
+        "cnword": "n. 孤独；孤苦伶仃"
+    },
+    {
+        "enword": "spread",
+        "cnword": "n./v. (spread, spread, spreading)延伸、展开、传播"
+    },
+    {
+        "enword": "all-round",
+        "cnword": "adj. 全面的、多方面的；全能的，多才多艺的"
+    },
+    {
+        "enword": "good",
+        "cnword": "adj. 好的；令人满意的；有益的"
+    },
+    {
+        "enword": "compare",
+        "cnword": "vt. 比较，对照"
+    },
+    {
+        "enword": "infrequent",
+        "cnword": "adj. 不常发生的，罕见的"
+    },
+    {
+        "enword": "home",
+        "cnword": "n. 家；本国；产地 adv. 到家；回家；在家"
+    },
+    {
+        "enword": "purchase",
+        "cnword": "vt. 购买，采购 n. 采购；购买的东西"
+    },
+    {
+        "enword": "often",
+        "cnword": "adv. 经常地"
+    },
+    {
+        "enword": "aside",
+        "cnword": "adv. 在旁边"
+    },
+    {
+        "enword": "fill",
+        "cnword": "v. 填空；装满；充满"
+    },
+    {
+        "enword": "meaning",
+        "cnword": "n. 意义；含义"
+    },
+    {
+        "enword": "certain",
+        "cnword": "adj. 某些；确定的；无疑的；肯定的"
+    },
+    {
+        "enword": "event",
+        "cnword": "n. 事件，大事；竞赛"
+    },
+    {
+        "enword": "the number of",
+        "cnword": "....数量"
+    },
+    {
+        "enword": "calculate",
+        "cnword": "v. 计算，核算"
+    },
+    {
+        "enword": "passenger",
+        "cnword": "n. 乘客，旅客"
+    },
+    {
+        "enword": "pigeon",
+        "cnword": "n. 鸽子"
+    },
+    {
+        "enword": "perhaps",
+        "cnword": "adv. 可能，或许"
+    },
+    {
+        "enword": "abundant",
+        "cnword": "adj. 丰富的，充裕的"
+    },
+    {
+        "enword": "world",
+        "cnword": "n. 世界"
+    },
+    {
+        "enword": "famous",
+        "cnword": "adj. 著名的，出名的"
+    },
+    {
+        "enword": "architect",
+        "cnword": "n. 建筑师，设计师"
+    },
+    {
+        "enword": "landmark",
+        "cnword": "n. 标志性建筑"
+    },
+    {
+        "enword": "tower",
+        "cnword": "n. 塔"
+    },
+    {
+        "enword": "national",
+        "cnword": "adj. 国家的，全国性的"
+    },
+    {
+        "enword": "centre",
+        "cnword": "n. 中心，中央；圆心"
+    },
+    {
+        "enword": "the performing arts",
+        "cnword": "表演艺术"
+    },
+    {
+        "enword": "excellent",
+        "cnword": "adj. 极好的，优秀的"
+    },
+    {
+        "enword": "effort",
+        "cnword": "n. 努力，艰难的尝试"
+    },
+    {
+        "enword": "stage",
+        "cnword": "n. 舞台；阶段"
     }
 ]
+

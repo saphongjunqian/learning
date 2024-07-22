@@ -1,60 +1,41 @@
 <main focusOnNavigation aria-label="Typing page" class="typing-page">
-  <div class="typing-page-content">
-    <mat-toolbar class="control-full-width">
-      <mat-toolbar-row>
-        <span>
-          <h5>Typing</h5>
-        </span>
-        <span class="toolbar-spacer"></span>
-        <mat-form-field>
-          <mat-label>Files</mat-label>
-          <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
-            <mat-option value="">None</mat-option>
-            @for (file of allFiles; track file.name ) {
-              <mat-option [value]="file">{{file.name}}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>Count</mat-label>
-          <input matInput type="number" [(ngModel)]="countOfItems">
-        </mat-form-field>
-        <section>
-          <div class="example-button-container">
-            <button mat-fab extended (click)="onRestart()" [disabled]="!selectedFile || countOfItems <= 0">
-              <mat-icon>slideshow</mat-icon>
-              Start
-            </button>
-          </div>
-        </section>
-      </mat-toolbar-row>  
-    </mat-toolbar>
-    
-    @if (isQueueCompleted) {
-      <div class="result-content">
-        <div>Score: </div>
-        <table mat-table [dataSource]="dataSourceResult" class="mat-elevation-z8 demo-table">
-          <!-- English Word Column -->
-          <ng-container matColumnDef="word">
-            <th mat-header-cell *matHeaderCellDef> Word </th>
-            <td mat-cell *matCellDef="let element"> {{element.enword}} </td>
-          </ng-container>
-        
-          <!-- Correct Column -->
-          <ng-container matColumnDef="correct">
-            <th mat-header-cell *matHeaderCellDef> Correct </th>
-            <td mat-cell *matCellDef="let element">
-              <mat-checkbox [checked]="element.correct" [disabled]="true"></mat-checkbox> 
-            </td>
-          </ng-container>
-        
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
-      </div>
+  <div class="typing-page-content">    
+    @if (isTypingNotStarted) 
+    {
+      <mat-toolbar class="control-full-width">
+        <mat-toolbar-row>
+          <span>
+            <h5>Typing</h5>
+          </span>
+          <span class="toolbar-spacer"></span>
+          <mat-form-field>
+            <mat-label>Files</mat-label>
+            <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
+              <mat-option value="">None</mat-option>
+              @for (file of allFiles; track file.name ) {
+                <mat-option [value]="file">{{file.name}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Count</mat-label>
+            <input matInput type="number" [(ngModel)]="countOfItems">
+            <span matSuffix>{{wordQueueCount}}</span>
+          </mat-form-field>
+          <section>
+            <div class="example-button-container">
+              <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
+                <mat-icon>slideshow</mat-icon>
+                Start
+              </button>
+            </div>
+          </section>
+        </mat-toolbar-row>  
+      </mat-toolbar>        
     }
-    @else {
-      <!-- <mat-toolbar class="control-full-width">
+
+    @if (isTypingInProgress) {
+      <mat-toolbar class="control-full-width">
         <mat-toolbar-row>
           <span class="toolbar-spacer"></span>
           <section>
@@ -73,9 +54,16 @@
               </button>
             </div>
           </section>
+          <section>
+            <div class="example-button-container">
+              <button mat-fab extended (click)="onNextWord()">
+                <mat-icon>next</mat-icon>
+                Next Word
+              </button>
+            </div>
+          </section>
         </mat-toolbar-row>
-      </mat-toolbar> -->
-
+      </mat-toolbar>
       <div>
         <audio autoplay [src]="sourceAudioFile">
         </audio>
@@ -87,6 +75,31 @@
             <span>{{echar.visible ? echar.letter : '_'}}</span>
           }
         </div>
+      </div>
+    }
+
+    @if (isTypingCompleted) {
+      <div class="result-content">
+        <div>Score: {{currentStatus.correctWordCount }} / {{currentStatus.totalWordCount}} </div>
+        <div>Time cost (in seconds): {{( currentStatus.endTime.getTime() - currentStatus.startTime.getTime() ) / 1000}}</div>
+        <table mat-table [dataSource]="dataSourceResult" class="mat-elevation-z8 control-full-width">
+          <!-- English Word Column -->
+          <ng-container matColumnDef="word">
+            <th mat-header-cell *matHeaderCellDef> Word </th>
+            <td mat-cell *matCellDef="let element"> {{element.enword}} </td>
+          </ng-container>
+        
+          <!-- Correct Column -->
+          <ng-container matColumnDef="correct">
+            <th mat-header-cell *matHeaderCellDef> Correct </th>
+            <td mat-cell *matCellDef="let element">
+              <mat-checkbox [checked]="element.correct" [disabled]="true"></mat-checkbox> 
+            </td>
+          </ng-container>
+        
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
       </div>
     }
   </div>

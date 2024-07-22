@@ -23,8 +23,9 @@
 }
 
 .typing-container {
+    font-family: "Consolas";
     font-size: 72px;
-    display: flex;
+    display: block;
     justify-content: center;
     height: 250px;
     align-items: center;
@@ -42,11 +43,6 @@
     display: flex;
     justify-content: center;
     width: 120px;
-}
-
-.demo-table {
-    width: 100%;
-    margin: 24px;
 }
 
 result-content {
