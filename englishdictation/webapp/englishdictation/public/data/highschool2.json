@@ -1,0 +1,6306 @@
+[
+    {
+        "enword": "a",
+        "cnword": "art. 一个(件...)"
+    },
+    {
+        "enword": "abandon",
+        "cnword": "vt. 放弃,抛弃"
+    },
+    {
+        "enword": "ability",
+        "cnword": "n. 能力,才能"
+    },
+    {
+        "enword": "able",
+        "cnword": "a. 有能力的,能干的"
+    },
+    {
+        "enword": "abnormal",
+        "cnword": "a. 不正常的,变态的"
+    },
+    {
+        "enword": "aboard",
+        "cnword": "ad. 在船(车)上,上船(车)"
+    },
+    {
+        "enword": "about",
+        "cnword": "prep. 关于,在...周围"
+    },
+    {
+        "enword": "above",
+        "cnword": "prep. 在...上面,在...之上"
+    },
+    {
+        "enword": "abroad",
+        "cnword": "ad. 到国外,在国外"
+    },
+    {
+        "enword": "absence",
+        "cnword": "n. 缺席,不在场,缺乏"
+    },
+    {
+        "enword": "absent",
+        "cnword": "a. 缺席的,不在场的"
+    },
+    {
+        "enword": "absolute",
+        "cnword": "a. 绝对的,完全的"
+    },
+    {
+        "enword": "absolutely",
+        "cnword": "ad. 绝对地,完全地"
+    },
+    {
+        "enword": "absorb",
+        "cnword": "vt. 吸收,吸引"
+    },
+    {
+        "enword": "abstract",
+        "cnword": "a. 抽象的,深奥的"
+    },
+    {
+        "enword": "abundant",
+        "cnword": "a. 丰富的,充裕的"
+    },
+    {
+        "enword": "academic",
+        "cnword": "a. 学术的,学院的"
+    },
+    {
+        "enword": "accent",
+        "cnword": "n. 口音,重音"
+    },
+    {
+        "enword": "accept",
+        "cnword": "vt. 接受,承认"
+    },
+    {
+        "enword": "acceptable",
+        "cnword": "a. 可接受的,合意的"
+    },
+    {
+        "enword": "access",
+        "cnword": "n. 接近,通道,入口"
+    },
+    {
+        "enword": "accident",
+        "cnword": "n. 事故,意外事件"
+    },
+    {
+        "enword": "accidental",
+        "cnword": "a. 意外的,偶然的"
+    },
+    {
+        "enword": "accommadation",
+        "cnword": "n. 住处,膳宿"
+    },
+    {
+        "enword": "accompany",
+        "cnword": "vt. 陪伴,伴随"
+    },
+    {
+        "enword": "accomplish",
+        "cnword": "vt. 完成,实现"
+    },
+    {
+        "enword": "according",
+        "cnword": "ad. 根据,按照"
+    },
+    {
+        "enword": "account",
+        "cnword": "n. 账目,账户,描述"
+    },
+    {
+        "enword": "accountant",
+        "cnword": "n. 会计"
+    },
+    {
+        "enword": "accuracy",
+        "cnword": "n. 准确(性),精确(性)"
+    },
+    {
+        "enword": "accuse",
+        "cnword": "vt. 指责,控告"
+    },
+    {
+        "enword": "accustomed",
+        "cnword": "a. 习惯的,通常的"
+    },
+    {
+        "enword": "ache",
+        "cnword": "n. 疼痛,痛苦"
+    },
+    {
+        "enword": "achieve",
+        "cnword": "vt. 完成,实现"
+    },
+    {
+        "enword": "achievement",
+        "cnword": "n. 成就,成绩"
+    },
+    {
+        "enword": "acid",
+        "cnword": "n. 酸,酸性物质"
+    },
+    {
+        "enword": "acknowledge",
+        "cnword": "vt. 承认,感谢"
+    },
+    {
+        "enword": "acquire",
+        "cnword": "vt. 获得,学到"
+    },
+    {
+        "enword": "across",
+        "cnword": "prep. 穿过,横过"
+    },
+    {
+        "enword": "act",
+        "cnword": "n. 行为,法案,剧本"
+    },
+    {
+        "enword": "action",
+        "cnword": "n. 行动,作用"
+    },
+    {
+        "enword": "active",
+        "cnword": "a. 积极的,活跃的"
+    },
+    {
+        "enword": "activity",
+        "cnword": "n. 活动,活跃"
+    },
+    {
+        "enword": "actor",
+        "cnword": "n. 男演员,演员"
+    },
+    {
+        "enword": "actress",
+        "cnword": "n. 女演员,女演员"
+    },
+    {
+        "enword": "actual",
+        "cnword": "a. 实际的,真实的"
+    },
+    {
+        "enword": "adapt",
+        "cnword": "vt. 使适应,改编"
+    },
+    {
+        "enword": "add",
+        "cnword": "vt. 加,增加"
+    },
+    {
+        "enword": "addition",
+        "cnword": "n. 加,增加,附加物"
+    },
+    {
+        "enword": "additional",
+        "cnword": "a. 附加的,额外的"
+    },
+    {
+        "enword": "address",
+        "cnword": "n. 地址,演说"
+    },
+    {
+        "enword": "adequate",
+        "cnword": "a. 足够的,适当的"
+    },
+    {
+        "enword": "adjust",
+        "cnword": "vt. 调整,调节"
+    },
+    {
+        "enword": "administration",
+        "cnword": "n. 管理,行政"
+    },
+    {
+        "enword": "admire",
+        "cnword": "vt. 钦佩,赞美"
+    },
+    {
+        "enword": "admit",
+        "cnword": "vt. 承认,准许进入"
+    },
+    {
+        "enword": "admission",
+        "cnword": "n. 承认,准许进入"
+    },
+    {
+        "enword": "adopt",
+        "cnword": "vt. 采用,收养"
+    },
+    {
+        "enword": "adult",
+        "cnword": "n. 成年人,成人"
+    },
+    {
+        "enword": "advance",
+        "cnword": "vt. 推进,提出"
+    },
+    {
+        "enword": "advanced",
+        "cnword": "a. 先进的,高级的"
+    },
+    {
+        "enword": "advancement",
+        "cnword": "n. 前进,进步"
+    },
+    {
+        "enword": "advantage",
+        "cnword": "n. 优势,有利条件"
+    },
+    {
+        "enword": "adventure",
+        "cnword": "n. 冒险,奇遇"
+    },
+    {
+        "enword": "advertise",
+        "cnword": "vt. 做广告,宣传"
+    },
+    {
+        "enword": "advertisement",
+        "cnword": "n. 广告,广告宣传"
+    },
+    {
+        "enword": "advice",
+        "cnword": "n. 忠告,建议"
+    },
+    {
+        "enword": "advise",
+        "cnword": "vt. 劝告,建议"
+    },
+    {
+        "enword": "aeroplane",
+        "cnword": "n. 飞机"
+    },
+    {
+        "enword": "affair",
+        "cnword": "n. 事情,事件"
+    },
+    {
+        "enword": "affect",
+        "cnword": "vt. 影响,感动"
+    },
+    {
+        "enword": "affection",
+        "cnword": "n. 感情,爱"
+    },
+    {
+        "enword": "afford",
+        "cnword": "vt. 买得起,负担得起"
+    },
+    {
+        "enword": "afraid",
+        "cnword": "a. 害怕的,担心的"
+    },
+    {
+        "enword": "after",
+        "cnword": "prep. 在...之后,在...以后"
+    },
+    {
+        "enword": "afternoon",
+        "cnword": "n. 下午,午后"
+    },
+    {
+        "enword": "again",
+        "cnword": "ad. 再一次,又"
+    },
+    {
+        "enword": "against",
+        "cnword": "prep. 反对,对着"
+    },
+    {
+        "enword": "age",
+        "cnword": "n. 年龄,时代"
+    },
+    {
+        "enword": "aged",
+        "cnword": "a. 年老的,年龄在...的"
+    },
+    {
+        "enword": "agency",
+        "cnword": "n. 代理处,代理权"
+    },
+    {
+        "enword": "agent",
+        "cnword": "n. 代理人,经纪人"
+    },
+    {
+        "enword": "aggressive",
+        "cnword": "a. 侵略的,好斗的"
+    },
+    {
+        "enword": "ago",
+        "cnword": "ad. 以前"
+    },
+    {
+        "enword": "agree",
+        "cnword": "vi. 同意,赞成"
+    },
+    {
+        "enword": "agreeable",
+        "cnword": "a. 令人愉快的,宜人的"
+    },
+    {
+        "enword": "agrictulture",
+        "cnword": "n. 农业,农艺"
+    },
+    {
+        "enword": "ahead",
+        "cnword": "ad. 在前,向前"
+    },
+    {
+        "enword": "aid",
+        "cnword": "n. 帮助,援助"
+    },
+    {
+        "enword": "AIDS",
+        "cnword": "n. 艾滋病"
+    },
+    {
+        "enword": "aim",
+        "cnword": "n. 目标,目的"
+    },
+    {
+        "enword": "air",
+        "cnword": "n. 空气,天空"
+    },
+    {
+        "enword": "air-conditioned",
+        "cnword": "a. 有空调的"
+    },
+    {
+        "enword": "aircraft",
+        "cnword": "n. 飞机,航空器"
+    },
+    {
+        "enword": "airline",
+        "cnword": "n. 航线,航空公司"
+    },
+    {
+        "enword": "airmail",
+        "cnword": "n. 航空邮件"
+    },
+    {
+        "enword": "airport",
+        "cnword": "n. 机场"
+    },
+    {
+        "enword": "alarm",
+        "cnword": "n. 警报,警告"
+    },
+    {
+        "enword": "album",
+        "cnword": "n. 相册,唱片集"
+    },
+    {
+        "enword": "alcohol",
+        "cnword": "n. 酒精,酒"
+    },
+    {
+        "enword": "alcobolic",
+        "cnword": "a. 含酒精的,醉人的"
+    },
+    {
+        "enword": "alert",
+        "cnword": "a. 警惕的,机警的"
+    },
+    {
+        "enword": "alike",
+        "cnword": "a. 相同的,相似的"
+    },
+    {
+        "enword": "alive",
+        "cnword": "a. 活着的,有生气的"
+    },
+    {
+        "enword": "all",
+        "cnword": "a. 全部的,所有的"
+    },
+    {
+        "enword": "allow",
+        "cnword": "vt. 允许,准许"
+    },
+    {
+        "enword": "almost",
+        "cnword": "ad. 几乎,差不多"
+    },
+    {
+        "enword": "alone",
+        "cnword": "a. 单独的,独自的"
+    },
+    {
+        "enword": "along",
+        "cnword": "prep. 沿着,顺着"
+    },
+    {
+        "enword": "alongside",
+        "cnword": "prep. 在...旁边"
+    },
+    {
+        "enword": "aloud",
+        "cnword": "ad. 大声地"
+    },
+    {
+        "enword": "alphabet",
+        "cnword": "n. 字母表,字母"
+    },
+    {
+        "enword": "already",
+        "cnword": "ad. 已经,早已"
+    },
+    {
+        "enword": "also",
+        "cnword": "ad. 也,又"
+    },
+    {
+        "enword": "alter",
+        "cnword": "vt. 改变,更改"
+    },
+    {
+        "enword": "alternative",
+        "cnword": "n. 选择,二中择一"
+    },
+    {
+        "enword": "although",
+        "cnword": "conj. 虽然,尽管"
+    },
+    {
+        "enword": "altogether",
+        "cnword": "ad. 完全,总共"
+    },
+    {
+        "enword": "always",
+        "cnword": "ad. 总是,一直"
+    },
+    {
+        "enword": "a.m.",
+        "cnword": "ad. 上午"
+    },
+    {
+        "enword": "amateur",
+        "cnword": "n. 业余爱好者,外行"
+    },
+    {
+        "enword": "amaze",
+        "cnword": "vt. 使惊奇,使惊愕"
+    },
+    {
+        "enword": "ambition",
+        "cnword": "n. 雄心,抱负,志向"
+    },
+    {
+        "enword": "ambulance",
+        "cnword": "n. 救护车"
+    },
+    {
+        "enword": "among",
+        "cnword": "prep. 在...之中,在...之间"
+    },
+    {
+        "enword": "amount",
+        "cnword": "n. 数量,总数"
+    },
+    {
+        "enword": "amuse",
+        "cnword": "vt. 逗乐,逗笑"
+    },
+    {
+        "enword": "amusement",
+        "cnword": "n. 娱乐,消遣"
+    },
+    {
+        "enword": "an",
+        "cnword": "art. 一(个,件...)"
+    },
+    {
+        "enword": "analysis",
+        "cnword": "n. 分析,分解"
+    },
+    {
+        "enword": "analyze",
+        "cnword": "vt. 分析,分解"
+    },
+    {
+        "enword": "ancestor",
+        "cnword": "n. 祖先,祖宗"
+    },
+    {
+        "enword": "ancient",
+        "cnword": "a. 古代的,古老的"
+    },
+    {
+        "enword": "and",
+        "cnword": "conj. 和,与,而且"
+    },
+    {
+        "enword": "anger",
+        "cnword": "n. 怒,愤怒"
+    },
+    {
+        "enword": "angle",
+        "cnword": "n. 角,角度"
+    },
+    {
+        "enword": "angry",
+        "cnword": "a. 生气的,愤怒的"
+    },
+    {
+        "enword": "animal",
+        "cnword": "n. 动物,兽"
+    },
+    {
+        "enword": "ankle",
+        "cnword": "n. 踝,踝关节"
+    },
+    {
+        "enword": "anniversary",
+        "cnword": "n. 周年纪念"
+    },
+    {
+        "enword": "announce",
+        "cnword": "vt. 宣布,宣告"
+    },
+    {
+        "enword": "announcement",
+        "cnword": "n. 宣布,通告"
+    },
+    {
+        "enword": "announcer",
+        "cnword": "n. 广播员,播音员"
+    },
+    {
+        "enword": "annoy",
+        "cnword": "vt. 使恼怒,打扰"
+    },
+    {
+        "enword": "annual",
+        "cnword": "a. 每年的,年度的"
+    },
+    {
+        "enword": "another",
+        "cnword": "a. 另一个,再一个"
+    },
+    {
+        "enword": "answer",
+        "cnword": "n. 答案,回答"
+    },
+    {
+        "enword": "ant",
+        "cnword": "n. 蚂蚁"
+    },
+    {
+        "enword": "anticpollution",
+        "cnword": "a. 反污染的"
+    },
+    {
+        "enword": "anxious",
+        "cnword": "a. 焦急的,担心的"
+    },
+    {
+        "enword": "any",
+        "cnword": "a. 任何,任何一个"
+    },
+    {
+        "enword": "anybody",
+        "cnword": "pron. 任何人,无论谁"
+    },
+    {
+        "enword": "anyhow",
+        "cnword": "ad. 无论如何,不管怎样"
+    },
+    {
+        "enword": "anyone",
+        "cnword": "pron. 任何人,无论谁"
+    },
+    {
+        "enword": "anything",
+        "cnword": "pron. 任何事物,无论什么"
+    },
+    {
+        "enword": "anyway",
+        "cnword": "ad. 无论如何,不管怎样"
+    },
+    {
+        "enword": "anywhere",
+        "cnword": "ad. 任何地方,无论哪里"
+    },
+    {
+        "enword": "apart",
+        "cnword": "ad. 分离,分开"
+    },
+    {
+        "enword": "apartment",
+        "cnword": "n. 公寓,住宅"
+    },
+    {
+        "enword": "apologize",
+        "cnword": "vi. 道歉,谢罪"
+    },
+    {
+        "enword": "apology",
+        "cnword": "n. 道歉,谢罪"
+    },
+    {
+        "enword": "apparent",
+        "cnword": "a. 明显的,显然的"
+    },
+    {
+        "enword": "appeal",
+        "cnword": "vi. 呼吁,恳求"
+    },
+    {
+        "enword": "appear",
+        "cnword": "vi. 出现,显露"
+    },
+    {
+        "enword": "appearance",
+        "cnword": "n. 出现,外貌"
+    },
+    {
+        "enword": "appetite",
+        "cnword": "n. 食欲,胃口"
+    },
+    {
+        "enword": "appland",
+        "cnword": "vt. 鼓掌,称赞"
+    },
+    {
+        "enword": "applause",
+        "cnword": "n. 鼓掌,喝彩"
+    },
+    {
+        "enword": "apple",
+        "cnword": "n. 苹果"
+    },
+    {
+        "enword": "appliance",
+        "cnword": "n. 用具,器械"
+    },
+    {
+        "enword": "applicable",
+        "cnword": "a. 适用的,可应用的"
+    },
+    {
+        "enword": "application",
+        "cnword": "n. 申请,应用"
+    },
+    {
+        "enword": "apply",
+        "cnword": "vt. 申请,应用"
+    },
+    {
+        "enword": "appoint",
+        "cnword": "vt. 任命,指定"
+    },
+    {
+        "enword": "appointment",
+        "cnword": "n. 约会,任命"
+    },
+    {
+        "enword": "appreciate",
+        "cnword": "vt. 欣赏,感激"
+    },
+    {
+        "enword": "appreciation",
+        "cnword": "n. 欣赏,感激"
+    },
+    {
+        "enword": "approach",
+        "cnword": "vt. 接近,靠近"
+    },
+    {
+        "enword": "appropriate",
+        "cnword": "a. 适当的,恰当的"
+    },
+    {
+        "enword": "approve",
+        "cnword": "vt. 赞成,批准"
+    },
+    {
+        "enword": "architect",
+        "cnword": "n. 建筑师"
+    },
+    {
+        "enword": "architecture",
+        "cnword": "n. 建筑学,建筑风格"
+    },
+    {
+        "enword": "area",
+        "cnword": "n. 面积,地区"
+    },
+    {
+        "enword": "argue",
+        "cnword": "vi. 争论,辩论"
+    },
+    {
+        "enword": "argument",
+        "cnword": "n. 争论,辩论"
+    },
+    {
+        "enword": "arise",
+        "cnword": "vi. 出现,发生"
+    },
+    {
+        "enword": "arithmetic",
+        "cnword": "n. 算术,算法"
+    },
+    {
+        "enword": "arm",
+        "cnword": "n. 手臂,武器"
+    },
+    {
+        "enword": "army",
+        "cnword": "n. 军队,陆军"
+    },
+    {
+        "enword": "around",
+        "cnword": "prep. 在...周围,在...附近"
+    },
+    {
+        "enword": "arouse",
+        "cnword": "vt. 唤醒,激起"
+    },
+    {
+        "enword": "arrange",
+        "cnword": "vt. 安排,整理"
+    },
+    {
+        "enword": "arrangement",
+        "cnword": "n. 安排,整理"
+    },
+    {
+        "enword": "arrest",
+        "cnword": "vt. 逮捕,拘留"
+    },
+    {
+        "enword": "arrival",
+        "cnword": "n. 到达,到来"
+    },
+    {
+        "enword": "arrive",
+        "cnword": "vi. 到达,到来"
+    },
+    {
+        "enword": "arrow",
+        "cnword": "n. 箭,箭头"
+    },
+    {
+        "enword": "art",
+        "cnword": "n. 艺术,美术"
+    },
+    {
+        "enword": "article",
+        "cnword": "n. 文章,物品"
+    },
+    {
+        "enword": "artificial",
+        "cnword": "a. 人工的,人造的"
+    },
+    {
+        "enword": "artist",
+        "cnword": "n. 艺术家,美术家"
+    },
+    {
+        "enword": "as",
+        "cnword": "conj. 当...时候,如同"
+    },
+    {
+        "enword": "ash",
+        "cnword": "n. 灰,灰烬"
+    },
+    {
+        "enword": "ashamed",
+        "cnword": "a. 羞愧的,惭愧的"
+    },
+    {
+        "enword": "aside",
+        "cnword": "ad. 在旁边,到一边"
+    },
+    {
+        "enword": "ask",
+        "cnword": "vt. 问,请求"
+    },
+    {
+        "enword": "asleep",
+        "cnword": "a. 睡着的,熟睡的"
+    },
+    {
+        "enword": "aspect",
+        "cnword": "n. 方面,样子"
+    },
+    {
+        "enword": "aspirin",
+        "cnword": "n. 阿司匹林"
+    },
+    {
+        "enword": "assemble",
+        "cnword": "vt. 集合,装配"
+    },
+    {
+        "enword": "assembly",
+        "cnword": "n. 集合,装配"
+    },
+    {
+        "enword": "assess",
+        "cnword": "vt. 评定,估价"
+    },
+    {
+        "enword": "assign",
+        "cnword": "vt. 分配,指定"
+    },
+    {
+        "enword": "assignment",
+        "cnword": "n. 分配,任务"
+    },
+    {
+        "enword": "assist",
+        "cnword": "v. 帮助,协助"
+    },
+    {
+        "enword": "assistance",
+        "cnword": "n. 帮助,协助"
+    },
+    {
+        "enword": "assistant",
+        "cnword": "n. 助手,助理"
+    },
+    {
+        "enword": "associate",
+        "cnword": "vt. 联想,联系"
+    },
+    {
+        "enword": "association",
+        "cnword": "n. 协会,社团"
+    },
+    {
+        "enword": "assume",
+        "cnword": "vt. 假定,设想"
+    },
+    {
+        "enword": "assure",
+        "cnword": "vt. 保证,担保"
+    },
+    {
+        "enword": "assurance",
+        "cnword": "n. 保证,担保"
+    },
+    {
+        "enword": "reassure",
+        "cnword": "vt. 使安心,使放心"
+    },
+    {
+        "enword": "astonish",
+        "cnword": "vt. 使惊讶,使吃惊"
+    },
+    {
+        "enword": "astonished",
+        "cnword": "a. 惊讶的,吃惊的"
+    },
+    {
+        "enword": "astonishing",
+        "cnword": "a. 令人惊讶的,惊人的"
+    },
+    {
+        "enword": "astronaut",
+        "cnword": "n. 宇航员"
+    },
+    {
+        "enword": "at",
+        "cnword": "prep. 在...处,在...时候"
+    },
+    {
+        "enword": "athlete",
+        "cnword": "n. 运动员,体育家"
+    },
+    {
+        "enword": "athletic",
+        "cnword": "a. 运动的,体育的"
+    },
+    {
+        "enword": "atmosphere",
+        "cnword": "n. 大气,气氛"
+    },
+    {
+        "enword": "atom",
+        "cnword": "n. 原子"
+    },
+    {
+        "enword": "atomic",
+        "cnword": "a. 原子的,原子能的"
+    },
+    {
+        "enword": "attach",
+        "cnword": "vt. 系,贴,附加"
+    },
+    {
+        "enword": "attack",
+        "cnword": "vt. 攻击,进攻"
+    },
+    {
+        "enword": "attempt",
+        "cnword": "vt. 尝试,试图"
+    },
+    {
+        "enword": "attend",
+        "cnword": "vt. 出席,参加"
+    },
+    {
+        "enword": "attendance",
+        "cnword": "n. 出席,出席人数"
+    },
+    {
+        "enword": "attendant",
+        "cnword": "n. 服务员,侍者"
+    },
+    {
+        "enword": "unattended",
+        "cnword": "a. 无人看管的,无人照料的"
+    },
+    {
+        "enword": "attention",
+        "cnword": "n. 注意,关心"
+    },
+    {
+        "enword": "attitude",
+        "cnword": "n. 态度,看法"
+    },
+    {
+        "enword": "attract",
+        "cnword": "vt. 吸引,引起"
+    },
+    {
+        "enword": "attraction",
+        "cnword": "n. 吸引,吸引力"
+    },
+    {
+        "enword": "attractive",
+        "cnword": "a. 吸引人的,有魅力的"
+    },
+    {
+        "enword": "audience",
+        "cnword": "n. 听众,观众"
+    },
+    {
+        "enword": "audio-visual",
+        "cnword": "a. 视听的,视听教育的"
+    },
+    {
+        "enword": "aunt",
+        "cnword": "n. 伯母,姑母"
+    },
+    {
+        "enword": "author",
+        "cnword": "n. 作者,作家"
+    },
+    {
+        "enword": "authority",
+        "cnword": "n. 权威,权力"
+    },
+    {
+        "enword": "auto",
+        "cnword": "n. 汽车"
+    },
+    {
+        "enword": "automatic",
+        "cnword": "a. 自动的,自动化的"
+    },
+    {
+        "enword": "automatically",
+        "cnword": "ad. 自动地,自动化地"
+    },
+    {
+        "enword": "automate",
+        "cnword": "vt. 自动化,使自动化"
+    },
+    {
+        "enword": "automation",
+        "cnword": "n. 自动化,自动操作"
+    },
+    {
+        "enword": "autumn",
+        "cnword": "n. 秋天,秋季"
+    },
+    {
+        "enword": "available",
+        "cnword": "a. 可利用的,可得到的"
+    },
+    {
+        "enword": "avenue",
+        "cnword": "n. 林荫道,大街"
+    },
+    {
+        "enword": "average",
+        "cnword": "n. 平均,平均数"
+    },
+    {
+        "enword": "avoid",
+        "cnword": "vt. 避免,躲开"
+    },
+    {
+        "enword": "unavoidable",
+        "cnword": "a. 不可避免的,不得已的"
+    },
+    {
+        "enword": "await",
+        "cnword": "vt. 等候,等待"
+    },
+    {
+        "enword": "awake",
+        "cnword": "a. 醒着的,醒来的"
+    },
+    {
+        "enword": "awaken",
+        "cnword": "vt. 唤醒,醒来"
+    },
+    {
+        "enword": "award",
+        "cnword": "n. 奖,奖品"
+    },
+    {
+        "enword": "aware",
+        "cnword": "a. 知道的,意识到的"
+    },
+    {
+        "enword": "away",
+        "cnword": "ad. 离开,远离"
+    },
+    {
+        "enword": "awful",
+        "cnword": "a. 可怕的,极坏的"
+    },
+    {
+        "enword": "awkward",
+        "cnword": "a. 笨拙的,尴尬的"
+    },
+    {
+        "enword": "absent-minded",
+        "cnword": "a. 心不在焉的,健忘的"
+    },
+    {
+        "enword": "absorption",
+        "cnword": "n. 吸收,专注"
+    },
+    {
+        "enword": "academy",
+        "cnword": "n. 学院,学会"
+    },
+    {
+        "enword": "unacceptable",
+        "cnword": "a. 不能接受的,不受欢迎的"
+    },
+    {
+        "enword": "accessible",
+        "cnword": "a. 可接近的,可进入的"
+    },
+    {
+        "enword": "traffic",
+        "cnword": "n. 交通,运输"
+    },
+    {
+        "enword": "on account of",
+        "cnword": "由于,因为"
+    },
+    {
+        "enword": "on no account",
+        "cnword": "决不,绝不"
+    },
+    {
+        "enword": "account for",
+        "cnword": "解释,说明"
+    },
+    {
+        "enword": "accurate",
+        "cnword": "a. 准确的,精确的"
+    },
+    {
+        "enword": "accuse sb. of",
+        "cnword": "控告某人犯有..."
+    },
+    {
+        "enword": "accusation",
+        "cnword": "n. 控告,指控"
+    },
+    {
+        "enword": "accuser",
+        "cnword": "n. 控告人,原告"
+    },
+    {
+        "enword": "acid rain",
+        "cnword": "酸雨"
+    },
+    {
+        "enword": "acquisition",
+        "cnword": "n. 获得,学到"
+    },
+    {
+        "enword": "act on",
+        "cnword": "按照...行动,根据...行事"
+    },
+    {
+        "enword": "interact",
+        "cnword": "vi. 互相作用,互相影响"
+    },
+    {
+        "enword": "take action",
+        "cnword": "采取行动"
+    },
+    {
+        "enword": "actually",
+        "cnword": "ad. 实际上,事实上"
+    },
+    {
+        "enword": "adaptable",
+        "cnword": "a. 适应性强的,可改编的"
+    },
+    {
+        "enword": "adaptation",
+        "cnword": "n. 适应,改编"
+    },
+    {
+        "enword": "add up",
+        "cnword": "加起来,合计"
+    },
+    {
+        "enword": "add up to",
+        "cnword": "总计达到,等于"
+    },
+    {
+        "enword": "in addition to",
+        "cnword": "除...之外,另外"
+    },
+    {
+        "enword": "additionally",
+        "cnword": "ad. 另外,此外"
+    },
+    {
+        "enword": "adjustment",
+        "cnword": "n. 调整,调节"
+    },
+    {
+        "enword": "addresser",
+        "cnword": "n. 演讲者,致辞者"
+    },
+    {
+        "enword": "addressee",
+        "cnword": "n. 收信人,收件人"
+    },
+    {
+        "enword": "administrator",
+        "cnword": "n. 管理者,行政人员"
+    },
+    {
+        "enword": "administration",
+        "cnword": "n. 管理,行政"
+    },
+    {
+        "enword": "admire sb. for",
+        "cnword": "因...而钦佩某人"
+    },
+    {
+        "enword": "admiration",
+        "cnword": "n. 钦佩,赞美"
+    },
+    {
+        "enword": "admiring",
+        "cnword": "a. 钦佩的,赞美的"
+    },
+    {
+        "enword": "admirable",
+        "cnword": "a. 值得钦佩的,令人赞美的"
+    },
+    {
+        "enword": "admit ... to",
+        "cnword": "准许...进入,承认..."
+    },
+    {
+        "enword": "adulthood",
+        "cnword": "n. 成年,成年期"
+    },
+    {
+        "enword": "take advantage of",
+        "cnword": "利用,趁机"
+    },
+    {
+        "enword": "advisor",
+        "cnword": "n. 顾问,指导者"
+    },
+    {
+        "enword": "advise doing",
+        "cnword": "建议做..."
+    },
+    {
+        "enword": "advise sb. to do",
+        "cnword": "建议某人做..."
+    },
+    {
+        "enword": "be afraid to do",
+        "cnword": "害怕做..."
+    },
+    {
+        "enword": "middle-aged",
+        "cnword": "a. 中年的"
+    },
+    {
+        "enword": "for one's age",
+        "cnword": "以某人的年龄来说"
+    },
+    {
+        "enword": "travel agency",
+        "cnword": "旅行社"
+    },
+    {
+        "enword": "first aid",
+        "cnword": "急救"
+    },
+    {
+        "enword": "go ahead",
+        "cnword": "前进,继续"
+    },
+    {
+        "enword": "aim at",
+        "cnword": "瞄准,针对"
+    },
+    {
+        "enword": "disagree",
+        "cnword": "vi. 不同意,不一致"
+    },
+    {
+        "enword": "in the air",
+        "cnword": "在空中,在流传"
+    },
+    {
+        "enword": "by air",
+        "cnword": "乘飞机,空运"
+    },
+    {
+        "enword": "air-conditioner",
+        "cnword": "n. 空调"
+    },
+    {
+        "enword": "alarming",
+        "cnword": "a. 令人担忧的,使人惊恐的"
+    },
+    {
+        "enword": "in all",
+        "cnword": "总共,总计"
+    },
+    {
+        "enword": "above all",
+        "cnword": "首先,尤其是"
+    },
+    {
+        "enword": "have no alternative but to do",
+        "cnword": "别无选择,只能..."
+    },
+    {
+        "enword": "along with ...",
+        "cnword": "和...一起,随着..."
+    },
+    {
+        "enword": "ambitious",
+        "cnword": "a. 有雄心的,有抱负的"
+    },
+    {
+        "enword": "amazing",
+        "cnword": "a. 令人惊奇的,惊人的"
+    },
+    {
+        "enword": "amazed",
+        "cnword": "a. 惊奇的,吃惊的"
+    },
+    {
+        "enword": "amused",
+        "cnword": "a. 有趣的,好笑的"
+    },
+    {
+        "enword": "amusing",
+        "cnword": "a. 有趣的,好笑的"
+    },
+    {
+        "enword": "be anxious for",
+        "cnword": "渴望,渴望得到"
+    },
+    {
+        "enword": "annoying",
+        "cnword": "a. 令人讨厌的,恼人的"
+    },
+    {
+        "enword": "be annoyed at sth.",
+        "cnword": "对...感到恼火"
+    },
+    {
+        "enword": "answer for",
+        "cnword": "对...负责,对...负责任"
+    },
+    {
+        "enword": "apart from",
+        "cnword": "除...之外,另外"
+    },
+    {
+        "enword": "apologize to sb. for",
+        "cnword": "为...向某人道歉"
+    },
+    {
+        "enword": "appeal to",
+        "cnword": "呼吁,恳求"
+    },
+    {
+        "enword": "appealing",
+        "cnword": "a. 吸引人的,有吸引力的"
+    },
+    {
+        "enword": "It appears that",
+        "cnword": "看来,似乎"
+    },
+    {
+        "enword": "have a good appetite",
+        "cnword": "胃口好"
+    },
+    {
+        "enword": "have no appetite for sth.",
+        "cnword": "对...没兴趣"
+    },
+    {
+        "enword": "electrical appliances",
+        "cnword": "电器"
+    },
+    {
+        "enword": "approval",
+        "cnword": "n. 赞成,批准"
+    },
+    {
+        "enword": "appreciate doing",
+        "cnword": "感激做..."
+    },
+    {
+        "enword": "arm in arm",
+        "cnword": "手挽手"
+    },
+    {
+        "enword": "arise from",
+        "cnword": "由...引起,起因于"
+    },
+    {
+        "enword": "hold  ... in one's arms",
+        "cnword": "抱着..."
+    },
+    {
+        "enword": "arrange for ... to do",
+        "cnword": "安排...做..."
+    },
+    {
+        "enword": "one one's arrival",
+        "cnword": "一到达,一来到"
+    },
+    {
+        "enword": "arrive at",
+        "cnword": "到达,抵达"
+    },
+    {
+        "enword": "artistic",
+        "cnword": "a. 艺术的,艺术家的"
+    },
+    {
+        "enword": "in all aspects",
+        "cnword": "在各方面"
+    },
+    {
+        "enword": "assembly",
+        "cnword": "n. 集合,装配"
+    },
+    {
+        "enword": "assembly line",
+        "cnword": "流水线"
+    },
+    {
+        "enword": "assessment",
+        "cnword": "n. 评定,估价"
+    },
+    {
+        "enword": "assistance",
+        "cnword": "n. 帮助,协助"
+    },
+    {
+        "enword": "be associated with",
+        "cnword": "与...有关"
+    },
+    {
+        "enword": "be astonished at",
+        "cnword": "对...感到惊讶"
+    },
+    {
+        "enword": "attach great importance to",
+        "cnword": "重视,看重"
+    },
+    {
+        "enword": "attempt to do",
+        "cnword": "试图做..."
+    },
+    {
+        "enword": "pay attention to",
+        "cnword": "注意,留心"
+    },
+    {
+        "enword": "draw one's attention to",
+        "cnword": "吸引某人的注意"
+    },
+    {
+        "enword": "attract worldwide attention",
+        "cnword": "引起全世界的关注"
+    },
+    {
+        "enword": "without attracting public attention",
+        "cnword": "不引起公众的注意"
+    },
+    {
+        "enword": "attitude towards",
+        "cnword": "对...的态度"
+    },
+    {
+        "enword": "attract sb. to",
+        "cnword": "吸引某人"
+    },
+    {
+        "enword": "tourist attraction",
+        "cnword": "旅游胜地"
+    },
+    {
+        "enword": "audio",
+        "cnword": "a. 听觉的,声音的"
+    },
+    {
+        "enword": "on the average",
+        "cnword": "平均"
+    },
+    {
+        "enword": "award sb. sth. for",
+        "cnword": "授予某人某事物"
+    },
+    {
+        "enword": "be aware of",
+        "cnword": "意识到,知道"
+    },
+    {
+        "enword": "awfully",
+        "cnword": "ad. 非常,极其"
+    },
+    {
+        "enword": "away from",
+        "cnword": "离开,远离"
+    },
+    {
+        "enword": "baby",
+        "cnword": "n. 婴儿"
+    },
+    {
+        "enword": "baby-sit",
+        "cnword": "看护婴儿，充任临时保姆"
+    },
+    {
+        "enword": "back",
+        "cnword": "n. 背部，后面 adj. 后面的 adv. 向后 vt. 支持"
+    },
+    {
+        "enword": "at the back of",
+        "cnword": "在...的后面"
+    },
+    {
+        "enword": "behind one's back",
+        "cnword": "在某人背后"
+    },
+    {
+        "enword": "background",
+        "cnword": "n. 背景，背景资料"
+    },
+    {
+        "enword": "backward",
+        "cnword": "adj. 向后的，倒退的"
+    },
+    {
+        "enword": "bacteria",
+        "cnword": "n. 细菌"
+    },
+    {
+        "enword": "bad",
+        "cnword": "adj. 坏的，恶劣的，不舒服的"
+    },
+    {
+        "enword": "be bad for",
+        "cnword": "对...有害"
+    },
+    {
+        "enword": "badly",
+        "cnword": "adv. 坏地，严重地"
+    },
+    {
+        "enword": "bag",
+        "cnword": "n. 袋，包，提包 vt. 装入袋中"
+    },
+    {
+        "enword": "schoolbag",
+        "cnword": "书包"
+    },
+    {
+        "enword": "baggage",
+        "cnword": "n. 行李"
+    },
+    {
+        "enword": "bake",
+        "cnword": "vt. 烤，烘"
+    },
+    {
+        "enword": "baker",
+        "cnword": "n. 面包师"
+    },
+    {
+        "enword": "balance",
+        "cnword": "n. 平衡，天平，余额 vt. 使平衡，权衡"
+    },
+    {
+        "enword": "keep the balance of nature",
+        "cnword": "保持自然平衡"
+    },
+    {
+        "enword": "upset the balance of nature",
+        "cnword": "破坏自然平衡"
+    },
+    {
+        "enword": "balanced",
+        "cnword": "adj. 平衡的"
+    },
+    {
+        "enword": "imbalance",
+        "cnword": "n. 不平衡"
+    },
+    {
+        "enword": "ball",
+        "cnword": "n. 球，舞会，球状物"
+    },
+    {
+        "enword": "ballet",
+        "cnword": "n. 芭蕾舞"
+    },
+    {
+        "enword": "balloon",
+        "cnword": "n. 气球"
+    },
+    {
+        "enword": "bamboo",
+        "cnword": "n. 竹子"
+    },
+    {
+        "enword": "ban",
+        "cnword": "vt. 禁止"
+    },
+    {
+        "enword": "ban ... from doing",
+        "cnword": "禁止...做"
+    },
+    {
+        "enword": "banana",
+        "cnword": "n. 香蕉"
+    },
+    {
+        "enword": "band",
+        "cnword": "n. 带，乐队"
+    },
+    {
+        "enword": "bandage",
+        "cnword": "n. 绷带 vt. 用绷带包扎"
+    },
+    {
+        "enword": "band-aid",
+        "cnword": "n. 创可贴"
+    },
+    {
+        "enword": "bank",
+        "cnword": "n. 银行，河岸"
+    },
+    {
+        "enword": "banking",
+        "cnword": "n. 银行业"
+    },
+    {
+        "enword": "banker",
+        "cnword": "n. 银行家"
+    },
+    {
+        "enword": "bar",
+        "cnword": "n. 条，棒，酒吧"
+    },
+    {
+        "enword": "barbecue",
+        "cnword": "n. 烧烤"
+    },
+    {
+        "enword": "barber",
+        "cnword": "n. 理发师"
+    },
+    {
+        "enword": "bare",
+        "cnword": "adj. 赤裸的，空的 vt. 露出，暴露"
+    },
+    {
+        "enword": "barely",
+        "cnword": "adv. 仅仅，几乎不"
+    },
+    {
+        "enword": "bargain",
+        "cnword": "n. 交易，便宜货 vt. 讨价还价"
+    },
+    {
+        "enword": "bark",
+        "cnword": "n. 树皮，狗吠声 vi. 狗吠，咆哮"
+    },
+    {
+        "enword": "barrier",
+        "cnword": "n. 障碍，屏障"
+    },
+    {
+        "enword": "base",
+        "cnword": "n. 基础，基地，基数 adj. 基本的 vt. 以...为基础"
+    },
+    {
+        "enword": "baseball",
+        "cnword": "n. 棒球"
+    },
+    {
+        "enword": "basement",
+        "cnword": "n. 地下室"
+    },
+    {
+        "enword": "basic",
+        "cnword": "adj. 基本的，基础的"
+    },
+    {
+        "enword": "basically",
+        "cnword": "adv. 基本上"
+    },
+    {
+        "enword": "basin",
+        "cnword": "n. 盆，盆地"
+    },
+    {
+        "enword": "basis",
+        "cnword": "n. 基础，根据"
+    },
+    {
+        "enword": "on the basis of",
+        "cnword": "根据"
+    },
+    {
+        "enword": "basket",
+        "cnword": "n. 篮子，篮球"
+    },
+    {
+        "enword": "basketball",
+        "cnword": "n. 篮球"
+    },
+    {
+        "enword": "bat",
+        "cnword": "n. 蝙蝠，球拍 vt. 用球拍击球"
+    },
+    {
+        "enword": "bath",
+        "cnword": "n. 洗澡，浴室 vt. 给...洗澡"
+    },
+    {
+        "enword": "take a bath",
+        "cnword": "洗澡"
+    },
+    {
+        "enword": "bathe",
+        "cnword": "vt. 给...洗澡 vi. 洗澡，游泳"
+    },
+    {
+        "enword": "bathing",
+        "cnword": "n. 游泳，洗澡"
+    },
+    {
+        "enword": "bathing suit",
+        "cnword": "游泳衣"
+    },
+    {
+        "enword": "bathroom",
+        "cnword": "n. 浴室"
+    },
+    {
+        "enword": "battery",
+        "cnword": "n. 电池，炮兵"
+    },
+    {
+        "enword": "battle",
+        "cnword": "n. 战斗，斗争 vi. 战斗，斗争"
+    },
+    {
+        "enword": "bay",
+        "cnword": "n. 海湾"
+    },
+    {
+        "enword": "B.C.",
+        "cnword": "公元前"
+    },
+    {
+        "enword": "be",
+        "cnword": "vi. 是，存在，发生 vt. 成为，是"
+    },
+    {
+        "enword": "be about to do sth.",
+        "cnword": "即将做某事"
+    },
+    {
+        "enword": "be going to do sth.",
+        "cnword": "打算做某事"
+    },
+    {
+        "enword": "beach",
+        "cnword": "n. 海滩，湖滩"
+    },
+    {
+        "enword": "at the beach",
+        "cnword": "在海滩上"
+    },
+    {
+        "enword": "bean",
+        "cnword": "n. 豆，豆类植物"
+    },
+    {
+        "enword": "bear",
+        "cnword": "n. 熊 vt. 忍受，负担，生育"
+    },
+    {
+        "enword": "can't bear doing sth.",
+        "cnword": "无法忍受做某事"
+    },
+    {
+        "enword": "bear sth. in mind",
+        "cnword": "记住某事"
+    },
+    {
+        "enword": "unbearable",
+        "cnword": "adj. 无法忍受的"
+    },
+    {
+        "enword": "beard",
+        "cnword": "n. 胡须"
+    },
+    {
+        "enword": "beast",
+        "cnword": "n. 野兽，畜生"
+    },
+    {
+        "enword": "beat",
+        "cnword": "vt. 打，敲，击败 vi. 打，敲，跳动 n. 敲打，拍子"
+    },
+    {
+        "enword": "beautiful",
+        "cnword": "adj. 美丽的"
+    },
+    {
+        "enword": "beauty",
+        "cnword": "n. 美，美人，美丽的事物"
+    },
+    {
+        "enword": "because",
+        "cnword": "conj. 因为"
+    },
+    {
+        "enword": "become",
+        "cnword": "vi. 变成，成为"
+    },
+    {
+        "enword": "bed",
+        "cnword": "n. 床，床位 vt. 安置，铺床"
+    },
+    {
+        "enword": "go to bed",
+        "cnword": "上床睡觉"
+    },
+    {
+        "enword": "make one's bed",
+        "cnword": "铺床"
+    },
+    {
+        "enword": "be ill in bed",
+        "cnword": "卧病在床"
+    },
+    {
+        "enword": "bedroom",
+        "cnword": "n. 卧室"
+    },
+    {
+        "enword": "bedtime",
+        "cnword": "n. 就寝时间"
+    },
+    {
+        "enword": "bee",
+        "cnword": "n. 蜜蜂"
+    },
+    {
+        "enword": "beef",
+        "cnword": "n. 牛肉"
+    },
+    {
+        "enword": "steak",
+        "cnword": "n. 牛排"
+    },
+    {
+        "enword": "beer",
+        "cnword": "n. 啤酒"
+    },
+    {
+        "enword": "before",
+        "cnword": "prep. 在...之前 adv. 以前 conj. 在...以前"
+    },
+    {
+        "enword": "as before",
+        "cnword": "像以前一样"
+    },
+    {
+        "enword": "It won't be long before that ...",
+        "cnword": "不久之后..."
+    },
+    {
+        "enword": "beg",
+        "cnword": "vt. 请求，乞求 vi. 请求施舍"
+    },
+    {
+        "enword": "beggar",
+        "cnword": "n. 乞丐"
+    },
+    {
+        "enword": "begin",
+        "cnword": "vi. 开始 vt. 开始"
+    },
+    {
+        "enword": "begin with",
+        "cnword": "以...开始"
+    },
+    {
+        "enword": "beginner",
+        "cnword": "n. 初学者"
+    },
+    {
+        "enword": "beginning",
+        "cnword": "n. 开始，起源"
+    },
+    {
+        "enword": "from the beginning",
+        "cnword": "从一开始"
+    },
+    {
+        "enword": "behave",
+        "cnword": "vi. 表现，举止"
+    },
+    {
+        "enword": "behave oneself",
+        "cnword": "守规矩"
+    },
+    {
+        "enword": "behavior",
+        "cnword": "n. 行为，举止"
+    },
+    {
+        "enword": "behavioral",
+        "cnword": "adj. 行为的"
+    },
+    {
+        "enword": "behind",
+        "cnword": "prep. 在...后面 adv. 在后面"
+    },
+    {
+        "enword": "fall behind in",
+        "cnword": "落后于"
+    },
+    {
+        "enword": "being",
+        "cnword": "n. 生物，存在"
+    },
+    {
+        "enword": "belief",
+        "cnword": "n. 信仰，信念"
+    },
+    {
+        "enword": "believe",
+        "cnword": "vt. 相信，认为 vi. 信仰"
+    },
+    {
+        "enword": "it is generally belived that",
+        "cnword": "一般认为"
+    },
+    {
+        "enword": "believe in",
+        "cnword": "相信"
+    },
+    {
+        "enword": "bell",
+        "cnword": "n. 钟，铃"
+    },
+    {
+        "enword": "ring the bell",
+        "cnword": "按铃"
+    },
+    {
+        "enword": "doorbell",
+        "cnword": "n. 门铃"
+    },
+    {
+        "enword": "belong",
+        "cnword": "vi. 属于，适宜"
+    },
+    {
+        "enword": "below",
+        "cnword": "prep. 在...下面 adv. 在下面"
+    },
+    {
+        "enword": "belt",
+        "cnword": "n. 腰带，带子"
+    },
+    {
+        "enword": "seat belt",
+        "cnword": "安全带"
+    },
+    {
+        "enword": "bench",
+        "cnword": "n. 长凳，工作台"
+    },
+    {
+        "enword": "bend",
+        "cnword": "vt. 弯曲 vi. 弯曲 n. 弯曲"
+    },
+    {
+        "enword": "beneath",
+        "cnword": "prep. 在...下面"
+    },
+    {
+        "enword": "beneficial",
+        "cnword": "adj. 有益的"
+    },
+    {
+        "enword": "benefit",
+        "cnword": "n. 利益，好处 vt. 有益于"
+    },
+    {
+        "enword": "sb. benefit from sth.",
+        "cnword": "某人从某事中受益"
+    },
+    {
+        "enword": "beside",
+        "cnword": "prep. 在...旁边 adv. 在旁边"
+    },
+    {
+        "enword": "besides",
+        "cnword": "prep. 除...之外 adv. 此外"
+    },
+    {
+        "enword": "best",
+        "cnword": "adj. 最好的 adv. 最好地"
+    },
+    {
+        "enword": "make the best of",
+        "cnword": "尽力做到最好"
+    },
+    {
+        "enword": "bet",
+        "cnword": "n. 打赌 vt. 打赌"
+    },
+    {
+        "enword": "better",
+        "cnword": "adj. 更好的 adv. 更好地"
+    },
+    {
+        "enword": "had better do sth.",
+        "cnword": "最好做某事"
+    },
+    {
+        "enword": "between",
+        "cnword": "prep. 在...之间 adv. 在中间"
+    },
+    {
+        "enword": "beyond",
+        "cnword": "prep. 超出 adv. 在远处"
+    },
+    {
+        "enword": "Bible",
+        "cnword": "n. 圣经"
+    },
+    {
+        "enword": "bicycle",
+        "cnword": "n. 自行车"
+    },
+    {
+        "enword": "big",
+        "cnword": "adj. 大的，重要的"
+    },
+    {
+        "enword": "bike",
+        "cnword": "n. 自行车"
+    },
+    {
+        "enword": "bill",
+        "cnword": "n. 账单，法案，钞票 vt. 开账单"
+    },
+    {
+        "enword": "bin",
+        "cnword": "n. 箱子，箱柜"
+    },
+    {
+        "enword": "bind",
+        "cnword": "vt. 捆绑，约束"
+    },
+    {
+        "enword": "be bound to do",
+        "cnword": "一定会做"
+    },
+    {
+        "enword": "biology",
+        "cnword": "n. 生物学"
+    },
+    {
+        "enword": "biological",
+        "cnword": "adj. 生物学的"
+    },
+    {
+        "enword": "biologist",
+        "cnword": "n. 生物学家"
+    },
+    {
+        "enword": "bird",
+        "cnword": "n. 鸟"
+    },
+    {
+        "enword": "birth",
+        "cnword": "n. 出生，诞生"
+    },
+    {
+        "enword": "give birth to",
+        "cnword": "给予...生命"
+    },
+    {
+        "enword": "birthday",
+        "cnword": "n. 生日"
+    },
+    {
+        "enword": "biscuit",
+        "cnword": "n. 饼干"
+    },
+    {
+        "enword": "bit",
+        "cnword": "n. 一点，少量 adv. 一点"
+    },
+    {
+        "enword": "not a bit",
+        "cnword": "一点也不"
+    },
+    {
+        "enword": "bit by bit",
+        "cnword": "一点一点地"
+    },
+    {
+        "enword": "do one's bit",
+        "cnword": "尽自己的一份力"
+    },
+    {
+        "enword": "bite",
+        "cnword": "vt. 咬，叮 n. 咬，叮"
+    },
+    {
+        "enword": "bitter",
+        "cnword": "adj. 苦的，痛苦的"
+    },
+    {
+        "enword": "black",
+        "cnword": "adj. 黑的 n. 黑色"
+    },
+    {
+        "enword": "blackground",
+        "cnword": "n. 背景"
+    },
+    {
+        "enword": "blacksmith",
+        "cnword": "n. 铁匠"
+    },
+    {
+        "enword": "blame",
+        "cnword": "vt. 责备，归咎于 n. 责备"
+    },
+    {
+        "enword": "blame sb. for sth.",
+        "cnword": "因某事责备某人"
+    },
+    {
+        "enword": "be to blame from",
+        "cnword": "应该受到责备"
+    },
+    {
+        "enword": "blank",
+        "cnword": "adj. 空白的 n. 空白"
+    },
+    {
+        "enword": "blanket",
+        "cnword": "n. 毯子"
+    },
+    {
+        "enword": "bleed",
+        "cnword": "vi. 流血 vt. 使流血"
+    },
+    {
+        "enword": "bless",
+        "cnword": "vt. 保佑，祝福"
+    },
+    {
+        "enword": "blind",
+        "cnword": "adj. 盲的 vt. 使失明 n. 百叶窗"
+    },
+    {
+        "enword": "block",
+        "cnword": "n. 街区，块 vt. 阻塞，阻止"
+    },
+    {
+        "enword": "blood",
+        "cnword": "n. 血"
+    },
+    {
+        "enword": "bloody",
+        "cnword": "adj. 血腥的，非常的"
+    },
+    {
+        "enword": "bloom",
+        "cnword": "n. 花朵 vi. 开花"
+    },
+    {
+        "enword": "blouse",
+        "cnword": "n. 女衬衫"
+    },
+    {
+        "enword": "blow",
+        "cnword": "vt. 吹，吹气 vi. 吹 n. 打击"
+    },
+    {
+        "enword": "blow up",
+        "cnword": "爆炸"
+    },
+    {
+        "enword": "blue",
+        "cnword": "adj. 蓝色的 n. 蓝色"
+    },
+    {
+        "enword": "board",
+        "cnword": "n. 木板，董事会 vt. 上船，登机"
+    },
+    {
+        "enword": "notice board",
+        "cnword": "布告栏"
+    },
+    {
+        "enword": "on board",
+        "cnword": "在船上"
+    },
+    {
+        "enword": "boast",
+        "cnword": "vt. 自夸，吹嘘 n. 自夸，吹嘘"
+    },
+    {
+        "enword": "boast about",
+        "cnword": "吹嘘"
+    },
+    {
+        "enword": "boat",
+        "cnword": "n. 小船，船"
+    },
+    {
+        "enword": "lifeboat",
+        "cnword": "n. 救生艇"
+    },
+    {
+        "enword": "body",
+        "cnword": "n. 身体，主体"
+    },
+    {
+        "enword": "body language",
+        "cnword": "肢体语言"
+    },
+    {
+        "enword": "bodily",
+        "cnword": "adj. 身体的"
+    },
+    {
+        "enword": "boil",
+        "cnword": "vi. 沸腾 vt. 煮沸 n. 沸腾"
+    },
+    {
+        "enword": "boiling point",
+        "cnword": "沸点"
+    },
+    {
+        "enword": "bomb",
+        "cnword": "n. 炸弹"
+    },
+    {
+        "enword": "bone",
+        "cnword": "n. 骨头"
+    },
+    {
+        "enword": "book",
+        "cnword": "n. 书 vt. 预订，登记"
+    },
+    {
+        "enword": "booking office",
+        "cnword": "订票处"
+    },
+    {
+        "enword": "handbook",
+        "cnword": "n. 手册"
+    },
+    {
+        "enword": "booklet",
+        "cnword": "n. 小册子"
+    },
+    {
+        "enword": "bookshop",
+        "cnword": "n. 书店"
+    },
+    {
+        "enword": "boot",
+        "cnword": "n. 靴子"
+    },
+    {
+        "enword": "border",
+        "cnword": "n. 边界 vt. 与...接壤"
+    },
+    {
+        "enword": "bore",
+        "cnword": "vt. 使厌烦 n. 令人厌烦的事物"
+    },
+    {
+        "enword": "be bored with",
+        "cnword": "对...感到厌烦"
+    },
+    {
+        "enword": "bored",
+        "cnword": "adj. 厌烦的"
+    },
+    {
+        "enword": "boring",
+        "cnword": "adj. 令人厌烦的"
+    },
+    {
+        "enword": "born",
+        "cnword": "adj. 出生的"
+    },
+    {
+        "enword": "be born with",
+        "cnword": "与生俱来的"
+    },
+    {
+        "enword": "be born equal",
+        "cnword": "生而平等"
+    },
+    {
+        "enword": "borrow",
+        "cnword": "vt. 借，借用"
+    },
+    {
+        "enword": "boss",
+        "cnword": "n. 老板，上司 vt. 指挥"
+    },
+    {
+        "enword": "botanist",
+        "cnword": "n. 植物学家"
+    },
+    {
+        "enword": "botany",
+        "cnword": "n. 植物学"
+    },
+    {
+        "enword": "botanic",
+        "cnword": "adj. 植物学的"
+    },
+    {
+        "enword": "both",
+        "cnword": "pron. 两者都 adj. 两个"
+    },
+    {
+        "enword": "bother",
+        "cnword": "vt. 打扰，烦扰 n. 麻烦"
+    },
+    {
+        "enword": "bothersome",
+        "cnword": "adj. 讨厌的"
+    },
+    {
+        "enword": "bottle",
+        "cnword": "n. 瓶子 vt. 把...装入瓶中"
+    },
+    {
+        "enword": "bottom",
+        "cnword": "n. 底部，末尾 adj. 最低的"
+    },
+    {
+        "enword": "from the bootom of one's heart",
+        "cnword": "由衷地"
+    },
+    {
+        "enword": "at the bottom of",
+        "cnword": "在...的底部"
+    },
+    {
+        "enword": "bow",
+        "cnword": "n. 弓，鞠躬 vi. 鞠躬"
+    },
+    {
+        "enword": "bowl",
+        "cnword": "n. 碗，碗状物"
+    },
+    {
+        "enword": "bowling",
+        "cnword": "n. 保龄球"
+    },
+    {
+        "enword": "box",
+        "cnword": "n. 盒子，箱 vt"
+    },
+    {
+        "enword": "boy",
+        "cnword": "n. 男孩"
+    },
+    {
+        "enword": "brain",
+        "cnword": "n. 大脑，智力"
+    },
+    {
+        "enword": "brainstorming",
+        "cnword": "n. 脑力激荡"
+    },
+    {
+        "enword": "brake",
+        "cnword": "n. 刹车 vt. 刹车"
+    },
+    {
+        "enword": "branch",
+        "cnword": "n. 树枝，分支，分部 vi. 分支"
+    },
+    {
+        "enword": "brand",
+        "cnword": "n. 商标，牌子 vt. 打烙印于"
+    },
+    {
+        "enword": "brand-new",
+        "cnword": "adj. 崭新的"
+    },
+    {
+        "enword": "brass",
+        "cnword": "n. 黄铜"
+    },
+    {
+        "enword": "brave",
+        "cnword": "adj. 勇敢的"
+    },
+    {
+        "enword": "bravery",
+        "cnword": "n. 勇敢"
+    },
+    {
+        "enword": "bread",
+        "cnword": "n. 面包"
+    },
+    {
+        "enword": "bread and butter",
+        "cnword": "生计, 面包与黄油"
+    },
+    {
+        "enword": "break",
+        "cnword": "vt. 打破，破坏 vi. 破裂，中断 n. 休息，间隔"
+    },
+    {
+        "enword": "break out",
+        "cnword": "爆发"
+    },
+    {
+        "enword": "break away from",
+        "cnword": "脱离"
+    },
+    {
+        "enword": "break down",
+        "cnword": "崩溃"
+    },
+    {
+        "enword": "break in",
+        "cnword": "打断"
+    },
+    {
+        "enword": "break into tears",
+        "cnword": "突然哭起来"
+    },
+    {
+        "enword": "outbreak",
+        "cnword": "n. 爆发"
+    },
+    {
+        "enword": "breakfast",
+        "cnword": "n. 早餐"
+    },
+    {
+        "enword": "breast",
+        "cnword": "n. 胸部, 乳房"
+    },
+    {
+        "enword": "breath",
+        "cnword": "n. 呼吸，气息"
+    },
+    {
+        "enword": "out of breath",
+        "cnword": "上气不接下气"
+    },
+    {
+        "enword": "hold one's breath",
+        "cnword": "屏住呼吸"
+    },
+    {
+        "enword": "breathless",
+        "cnword": "adj. 喘不过气来的"
+    },
+    {
+        "enword": "breathtaking",
+        "cnword": "adj. 令人屏息的"
+    },
+    {
+        "enword": "breathe",
+        "cnword": "vi. 呼吸 vt. 吸入"
+    },
+    {
+        "enword": "breed",
+        "cnword": "vt. 繁殖，饲养 n. 品种"
+    },
+    {
+        "enword": "breeze",
+        "cnword": "n. 微风"
+    },
+    {
+        "enword": "bribe",
+        "cnword": "vt. 贿赂 n. 贿赂"
+    },
+    {
+        "enword": "bribery",
+        "cnword": "n. 贿赂"
+    },
+    {
+        "enword": "brick",
+        "cnword": "n. 砖"
+    },
+    {
+        "enword": "bride",
+        "cnword": "n. 新娘"
+    },
+    {
+        "enword": "bridgeroom",
+        "cnword": "n. 新郎"
+    },
+    {
+        "enword": "bridge",
+        "cnword": "n. 桥"
+    },
+    {
+        "enword": "brief",
+        "cnword": "adj. 简短的，简要的 n. 摘要"
+    },
+    {
+        "enword": "in brief",
+        "cnword": "简言之"
+    },
+    {
+        "enword": "brigade",
+        "cnword": "n. 旅，队"
+    },
+    {
+        "enword": "fire brigade",
+        "cnword": "消防队"
+    },
+    {
+        "enword": "bright",
+        "cnword": "adj. 明亮的，聪明的"
+    },
+    {
+        "enword": "brilliant",
+        "cnword": "adj. 光辉的，杰出的"
+    },
+    {
+        "enword": "bring",
+        "cnword": "vt. 带来，拿来"
+    },
+    {
+        "enword": "bring up",
+        "cnword": "抚养"
+    },
+    {
+        "enword": "bring in",
+        "cnword": "引进"
+    },
+    {
+        "enword": "broad",
+        "cnword": "adj. 宽的，广泛的"
+    },
+    {
+        "enword": "broaden",
+        "cnword": "vt. 加宽，扩大"
+    },
+    {
+        "enword": "broadcast",
+        "cnword": "vt. 广播 n. 广播"
+    },
+    {
+        "enword": "brother",
+        "cnword": "n. 兄弟"
+    },
+    {
+        "enword": "brow",
+        "cnword": "n. 眉，眉毛"
+    },
+    {
+        "enword": "brown",
+        "cnword": "adj. 棕色的 n. 棕色"
+    },
+    {
+        "enword": "browse",
+        "cnword": "vt. 浏览"
+    },
+    {
+        "enword": "brunch",
+        "cnword": "n. 早午餐"
+    },
+    {
+        "enword": "brush",
+        "cnword": "n. 刷子，毛刷 vt. 刷，擦拭"
+    },
+    {
+        "enword": "B.S.",
+        "cnword": "理学士"
+    },
+    {
+        "enword": "bubble",
+        "cnword": "n. 气泡，泡沫 vi. 冒泡"
+    },
+    {
+        "enword": "bucket",
+        "cnword": "n. 桶"
+    },
+    {
+        "enword": "buckle",
+        "cnword": "n. 扣子 vt. 扣住"
+    },
+    {
+        "enword": "budget",
+        "cnword": "n. 预算"
+    },
+    {
+        "enword": "build",
+        "cnword": "vt. 建造，建立"
+    },
+    {
+        "enword": "build up one's confidence",
+        "cnword": "增强信心"
+    },
+    {
+        "enword": "newly-built",
+        "cnword": "新建的"
+    },
+    {
+        "enword": "building",
+        "cnword": "n. 建筑物"
+    },
+    {
+        "enword": "bulb",
+        "cnword": "n. 灯泡，球茎"
+    },
+    {
+        "enword": "bull",
+        "cnword": "n. 公牛"
+    },
+    {
+        "enword": "bullet",
+        "cnword": "n. 子弹"
+    },
+    {
+        "enword": "bump",
+        "cnword": "vt. 碰，撞 n. 碰撞"
+    },
+    {
+        "enword": "bump into",
+        "cnword": "碰到"
+    },
+    {
+        "enword": "bunch",
+        "cnword": "n. 一束，一群"
+    },
+    {
+        "enword": "bundle",
+        "cnword": "n. 捆，束 vt. 捆"
+    },
+    {
+        "enword": "burden",
+        "cnword": "n. 负担 vt. 使负担"
+    },
+    {
+        "enword": "carry the burden of",
+        "cnword": "承担...的负担"
+    },
+    {
+        "enword": "burn",
+        "cnword": "vt. 燃烧，烧伤 vi. 燃烧 n. 烧伤"
+    },
+    {
+        "enword": "burst",
+        "cnword": "vi. 爆裂，炸裂 n. 爆裂，炸裂"
+    },
+    {
+        "enword": "burst into tears",
+        "cnword": "突然哭起来"
+    },
+    {
+        "enword": "bury",
+        "cnword": "vt. 埋葬，埋藏"
+    },
+    {
+        "enword": "bury oneself in",
+        "cnword": "专心于"
+    },
+    {
+        "enword": "bus",
+        "cnword": "n. 公共汽车"
+    },
+    {
+        "enword": "bus stop",
+        "cnword": "公共汽车站"
+    },
+    {
+        "enword": "bush",
+        "cnword": "n. 灌木"
+    },
+    {
+        "enword": "business",
+        "cnword": "n. 事务，商业，生意"
+    },
+    {
+        "enword": "on business",
+        "cnword": "因公"
+    },
+    {
+        "enword": "business hours",
+        "cnword": "营业时间"
+    },
+    {
+        "enword": "none of your business",
+        "cnword": "不关你的事"
+    },
+    {
+        "enword": "businessman",
+        "cnword": "n. 商人，"
+    },
+    {
+        "enword": "busy",
+        "cnword": "adj. 忙的，繁忙的"
+    },
+    {
+        "enword": "be busy doing sth.",
+        "cnword": "忙于做某事"
+    },
+    {
+        "enword": "but",
+        "cnword": "conj."
+    },
+    {
+        "enword": "can do nothing but",
+        "cnword": "什么都不能做，只能做"
+    },
+    {
+        "enword": "have nothing to do but",
+        "cnword": "除了...什么都不做"
+    },
+    {
+        "enword": "anything but",
+        "cnword": "根本不"
+    },
+    {
+        "enword": "butcher",
+        "cnword": "n. 屠夫"
+    },
+    {
+        "enword": "butter",
+        "cnword": "n. 黄油"
+    },
+    {
+        "enword": "butterfly",
+        "cnword": "n. 蝴蝶"
+    },
+    {
+        "enword": "button",
+        "cnword": "n. 钮扣 vt. 扣紧"
+    },
+    {
+        "enword": "buy",
+        "cnword": "vt. 买，购买"
+    },
+    {
+        "enword": "by",
+        "cnword": "prep. 通过，靠近，被"
+    },
+    {
+        "enword": "bye",
+        "cnword": "int. 再见"
+    },
+    {
+        "enword": "cabbage",
+        "cnword": "n. 卷心菜"
+    },
+    {
+        "enword": "cabin",
+        "cnword": "n. 小屋, 船舱"
+    },
+    {
+        "enword": "cable",
+        "cnword": "n. 缆绳, 电缆"
+    },
+    {
+        "enword": "cafe",
+        "cnword": "n. 咖啡馆"
+    },
+    {
+        "enword": "cafeteria",
+        "cnword": "n. 自助餐厅"
+    },
+    {
+        "enword": "cage",
+        "cnword": "n. 笼子"
+    },
+    {
+        "enword": "cake",
+        "cnword": "n. 蛋糕"
+    },
+    {
+        "enword": "calculate",
+        "cnword": "v. 计算"
+    },
+    {
+        "enword": "calculation",
+        "cnword": "n. 计算"
+    },
+    {
+        "enword": "calculator",
+        "cnword": "n. 计算器"
+    },
+    {
+        "enword": "pocket calculator",
+        "cnword": "袖珍计算器"
+    },
+    {
+        "enword": "calendar",
+        "cnword": "n. 日历"
+    },
+    {
+        "enword": "call",
+        "cnword": "v. 打电话, 叫, 喊"
+    },
+    {
+        "enword": "call at sp.",
+        "cnword": "拜访某地"
+    },
+    {
+        "enword": "call on sb.",
+        "cnword": "拜访某人"
+    },
+    {
+        "enword": "call on ... to do",
+        "cnword": "号召...做"
+    },
+    {
+        "enword": "call for",
+        "cnword": "要求"
+    },
+    {
+        "enword": "call off",
+        "cnword": "取消"
+    },
+    {
+        "enword": "call up",
+        "cnword": "打电话"
+    },
+    {
+        "enword": "call back",
+        "cnword": "回电话"
+    },
+    {
+        "enword": "at call",
+        "cnword": "随叫随到"
+    },
+    {
+        "enword": "so-called",
+        "cnword": "所谓的"
+    },
+    {
+        "enword": "calm",
+        "cnword": "adj. 平静的, 镇定的"
+    },
+    {
+        "enword": "calm down",
+        "cnword": "平静下来"
+    },
+    {
+        "enword": "calmness",
+        "cnword": "n. 平静"
+    },
+    {
+        "enword": "camel",
+        "cnword": "n. 骆驼"
+    },
+    {
+        "enword": "camera",
+        "cnword": "n. 照相机"
+    },
+    {
+        "enword": "camp",
+        "cnword": "n. 营地"
+    },
+    {
+        "enword": "campsite",
+        "cnword": "n. 露营地, 营地"
+    },
+    {
+        "enword": "campaign",
+        "cnword": "n. 运动, 战役"
+    },
+    {
+        "enword": "campus",
+        "cnword": "n. 校园"
+    },
+    {
+        "enword": "on campus",
+        "cnword": "在校园内"
+    },
+    {
+        "enword": "can",
+        "cnword": "n. 罐头, 罐; v. 能, 会; aux. 能, 会"
+    },
+    {
+        "enword": "canal",
+        "cnword": "n. 运河"
+    },
+    {
+        "enword": "cancel",
+        "cnword": "v. 取消, 废除; n. 作废"
+    },
+    {
+        "enword": "cancer",
+        "cnword": "n. 癌"
+    },
+    {
+        "enword": "candidate",
+        "cnword": "n. 候选人"
+    },
+    {
+        "enword": "candle",
+        "cnword": "n. 蜡烛, 烛光"
+    },
+    {
+        "enword": "candy",
+        "cnword": "n. 糖果, 糖"
+    },
+    {
+        "enword": "canned",
+        "cnword": "adj. 罐装的"
+    },
+    {
+        "enword": "cannot",
+        "cnword": "aux. 不能"
+    },
+    {
+        "enword": "canteen",
+        "cnword": "n. 食堂"
+    },
+    {
+        "enword": "cap",
+        "cnword": "n. 帽子, 盖子"
+    },
+    {
+        "enword": "capable",
+        "cnword": "adj. 有能力的, 能干的"
+    },
+    {
+        "enword": "capability",
+        "cnword": "n. 能力"
+    },
+    {
+        "enword": "incapable",
+        "cnword": "adj. 无能力的"
+    },
+    {
+        "enword": "capital",
+        "cnword": "n. 首都, 大写字母; adj. 首都的, 大写的"
+    },
+    {
+        "enword": "capitalism",
+        "cnword": "n. 资本主义"
+    },
+    {
+        "enword": "capitalize",
+        "cnword": "v. 大写"
+    },
+    {
+        "enword": "capitalist",
+        "cnword": "n. 资本家"
+    },
+    {
+        "enword": "captain",
+        "cnword": "n. 队长, 船长"
+    },
+    {
+        "enword": "capture",
+        "cnword": "v. 捕获, 俘获"
+    },
+    {
+        "enword": "car",
+        "cnword": "n. 汽车"
+    },
+    {
+        "enword": "carbon",
+        "cnword": "n. 碳"
+    },
+    {
+        "enword": "carbon dioxide",
+        "cnword": "二氧化碳"
+    },
+    {
+        "enword": "carbonic",
+        "cnword": "adj. 碳的"
+    },
+    {
+        "enword": "card",
+        "cnword": "n. 卡片, 纸牌"
+    },
+    {
+        "enword": "play cards",
+        "cnword": "打牌"
+    },
+    {
+        "enword": "cardboard",
+        "cnword": "n. 硬纸板"
+    },
+    {
+        "enword": "care",
+        "cnword": "n. 照顾, 关心; v. 照顾, 关心"
+    },
+    {
+        "enword": "take care of",
+        "cnword": "照顾"
+    },
+    {
+        "enword": "care about",
+        "cnword": "关心"
+    },
+    {
+        "enword": "career",
+        "cnword": "n. 职业, 生涯"
+    },
+    {
+        "enword": "follow a ... career",
+        "cnword": "从事...职业"
+    },
+    {
+        "enword": "careful",
+        "cnword": "adj. 小心的, 仔细的"
+    },
+    {
+        "enword": "be careful about",
+        "cnword": "对...小心"
+    },
+    {
+        "enword": "carefulness",
+        "cnword": "n. 小心"
+    },
+    {
+        "enword": "careless",
+        "cnword": "adj. 粗心的, 不小心的"
+    },
+    {
+        "enword": "carelessness",
+        "cnword": "n. 粗心"
+    },
+    {
+        "enword": "cargo",
+        "cnword": "n. 货物"
+    },
+    {
+        "enword": "carpenter",
+        "cnword": "n. 木工"
+    },
+    {
+        "enword": "carpet",
+        "cnword": "n. 地毯"
+    },
+    {
+        "enword": "carriage",
+        "cnword": "n. 四轮马车, 运费"
+    },
+    {
+        "enword": "carrot",
+        "cnword": "n. 胡萝卜"
+    },
+    {
+        "enword": "carry",
+        "cnword": "v. 搬运, 拿着, 运送"
+    },
+    {
+        "enword": "carry out",
+        "cnword": "执行"
+    },
+    {
+        "enword": "carry on",
+        "cnword": "继续"
+    },
+    {
+        "enword": "cart",
+        "cnword": "n. 手推车"
+    },
+    {
+        "enword": "cartoon",
+        "cnword": "n. 漫画"
+    },
+    {
+        "enword": "cartoonist",
+        "cnword": "n. 漫画家"
+    },
+    {
+        "enword": "case",
+        "cnword": "n. 案例, 情况, 病例, 事例, 事件, 情形, 情节, 情景, 情态, 情势"
+    },
+    {
+        "enword": "in any case",
+        "cnword": "无论如何"
+    },
+    {
+        "enword": "in no case",
+        "cnword": "决不"
+    },
+    {
+        "enword": "cash",
+        "cnword": "n. 现金"
+    },
+    {
+        "enword": "pay in cash",
+        "cnword": "现金支付"
+    },
+    {
+        "enword": "cashier",
+        "cnword": "n. 出纳员"
+    },
+    {
+        "enword": "cassette",
+        "cnword": "n. 盒式磁带"
+    },
+    {
+        "enword": "cast",
+        "cnword": "v. 投, 抛, 扔, 掷, 投掷, 投射"
+    },
+    {
+        "enword": "castle",
+        "cnword": "n. 城堡"
+    },
+    {
+        "enword": "casual",
+        "cnword": "adj. 随便的, 随意的"
+    },
+    {
+        "enword": "cat",
+        "cnword": "n. 猫"
+    },
+    {
+        "enword": "It rains cats and dogs",
+        "cnword": "下倾盆大雨"
+    },
+    {
+        "enword": "catalog",
+        "cnword": "n. 目录"
+    },
+    {
+        "enword": "catch",
+        "cnword": "n. 捕捉, 捕获"
+    },
+    {
+        "enword": "catch up with",
+        "cnword": "赶上"
+    },
+    {
+        "enword": "catch cold",
+        "cnword": "感冒"
+    },
+    {
+        "enword": "catch sb. doing",
+        "cnword": "抓住某人做某事"
+    },
+    {
+        "enword": "be caught in",
+        "cnword": "陷入"
+    },
+    {
+        "enword": "cattle",
+        "cnword": "n. 牛, 家畜"
+    },
+    {
+        "enword": "cause",
+        "cnword": "n. 原因, 缘故; v. 引起, 造成"
+    },
+    {
+        "enword": "cave",
+        "cnword": "n. 洞穴"
+    },
+    {
+        "enword": "CD",
+        "cnword": "n. 光盘"
+    },
+    {
+        "enword": "cease",
+        "cnword": "v. 停止, 终止"
+    },
+    {
+        "enword": "ceiling",
+        "cnword": "n. 天花板"
+    },
+    {
+        "enword": "celebrate",
+        "cnword": "v. 庆祝"
+    },
+    {
+        "enword": "celebration",
+        "cnword": "n. 庆祝"
+    },
+    {
+        "enword": "cell",
+        "cnword": "n. 细胞, 电池"
+    },
+    {
+        "enword": "cement",
+        "cnword": "n. 水泥"
+    },
+    {
+        "enword": "cemetery",
+        "cnword": "n. 墓地"
+    },
+    {
+        "enword": "cent",
+        "cnword": "n. 分"
+    },
+    {
+        "enword": "centigrade",
+        "cnword": "adj. 摄氏的"
+    },
+    {
+        "enword": "centimeter",
+        "cnword": "n. 厘米"
+    },
+    {
+        "enword": "central",
+        "cnword": "adj. 中央的, 中心的"
+    },
+    {
+        "enword": "center",
+        "cnword": "n. 中心, 中央"
+    },
+    {
+        "enword": "century",
+        "cnword": "n. 世纪"
+    },
+    {
+        "enword": "ceremony",
+        "cnword": "n. 仪式, 典礼"
+    },
+    {
+        "enword": "opening ceremony",
+        "cnword": "开幕式"
+    },
+    {
+        "enword": "graduation ceremony",
+        "cnword": "毕业典礼"
+    },
+    {
+        "enword": "certain",
+        "cnword": "adj. 确定的, 一定的"
+    },
+    {
+        "enword": "be certain of",
+        "cnword": "确信"
+    },
+    {
+        "enword": "certainty",
+        "cnword": "n. 确定, 确信"
+    },
+    {
+        "enword": "uncertain",
+        "cnword": "adj. 不确定的"
+    },
+    {
+        "enword": "certainly",
+        "cnword": "adv. 当然, 确实"
+    },
+    {
+        "enword": "certificate",
+        "cnword": "n. 证书, 执照"
+    },
+    {
+        "enword": "chain",
+        "cnword": "n. 链, 链条"
+    },
+    {
+        "enword": "chain store",
+        "cnword": "连锁店"
+    },
+    {
+        "enword": "chair",
+        "cnword": "n. 椅子"
+    },
+    {
+        "enword": "chairman",
+        "cnword": "n. 主席"
+    },
+    {
+        "enword": "chalk",
+        "cnword": "n. 粉笔"
+    },
+    {
+        "enword": "challenge",
+        "cnword": "n. 挑战, 要求"
+    },
+    {
+        "enword": "meet the challenge",
+        "cnword": "迎接挑战"
+    },
+    {
+        "enword": "challenging",
+        "cnword": "adj. 具有挑战性的"
+    },
+    {
+        "enword": "champion",
+        "cnword": "n. 冠军"
+    },
+    {
+        "enword": "championship",
+        "cnword": "n. 锦标赛"
+    },
+    {
+        "enword": "chance",
+        "cnword": "n. 机会, 可能性"
+    },
+    {
+        "enword": "seize a chance",
+        "cnword": "抓住机会"
+    },
+    {
+        "enword": "change",
+        "cnword": "n. 变化, 零钱; v. 改变, 换"
+    },
+    {
+        "enword": "change for the better",
+        "cnword": "变好"
+    },
+    {
+        "enword": "changeable",
+        "cnword": "adj. 可变的"
+    },
+    {
+        "enword": "channel",
+        "cnword": "n. 频道, 通道"
+    },
+    {
+        "enword": "chapter",
+        "cnword": "n. 章, 章节"
+    },
+    {
+        "enword": "character",
+        "cnword": "n. 性格, 人物, 字符"
+    },
+    {
+        "enword": "be characterized by",
+        "cnword": "以...为特征"
+    },
+    {
+        "enword": "Chinese character",
+        "cnword": "汉字"
+    },
+    {
+        "enword": "characteristic",
+        "cnword": "n. 特征, 特点"
+    },
+    {
+        "enword": "charge",
+        "cnword": "n. 掌管, 负责, 费用, 充电; v. 控告, 负责, 充电"
+    },
+    {
+        "enword": "in charge of",
+        "cnword": "负责"
+    },
+    {
+        "enword": "free of charge",
+        "cnword": "免费"
+    },
+    {
+        "enword": "rechargeable",
+        "cnword": "可充电的"
+    },
+    {
+        "enword": "charity",
+        "cnword": "n. 慈善"
+    },
+    {
+        "enword": "charm",
+        "cnword": "n. 魅力, 符咒"
+    },
+    {
+        "enword": "charming",
+        "cnword": "adj. 迷人的"
+    },
+    {
+        "enword": "chart",
+        "cnword": "n. 图表"
+    },
+    {
+        "enword": "chase",
+        "cnword": "v. 追逐, 追赶"
+    },
+    {
+        "enword": "chat",
+        "cnword": "v. 聊天"
+    },
+    {
+        "enword": "cheap",
+        "cnword": "adj. 便宜的"
+    },
+    {
+        "enword": "cheat",
+        "cnword": "v. 欺骗, 作弊"
+    },
+    {
+        "enword": "check",
+        "cnword": "n. 支票, 检查; v. 检查, 核对"
+    },
+    {
+        "enword": "check in",
+        "cnword": "登记"
+    },
+    {
+        "enword": "check out",
+        "cnword": "结账"
+    },
+    {
+        "enword": "checkout",
+        "cnword": "n. 结账处"
+    },
+    {
+        "enword": "cheek",
+        "cnword": "n. 面颊"
+    },
+    {
+        "enword": "cheer",
+        "cnword": "n. 欢呼, 喝彩; v. 欢呼, 鼓励"
+    },
+    {
+        "enword": "cheer up",
+        "cnword": "振作起来"
+    },
+    {
+        "enword": "cheerful",
+        "cnword": "adj. 高兴的, 快乐的"
+    },
+    {
+        "enword": "cheese",
+        "cnword": "n. 奶酪"
+    },
+    {
+        "enword": "chemical",
+        "cnword": "adj. 化学的"
+    },
+    {
+        "enword": "chemistry",
+        "cnword": "n. 化学"
+    },
+    {
+        "enword": "cheque",
+        "cnword": "n. 支票"
+    },
+    {
+        "enword": "chess",
+        "cnword": "n. 国际象棋"
+    },
+    {
+        "enword": "chest",
+        "cnword": "n. 胸膛, 箱子"
+    },
+    {
+        "enword": "chew",
+        "cnword": "v. 咀嚼"
+    },
+    {
+        "enword": "chicken",
+        "cnword": "n. 鸡"
+    },
+    {
+        "enword": "chief",
+        "cnword": "n. 首领, 领袖; adj. 主要的, 首要的"
+    },
+    {
+        "enword": "child",
+        "cnword": "n. 孩子"
+    },
+    {
+        "enword": "children",
+        "cnword": "n. 孩子们"
+    },
+    {
+        "enword": "childbirth",
+        "cnword": "n. 分娩"
+    },
+    {
+        "enword": "childhood",
+        "cnword": "n. 童年"
+    },
+    {
+        "enword": "childish",
+        "cnword": "adj. 孩子气的"
+    },
+    {
+        "enword": "chill",
+        "cnword": "n. 寒冷, 寒意; v. 使寒冷"
+    },
+    {
+        "enword": "chilly",
+        "cnword": "adj. 寒冷的"
+    },
+    {
+        "enword": "chimney",
+        "cnword": "n. 烟囱"
+    },
+    {
+        "enword": "china",
+        "cnword": "n. 瓷器"
+    },
+    {
+        "enword": "chip",
+        "cnword": "n. 碎片, 薄片"
+    },
+    {
+        "enword": "fish and chips",
+        "cnword": "炸鱼薯条"
+    },
+    {
+        "enword": "chocolate",
+        "cnword": "n. 巧克力"
+    },
+    {
+        "enword": "choice",
+        "cnword": "n. 选择, 选择权"
+    },
+    {
+        "enword": "have no choice but to do",
+        "cnword": "别无选择只能做"
+    },
+    {
+        "enword": "choose",
+        "cnword": "v. 选择"
+    },
+    {
+        "enword": "chop",
+        "cnword": "v. 砍, 切"
+    },
+    {
+        "enword": "chopsticks",
+        "cnword": "n. 筷子"
+    },
+    {
+        "enword": "Christmas",
+        "cnword": "n. 圣诞节"
+    },
+    {
+        "enword": "Christian",
+        "cnword": "n. 基督教徒"
+    },
+    {
+        "enword": "Father Christmas",
+        "cnword": "圣诞老人"
+    },
+    {
+        "enword": "on Christmas Eve",
+        "cnword": "在圣诞夜"
+    },
+    {
+        "enword": "church",
+        "cnword": "n. 教堂"
+    },
+    {
+        "enword": "go to church",
+        "cnword": "去教堂"
+    },
+    {
+        "enword": "cigar",
+        "cnword": "n. 雪茄"
+    },
+    {
+        "enword": "cigarette",
+        "cnword": "n. 香烟"
+    },
+    {
+        "enword": "cinema",
+        "cnword": "n. 电影院"
+    },
+    {
+        "enword": "go to the cinema",
+        "cnword": "去看电影"
+    },
+    {
+        "enword": "circle",
+        "cnword": "n. 圆, 圈"
+    },
+    {
+        "enword": "circular",
+        "cnword": "adj. 圆的, 循环的"
+    },
+    {
+        "enword": "circumstance",
+        "cnword": "n. 环境, 情况"
+    },
+    {
+        "enword": "under no circumstances",
+        "cnword": "无论如何不"
+    },
+    {
+        "enword": "citizen",
+        "cnword": "n. 公民"
+    },
+    {
+        "enword": "citizenship",
+        "cnword": "n. 公民权"
+    },
+    {
+        "enword": "city",
+        "cnword": "n. 城市"
+    },
+    {
+        "enword": "civil",
+        "cnword": "adj. 公民的, 文明的"
+    },
+    {
+        "enword": "civilian",
+        "cnword": "n. 平民"
+    },
+    {
+        "enword": "civilize",
+        "cnword": "v. 使文明"
+    },
+    {
+        "enword": "civilized",
+        "cnword": "adj. 文明的"
+    },
+    {
+        "enword": "claim",
+        "cnword": "n. 要求, 声称; v. 要求, 声称"
+    },
+    {
+        "enword": "clap",
+        "cnword": "v. 拍手"
+    },
+    {
+        "enword": "class",
+        "cnword": "n. 班级, 等级, 种类, 课; v. 分类"
+    },
+    {
+        "enword": "after class",
+        "cnword": "下课后"
+    },
+    {
+        "enword": "economy class",
+        "cnword": "经济舱"
+    },
+    {
+        "enword": "the upper class",
+        "cnword": "上层社会"
+    },
+    {
+        "enword": "first-class",
+        "cnword": "一流的"
+    },
+    {
+        "enword": "classic",
+        "cnword": "adj. 经典的"
+    },
+    {
+        "enword": "classical",
+        "cnword": "adj. 古典的"
+    },
+    {
+        "enword": "classical music",
+        "cnword": "古典音乐"
+    },
+    {
+        "enword": "classify",
+        "cnword": "v. 分类"
+    },
+    {
+        "enword": "classification",
+        "cnword": "n. 分类"
+    },
+    {
+        "enword": "classmate",
+        "cnword": "n. 同班同学"
+    },
+    {
+        "enword": "classroom",
+        "cnword": "n. 教室"
+    },
+    {
+        "enword": "clay",
+        "cnword": "n. 泥土"
+    },
+    {
+        "enword": "clean",
+        "cnword": "adj. 干净的, 清洁的; v. 打扫, 清洁"
+    },
+    {
+        "enword": "dry cleaning",
+        "cnword": "干洗"
+    },
+    {
+        "enword": "cleaner",
+        "cnword": "n. 清洁工"
+    },
+    {
+        "enword": "clear",
+        "cnword": "adj. 清楚的, 明确的; v. 清除, 澄清"
+    },
+    {
+        "enword": "clear up",
+        "cnword": "澄清"
+    },
+    {
+        "enword": "clerk",
+        "cnword": "n. 职员, 店员"
+    },
+    {
+        "enword": "clever",
+        "cnword": "adj. 聪明的, 机敏的"
+    },
+    {
+        "enword": "cleverness",
+        "cnword": "n. 聪明"
+    },
+    {
+        "enword": "click",
+        "cnword": "v. 点击"
+    },
+    {
+        "enword": "click the mouse",
+        "cnword": "点击鼠标"
+    },
+    {
+        "enword": "cliff",
+        "cnword": "n. 悬崖"
+    },
+    {
+        "enword": "climate",
+        "cnword": "n. 气候"
+    },
+    {
+        "enword": "climb",
+        "cnword": "v. 爬, 攀登"
+    },
+    {
+        "enword": "climber",
+        "cnword": "n. 登山者"
+    },
+    {
+        "enword": "clinic",
+        "cnword": "n. 诊所"
+    },
+    {
+        "enword": "clock",
+        "cnword": "n. 时钟"
+    },
+    {
+        "enword": "around the clock",
+        "cnword": "昼夜不停"
+    },
+    {
+        "enword": "clone",
+        "cnword": "n. 克隆"
+    },
+    {
+        "enword": "close",
+        "cnword": "adj. 近的, 紧密的; v. 关闭, 结束"
+    },
+    {
+        "enword": "close friend",
+        "cnword": "密友"
+    },
+    {
+        "enword": "take a close look at",
+        "cnword": "仔细看"
+    },
+    {
+        "enword": "closely",
+        "cnword": "adv. 紧密地"
+    },
+    {
+        "enword": "disclose",
+        "cnword": "v. 揭露"
+    },
+    {
+        "enword": "cloth",
+        "cnword": "n. 布, 衣料"
+    },
+    {
+        "enword": "clothes",
+        "cnword": "n. 衣服"
+    },
+    {
+        "enword": "clothing",
+        "cnword": "n. 服装"
+    },
+    {
+        "enword": "clothing shop",
+        "cnword": "服装店"
+    },
+    {
+        "enword": "cloud",
+        "cnword": "n. 云"
+    },
+    {
+        "enword": "cloudless",
+        "cnword": "adj. 没有云的"
+    },
+    {
+        "enword": "cloudy",
+        "cnword": "adj. 多云的"
+    },
+    {
+        "enword": "club",
+        "cnword": "n. 俱乐部"
+    },
+    {
+        "enword": "clue",
+        "cnword": "n. 线索"
+    },
+    {
+        "enword": "coach",
+        "cnword": "n. 教练, 长途汽车"
+    },
+    {
+        "enword": "coal",
+        "cnword": "n. 煤"
+    },
+    {
+        "enword": "coast",
+        "cnword": "n. 海岸"
+    },
+    {
+        "enword": "on the coast",
+        "cnword": "在海岸上"
+    },
+    {
+        "enword": "off the coast",
+        "cnword": "离海岸, 在海上"
+    },
+    {
+        "enword": "coastal",
+        "cnword": "adj. 沿海的"
+    },
+    {
+        "enword": "coat",
+        "cnword": "n. 外套, 涂层"
+    },
+    {
+        "enword": "cock",
+        "cnword": "n. 公鸡"
+    },
+    {
+        "enword": "code",
+        "cnword": "n. 密码, 代码"
+    },
+    {
+        "enword": "coffee",
+        "cnword": "n. 咖啡"
+    },
+    {
+        "enword": "coin",
+        "cnword": "n. 硬币"
+    },
+    {
+        "enword": "coincidence",
+        "cnword": "n. 巧合"
+    },
+    {
+        "enword": "Coke",
+        "cnword": "n. 可口可乐"
+    },
+    {
+        "enword": "cold",
+        "cnword": "adj. 冷的, 寒冷的, 冷淡的 n. 寒冷, 感冒, 伤风"
+    },
+    {
+        "enword": "catch a bad cold",
+        "cnword": "得了重感冒"
+    },
+    {
+        "enword": "collapse",
+        "cnword": "v. (使)倒塌, (使)崩溃"
+    },
+    {
+        "enword": "collar",
+        "cnword": "n. 衣领, 项圈"
+    },
+    {
+        "enword": "colleague",
+        "cnword": "n. 同事"
+    },
+    {
+        "enword": "collect",
+        "cnword": "v. 收集, 聚集"
+    },
+    {
+        "enword": "computer",
+        "cnword": "n. 计算机, 电脑"
+    },
+    {
+        "enword": "computerize",
+        "cnword": "v. 使计算机化"
+    },
+    {
+        "enword": "conceal",
+        "cnword": "v. 隐藏, 掩盖"
+    },
+    {
+        "enword": "concentrate",
+        "cnword": "v. 集中, 专心"
+    },
+    {
+        "enword": "concentration",
+        "cnword": "n. 集中, 专心"
+    },
+    {
+        "enword": "concept",
+        "cnword": "n. 概念"
+    },
+    {
+        "enword": "concern",
+        "cnword": "v. 关心, 涉及"
+    },
+    {
+        "enword": "be concerned about",
+        "cnword": "关心, 担心"
+    },
+    {
+        "enword": "concerned",
+        "cnword": "adj. 担心的, 关心的"
+    },
+    {
+        "enword": "concerning",
+        "cnword": "prep. 关于"
+    },
+    {
+        "enword": "concert",
+        "cnword": "n. 音乐会"
+    },
+    {
+        "enword": "conclude",
+        "cnword": "v. 结束, 下结论"
+    },
+    {
+        "enword": "conclusive",
+        "cnword": "adj. 决定性的, 结论性的"
+    },
+    {
+        "enword": "conclusion",
+        "cnword": "n. 结论"
+    },
+    {
+        "enword": "draw a conclusion",
+        "cnword": "得出结论"
+    },
+    {
+        "enword": "make a conclusion",
+        "cnword": "得出结论"
+    },
+    {
+        "enword": "concrete",
+        "cnword": "adj. 具体的, 实际的"
+    },
+    {
+        "enword": "condition",
+        "cnword": "n. 条件, 状况"
+    },
+    {
+        "enword": "be in good condition",
+        "cnword": "状况良好"
+    },
+    {
+        "enword": "on no condition",
+        "cnword": "无论如何不"
+    },
+    {
+        "enword": "conduct",
+        "cnword": "v. 进行, 实施"
+    },
+    {
+        "enword": "conductor",
+        "cnword": "n. 导体, 指挥家"
+    },
+    {
+        "enword": "conference",
+        "cnword": "n. 会议"
+    },
+    {
+        "enword": "confess",
+        "cnword": "v. 承认, 坦白"
+    },
+    {
+        "enword": "confession",
+        "cnword": "n. 承认, 坦白"
+    },
+    {
+        "enword": "confidence",
+        "cnword": "n. 信心"
+    },
+    {
+        "enword": "have confidence to do sth.",
+        "cnword": "有信心做某事"
+    },
+    {
+        "enword": "confident",
+        "cnword": "adj. 自信的"
+    },
+    {
+        "enword": "self-confident",
+        "cnword": "adj. 自信的"
+    },
+    {
+        "enword": "confirm",
+        "cnword": "v. 确认, 证实"
+    },
+    {
+        "enword": "conflict",
+        "cnword": "n. 冲突, 矛盾"
+    },
+    {
+        "enword": "confuse",
+        "cnword": "v. 使困惑, 混淆"
+    },
+    {
+        "enword": "confuse with",
+        "cnword": "把...和...混淆"
+    },
+    {
+        "enword": "confused",
+        "cnword": "adj. 困惑的, 混乱的"
+    },
+    {
+        "enword": "confusing",
+        "cnword": "adj. 令人困惑的, 令人混淆的"
+    },
+    {
+        "enword": "confusion",
+        "cnword": "n. 困惑, 混乱"
+    },
+    {
+        "enword": "congratulate",
+        "cnword": "v. 祝贺"
+    },
+    {
+        "enword": "congratulate sb. on",
+        "cnword": "祝贺某人..."
+    },
+    {
+        "enword": "congratulation",
+        "cnword": "n. 祝贺"
+    },
+    {
+        "enword": "congress",
+        "cnword": "n. 国会, 大会"
+    },
+    {
+        "enword": "connect",
+        "cnword": "v. 连接"
+    },
+    {
+        "enword": "connection",
+        "cnword": "n. 连接"
+    },
+    {
+        "enword": "conquer",
+        "cnword": "v. 征服"
+    },
+    {
+        "enword": "conscience",
+        "cnword": "n. 良心"
+    },
+    {
+        "enword": "have a clear conscience",
+        "cnword": "问心无愧"
+    },
+    {
+        "enword": "conscious",
+        "cnword": "adj. 有意识的"
+    },
+    {
+        "enword": "be conscious of",
+        "cnword": "意识到"
+    },
+    {
+        "enword": "consequence",
+        "cnword": "n. 结果, 后果"
+    },
+    {
+        "enword": "consequently",
+        "cnword": "adv. 因此, 所以"
+    },
+    {
+        "enword": "consider",
+        "cnword": "v. 考虑, 认为"
+    },
+    {
+        "enword": "consider doing",
+        "cnword": "考虑做某事"
+    },
+    {
+        "enword": "all things considered",
+        "cnword": "综上所述"
+    },
+    {
+        "enword": "take ... into consideration",
+        "cnword": "考虑..."
+    },
+    {
+        "enword": "considerable",
+        "cnword": "adj. 相当大的"
+    },
+    {
+        "enword": "considerably",
+        "cnword": "adv. 相当地"
+    },
+    {
+        "enword": "considerate",
+        "cnword": "adj. 体贴的"
+    },
+    {
+        "enword": "be considerate of sb.",
+        "cnword": "体贴某人"
+    },
+    {
+        "enword": "consist",
+        "cnword": "v. 由...组成"
+    },
+    {
+        "enword": "consist of",
+        "cnword": "由...组成"
+    },
+    {
+        "enword": "constant",
+        "cnword": "adj. 不变的, 持续的"
+    },
+    {
+        "enword": "construct",
+        "cnword": "v. 建造, 构建"
+    },
+    {
+        "enword": "construction",
+        "cnword": "n. 建造, 构建"
+    },
+    {
+        "enword": "under construction",
+        "cnword": "在建设中"
+    },
+    {
+        "enword": "constructive",
+        "cnword": "adj. 建设性的"
+    },
+    {
+        "enword": "consult",
+        "cnword": "v. 咨询, 商量"
+    },
+    {
+        "enword": "consultation",
+        "cnword": "n. 咨询, 商量"
+    },
+    {
+        "enword": "consume",
+        "cnword": "v. 消费, 消耗"
+    },
+    {
+        "enword": "consumption",
+        "cnword": "n. 消费, 消耗"
+    },
+    {
+        "enword": "consumer",
+        "cnword": "n. 消费者"
+    },
+    {
+        "enword": "contact",
+        "cnword": "v. 联系"
+    },
+    {
+        "enword": "keep in contact with sb.",
+        "cnword": "与某人保持联系"
+    },
+    {
+        "enword": "get in contact with sb.",
+        "cnword": "与某人取得联系"
+    },
+    {
+        "enword": "be in contact with sb.",
+        "cnword": "与某人保持联系"
+    },
+    {
+        "enword": "make contact with sb.",
+        "cnword": "与某人取得联系"
+    },
+    {
+        "enword": "eye contact",
+        "cnword": "眼神交流"
+    },
+    {
+        "enword": "contain",
+        "cnword": "v. 包含, 容纳"
+    },
+    {
+        "enword": "container",
+        "cnword": "n. 容器"
+    },
+    {
+        "enword": "contemporary",
+        "cnword": "adj. 当代的"
+    },
+    {
+        "enword": "content",
+        "cnword": "n. 内容"
+    },
+    {
+        "enword": "be contented with",
+        "cnword": "对...满意"
+    },
+    {
+        "enword": "contest",
+        "cnword": "n. 比赛"
+    },
+    {
+        "enword": "contestant",
+        "cnword": "n. 参赛者"
+    },
+    {
+        "enword": "context",
+        "cnword": "n. 上下文"
+    },
+    {
+        "enword": "contextual",
+        "cnword": "adj. 上下文的"
+    },
+    {
+        "enword": "continent",
+        "cnword": "n. 大陆"
+    },
+    {
+        "enword": "the Continent",
+        "cnword": "欧洲大陆"
+    },
+    {
+        "enword": "continental",
+        "cnword": "adj. 大陆的"
+    },
+    {
+        "enword": "continue",
+        "cnword": "v. 继续"
+    },
+    {
+        "enword": "continual",
+        "cnword": "adj. 不断的"
+    },
+    {
+        "enword": "continuous",
+        "cnword": "adj. 连续的"
+    },
+    {
+        "enword": "continuity",
+        "cnword": "n. 连续性"
+    },
+    {
+        "enword": "contract",
+        "cnword": "n. 合同"
+    },
+    {
+        "enword": "contrary",
+        "cnword": "adj. 相反的"
+    },
+    {
+        "enword": "on the contrary",
+        "cnword": "相反地"
+    },
+    {
+        "enword": "contrast",
+        "cnword": "n. 对比"
+    },
+    {
+        "enword": "a sharp contrast",
+        "cnword": "鲜明的对比"
+    },
+    {
+        "enword": "contribute",
+        "cnword": "v. 贡献"
+    },
+    {
+        "enword": "contribute to",
+        "cnword": "对...做出贡献"
+    },
+    {
+        "enword": "contribution",
+        "cnword": "n. 贡献"
+    },
+    {
+        "enword": "make contributions to",
+        "cnword": "对...做出贡献"
+    },
+    {
+        "enword": "control",
+        "cnword": "n. 控制"
+    },
+    {
+        "enword": "under control",
+        "cnword": "在控制之下"
+    },
+    {
+        "enword": "out of control",
+        "cnword": "失控"
+    },
+    {
+        "enword": "self-control",
+        "cnword": "自控"
+    },
+    {
+        "enword": "convenience",
+        "cnword": "n. 便利"
+    },
+    {
+        "enword": "at your earliest convenience",
+        "cnword": "尽早方便的时候"
+    },
+    {
+        "enword": "convenient",
+        "cnword": "adj. 方便的"
+    },
+    {
+        "enword": "conversation",
+        "cnword": "n. 对话"
+    },
+    {
+        "enword": "converse",
+        "cnword": "v. 交谈"
+    },
+    {
+        "enword": "convey",
+        "cnword": "v. 传达"
+    },
+    {
+        "enword": "convince",
+        "cnword": "v. 说服"
+    },
+    {
+        "enword": "convince sb. to do",
+        "cnword": "说服某人做某事"
+    },
+    {
+        "enword": "convinced",
+        "cnword": "adj. 确信的"
+    },
+    {
+        "enword": "convincing",
+        "cnword": "adj. 令人信服的"
+    },
+    {
+        "enword": "conviction",
+        "cnword": "n. 信念"
+    },
+    {
+        "enword": "cook",
+        "cnword": "v. 烹饪"
+    },
+    {
+        "enword": "cooker",
+        "cnword": "n. 炊具"
+    },
+    {
+        "enword": "cool",
+        "cnword": "adj. 凉的"
+    },
+    {
+        "enword": "cool down",
+        "cnword": "冷静下来"
+    },
+    {
+        "enword": "cooperate",
+        "cnword": "v. 合作"
+    },
+    {
+        "enword": "cooperation",
+        "cnword": "n. 合作"
+    },
+    {
+        "enword": "cooperative",
+        "cnword": "adj. 合作的"
+    },
+    {
+        "enword": "cooperator",
+        "cnword": "n. 合作者"
+    },
+    {
+        "enword": "cope",
+        "cnword": "v. 应对"
+    },
+    {
+        "enword": "cope with",
+        "cnword": "应对"
+    },
+    {
+        "enword": "copy",
+        "cnword": "n. 复制品"
+    },
+    {
+        "enword": "corn",
+        "cnword": "n. 玉米"
+    },
+    {
+        "enword": "corner",
+        "cnword": "n. 角落"
+    },
+    {
+        "enword": "around the corner",
+        "cnword": "即将来临"
+    },
+    {
+        "enword": "corporation",
+        "cnword": "n. 公司"
+    },
+    {
+        "enword": "correct",
+        "cnword": "adj. 正确的"
+    },
+    {
+        "enword": "correction",
+        "cnword": "n. 改正"
+    },
+    {
+        "enword": "incorrect",
+        "cnword": "adj. 不正确的"
+    },
+    {
+        "enword": "corridor",
+        "cnword": "n. 走廊"
+    },
+    {
+        "enword": "cost",
+        "cnword": "n. 价格"
+    },
+    {
+        "enword": "at the cost of",
+        "cnword": "以...为代价"
+    },
+    {
+        "enword": "at all costs",
+        "cnword": "不惜一切代价"
+    },
+    {
+        "enword": "costly",
+        "cnword": "adj. 昂贵的"
+    },
+    {
+        "enword": "cotton",
+        "cnword": "n. 棉花"
+    },
+    {
+        "enword": "cough",
+        "cnword": "n. 咳嗽"
+    },
+    {
+        "enword": "had a bad cough",
+        "cnword": "咳嗽得厉害"
+    },
+    {
+        "enword": "could",
+        "cnword": "aux. 可以"
+    },
+    {
+        "enword": "could have done",
+        "cnword": "本可以做..."
+    },
+    {
+        "enword": "count",
+        "cnword": "v. 计数"
+    },
+    {
+        "enword": "countless",
+        "cnword": "adj. 无数的"
+    },
+    {
+        "enword": "countable",
+        "cnword": "adj. 可数的"
+    },
+    {
+        "enword": "uncountable",
+        "cnword": "adj. 不可数的"
+    },
+    {
+        "enword": "counter",
+        "cnword": "n. 柜台"
+    },
+    {
+        "enword": "country",
+        "cnword": "n. 国家"
+    },
+    {
+        "enword": "countryside",
+        "cnword": "n. 乡村"
+    },
+    {
+        "enword": "county",
+        "cnword": "n. 县"
+    },
+    {
+        "enword": "couple",
+        "cnword": "n. 一对"
+    },
+    {
+        "enword": "a couple of",
+        "cnword": "几个"
+    },
+    {
+        "enword": "courage",
+        "cnword": "n. 勇气"
+    },
+    {
+        "enword": "get up courage",
+        "cnword": "鼓起勇气"
+    },
+    {
+        "enword": "courageous",
+        "cnword": "adj. 勇敢的"
+    },
+    {
+        "enword": "course",
+        "cnword": "n. 课程"
+    },
+    {
+        "enword": "a matter of course",
+        "cnword": "理所当然的事"
+    },
+    {
+        "enword": "court",
+        "cnword": "n. 法庭"
+    },
+    {
+        "enword": "cousin",
+        "cnword": "n. 堂兄弟姐妹"
+    },
+    {
+        "enword": "cover",
+        "cnword": "v. 覆盖"
+    },
+    {
+        "enword": "from cover to cover",
+        "cnword": "从头到尾"
+    },
+    {
+        "enword": "uncover",
+        "cnword": "v. 揭开"
+    },
+    {
+        "enword": "cow",
+        "cnword": "n. 母牛"
+    },
+    {
+        "enword": "crack",
+        "cnword": "n. 裂缝"
+    },
+    {
+        "enword": "craft",
+        "cnword": "n. 工艺"
+    },
+    {
+        "enword": "craftsman",
+        "cnword": "n. 工匠"
+    },
+    {
+        "enword": "crash",
+        "cnword": "n. 崩溃"
+    },
+    {
+        "enword": "air crash",
+        "cnword": "飞机失事"
+    },
+    {
+        "enword": "crawl",
+        "cnword": "v. 爬行"
+    },
+    {
+        "enword": "crazy",
+        "cnword": "adj. 疯狂的"
+    },
+    {
+        "enword": "be crazy about",
+        "cnword": "痴迷于..."
+    },
+    {
+        "enword": "cream",
+        "cnword": "n. 奶油"
+    },
+    {
+        "enword": "creamy",
+        "cnword": "adj. 奶油的"
+    },
+    {
+        "enword": "create",
+        "cnword": "v. 创造"
+    },
+    {
+        "enword": "creation",
+        "cnword": "n. 创造"
+    },
+    {
+        "enword": "creator",
+        "cnword": "n. 创造者"
+    },
+    {
+        "enword": "creative",
+        "cnword": "adj. 创造性的"
+    },
+    {
+        "enword": "creativity",
+        "cnword": "n. 创造力"
+    },
+    {
+        "enword": "creature",
+        "cnword": "n. 生物"
+    },
+    {
+        "enword": "credit",
+        "cnword": "n. 信用"
+    },
+    {
+        "enword": "pay by credit card",
+        "cnword": "用信用卡支付"
+    },
+    {
+        "enword": "crew",
+        "cnword": "n. 全体船员"
+    },
+    {
+        "enword": "crime",
+        "cnword": "n. 犯罪"
+    },
+    {
+        "enword": "commit a crime",
+        "cnword": "犯罪"
+    },
+    {
+        "enword": "criminal",
+        "cnword": "n. 罪犯"
+    },
+    {
+        "enword": "crisis",
+        "cnword": "n. 危机"
+    },
+    {
+        "enword": "critic",
+        "cnword": "n. 评论家"
+    },
+    {
+        "enword": "critical",
+        "cnword": "adj. 批评的"
+    },
+    {
+        "enword": "criticism",
+        "cnword": "n. 批评"
+    },
+    {
+        "enword": "criticize",
+        "cnword": "v. 批评"
+    },
+    {
+        "enword": "crop",
+        "cnword": "n. 庄稼"
+    },
+    {
+        "enword": "cross",
+        "cnword": "v. 穿过"
+    },
+    {
+        "enword": "crossing",
+        "cnword": "n. 交叉口"
+    },
+    {
+        "enword": "crossroads",
+        "cnword": "n. 十字路口"
+    },
+    {
+        "enword": "crowd",
+        "cnword": "n. 人群"
+    },
+    {
+        "enword": "be crowded with",
+        "cnword": "拥挤着"
+    },
+    {
+        "enword": "crowded",
+        "cnword": "adj. 拥挤的"
+    },
+    {
+        "enword": "crown",
+        "cnword": "n. 王冠"
+    },
+    {
+        "enword": "cruel",
+        "cnword": "adj. 残忍的"
+    },
+    {
+        "enword": "cruelty",
+        "cnword": "n. 残忍"
+    },
+    {
+        "enword": "crush",
+        "cnword": "v. 压碎"
+    },
+    {
+        "enword": "cry",
+        "cnword": "v. 哭泣"
+    },
+    {
+        "enword": "crystal",
+        "cnword": "n. 水晶"
+    },
+    {
+        "enword": "cucumber",
+        "cnword": "n. 黄瓜"
+    },
+    {
+        "enword": "cultivate",
+        "cnword": "v. 耕种"
+    },
+    {
+        "enword": "cultivated",
+        "cnword": "adj. 耕种的"
+    },
+    {
+        "enword": "cultivation",
+        "cnword": "n. 耕种"
+    },
+    {
+        "enword": "cultural",
+        "cnword": "adj. 文化的"
+    },
+    {
+        "enword": "culture",
+        "cnword": "n. 文化"
+    },
+    {
+        "enword": "cup",
+        "cnword": "n. 杯子"
+    },
+    {
+        "enword": "cupboard",
+        "cnword": "n. 橱柜"
+    },
+    {
+        "enword": "cure",
+        "cnword": "v. 治愈"
+    },
+    {
+        "enword": "curious",
+        "cnword": "adj. 好奇的"
+    },
+    {
+        "enword": "be curious about",
+        "cnword": "对...好奇"
+    },
+    {
+        "enword": "curiosity",
+        "cnword": "n. 好奇心"
+    },
+    {
+        "enword": "current",
+        "cnword": "adj. 当前的"
+    },
+    {
+        "enword": "curtain",
+        "cnword": "n. 窗帘"
+    },
+    {
+        "enword": "curve",
+        "cnword": "n. 曲线"
+    },
+    {
+        "enword": "cushion",
+        "cnword": "n. 垫子"
+    },
+    {
+        "enword": "custom",
+        "cnword": "n. 习俗"
+    },
+    {
+        "enword": "customary",
+        "cnword": "adj. 习俗的"
+    },
+    {
+        "enword": "customer",
+        "cnword": "n. 顾客"
+    },
+    {
+        "enword": "cut",
+        "cnword": "v. 切割"
+    },
+    {
+        "enword": "cut down",
+        "cnword": "砍倒"
+    },
+    {
+        "enword": "cut in",
+        "cnword": "插嘴"
+    },
+    {
+        "enword": "cut off",
+        "cnword": "切断"
+    },
+    {
+        "enword": "cycle",
+        "cnword": "n. 周期"
+    },
+    {
+        "enword": "cyclist",
+        "cnword": "n. 骑自行车的人"
+    },
+    {
+        "enword": "dad",
+        "cnword": "n. 爸爸"
+    },
+    {
+        "enword": "daily",
+        "cnword": "adj. 每天的, 日常的 adv. 每天 n. 日报"
+    },
+    {
+        "enword": "in one's daily life",
+        "cnword": "在日常生活中"
+    },
+    {
+        "enword": "dairy",
+        "cnword": "n. 牛奶厂, 乳品店"
+    },
+    {
+        "enword": "dam",
+        "cnword": "n. 水坝, 堰"
+    },
+    {
+        "enword": "damage",
+        "cnword": "n. 损害, 损失 v. 损害, 损坏"
+    },
+    {
+        "enword": "damp",
+        "cnword": "adj. 潮湿的, 湿润的"
+    },
+    {
+        "enword": "dance",
+        "cnword": "n. 舞蹈, 舞会 v. 跳舞"
+    },
+    {
+        "enword": "dancer",
+        "cnword": "n. 舞蹈家, 舞者"
+    },
+    {
+        "enword": "danger",
+        "cnword": "n. 危险, 危险事物"
+    },
+    {
+        "enword": "in danger",
+        "cnword": "处于危险之中"
+    },
+    {
+        "enword": "out of danger",
+        "cnword": "脱离危险"
+    },
+    {
+        "enword": "dangerous",
+        "cnword": "adj. 危险的, 冒险的"
+    },
+    {
+        "enword": "dare",
+        "cnword": "v. 敢, 挑战 n. 挑战"
+    },
+    {
+        "enword": "daring",
+        "cnword": "adj. 大胆的, 勇敢的"
+    },
+    {
+        "enword": "dark",
+        "cnword": "adj. 黑暗的, 暗的 n. 黑暗, 暗处"
+    },
+    {
+        "enword": "at dark",
+        "cnword": "在天黑时"
+    },
+    {
+        "enword": "darkness",
+        "cnword": "n. 黑暗, 暗处"
+    },
+    {
+        "enword": "darling",
+        "cnword": "n. 亲爱的人, 宠儿 adj. 亲爱的, 可爱的"
+    },
+    {
+        "enword": "dash",
+        "cnword": "n. 破折号, 短跑 v. 猛冲, 猛冲而过"
+    },
+    {
+        "enword": "data",
+        "cnword": "n. 数据, 资料"
+    },
+    {
+        "enword": "date",
+        "cnword": "n. 日期, 时期 v. 约会, 注明日期"
+    },
+    {
+        "enword": "date back to",
+        "cnword": "追溯到"
+    },
+    {
+        "enword": "dated",
+        "cnword": "adj. 陈旧的, 过时的"
+    },
+    {
+        "enword": "daughter",
+        "cnword": "n. 女儿"
+    },
+    {
+        "enword": "dawn",
+        "cnword": "n. 黎明, 开端 v. 破晓, 开始"
+    },
+    {
+        "enword": "day",
+        "cnword": "n. 白天, 日子, 一天"
+    },
+    {
+        "enword": "to this day",
+        "cnword": "直到今天"
+    },
+    {
+        "enword": "some day",
+        "cnword": "有一天"
+    },
+    {
+        "enword": "the other day",
+        "cnword": "前几天"
+    },
+    {
+        "enword": "the day before yesterday",
+        "cnword": "前天"
+    },
+    {
+        "enword": "the day after tomorrow",
+        "cnword": "后天"
+    },
+    {
+        "enword": "daybreak",
+        "cnword": "n. 破晓, 黎明"
+    },
+    {
+        "enword": "day by day",
+        "cnword": "日复一日"
+    },
+    {
+        "enword": "daylight",
+        "cnword": "n. 日光, 白昼"
+    },
+    {
+        "enword": "in broad daylight",
+        "cnword": "在光天化日之下"
+    },
+    {
+        "enword": "daytime",
+        "cnword": "n. 白天, 日间"
+    },
+    {
+        "enword": "in the daytime",
+        "cnword": "在白天"
+    },
+    {
+        "enword": "dead",
+        "cnword": "adj. 死的, 枯燥的, 无效的 adv. 完全地 n. 死者"
+    },
+    {
+        "enword": "deadly",
+        "cnword": "adj. 致命的, 死一般的 adv. 非常地"
+    },
+    {
+        "enword": "deadline",
+        "cnword": "n. 最后期限"
+    },
+    {
+        "enword": "meet the deadline",
+        "cnword": "按期完成"
+    },
+    {
+        "enword": "deaf",
+        "cnword": "adj. 聋的, 不愿听的"
+    },
+    {
+        "enword": "deafness",
+        "cnword": "n. 聋, 聋耳"
+    },
+    {
+        "enword": "deafen",
+        "cnword": "v. 使聋, 使不愿听"
+    },
+    {
+        "enword": "deafening",
+        "cnword": "adj. 震耳欲聋的"
+    },
+    {
+        "enword": "deal",
+        "cnword": "n. 交易, 协议 v. 处理, 分配"
+    },
+    {
+        "enword": "deal with",
+        "cnword": "处理, 对付"
+    },
+    {
+        "enword": "a great deal of",
+        "cnword": "许多, 大量"
+    },
+    {
+        "enword": "dealer",
+        "cnword": "n. 商人, 经销商"
+    },
+    {
+        "enword": "dear",
+        "cnword": "adj. 亲爱的, 昂贵的 n. 亲爱的人"
+    },
+    {
+        "enword": "death",
+        "cnword": "n. 死, 死亡"
+    },
+    {
+        "enword": "debate",
+        "cnword": "n. 辩论, 讨论 v. 辩论, 讨论"
+    },
+    {
+        "enword": "debt",
+        "cnword": "n. 债务, 欠债"
+    },
+    {
+        "enword": "be in debt",
+        "cnword": "负债"
+    },
+    {
+        "enword": "decade",
+        "cnword": "n. 十年, 十年期"
+    },
+    {
+        "enword": "decay",
+        "cnword": "v. 腐烂, 衰退 n. 腐烂, 衰退"
+    },
+    {
+        "enword": "deceive",
+        "cnword": "v. 欺骗, 行骗"
+    },
+    {
+        "enword": "decide",
+        "cnword": "v. 决定, 下决心"
+    },
+    {
+        "enword": "decisive",
+        "cnword": "adj. 决定性的, 果断的"
+    },
+    {
+        "enword": "decision",
+        "cnword": "n. 决定, 决心"
+    },
+    {
+        "enword": "make a decision",
+        "cnword": "做出决定"
+    },
+    {
+        "enword": "deck",
+        "cnword": "n. 甲板, 层 v. 装饰"
+    },
+    {
+        "enword": "declare",
+        "cnword": "v. 宣布, 声明"
+    },
+    {
+        "enword": "declaration",
+        "cnword": "n. 宣布, 声明"
+    },
+    {
+        "enword": "decline",
+        "cnword": "v. 下降, 衰退 n. 下降, 衰退"
+    },
+    {
+        "enword": "decorate",
+        "cnword": "v. 装饰, 装潢"
+    },
+    {
+        "enword": "decoration",
+        "cnword": "n. 装饰, 装潢"
+    },
+    {
+        "enword": "decrease",
+        "cnword": "v. 减少, 减小 n. 减少, 减小"
+    },
+    {
+        "enword": "deed",
+        "cnword": "n. 行为, 事迹, 契约"
+    },
+    {
+        "enword": "do good deeds",
+        "cnword": "行善"
+    },
+    {
+        "enword": "deep",
+        "cnword": "adj. 深的, 深刻的 adv. 深 n. 深处"
+    },
+    {
+        "enword": "deeply",
+        "cnword": "adv. 深深地, 深刻地"
+    },
+    {
+        "enword": "deepen",
+        "cnword": "v. 加深, 使深化"
+    },
+    {
+        "enword": "deer",
+        "cnword": "n. 鹿"
+    },
+    {
+        "enword": "defeat",
+        "cnword": "v. 击败, 打败 n. 失败, 击败"
+    },
+    {
+        "enword": "defense",
+        "cnword": "n. 防御, 防护"
+    },
+    {
+        "enword": "defend",
+        "cnword": "v. 防卫, 辩护"
+    },
+    {
+        "enword": "defensive",
+        "cnword": "adj. 防御的, 防卫的"
+    },
+    {
+        "enword": "defendant",
+        "cnword": "n. 被告"
+    },
+    {
+        "enword": "define",
+        "cnword": "v. 定义, 解释"
+    },
+    {
+        "enword": "definite",
+        "cnword": "adj. 明确的, 确定的"
+    },
+    {
+        "enword": "definition",
+        "cnword": "n. 定义, 解释"
+    },
+    {
+        "enword": "degree",
+        "cnword": "n. 程度, 学位"
+    },
+    {
+        "enword": "to a certain degree",
+        "cnword": "在一定程度上"
+    },
+    {
+        "enword": "delay",
+        "cnword": "v. 推迟, 延迟 n. 延迟, 耽搁"
+    },
+    {
+        "enword": "delegate",
+        "cnword": "n. 代表, 代表团 v. 委派, 授权"
+    },
+    {
+        "enword": "delegation",
+        "cnword": "n. 代表团, 授权"
+    },
+    {
+        "enword": "delete",
+        "cnword": "v. 删除, 去掉"
+    },
+    {
+        "enword": "delicate",
+        "cnword": "adj. 精美的, 精致的, 微妙的"
+    },
+    {
+        "enword": "delicious",
+        "cnword": "adj. 美味的, 可口的"
+    },
+    {
+        "enword": "delight",
+        "cnword": "n. 高兴, 欢喜 v. 使高兴, 使愉快"
+    },
+    {
+        "enword": "delighted",
+        "cnword": "adj. 高兴的, 欣喜的"
+    },
+    {
+        "enword": "to one's great delight",
+        "cnword": "使某人非常高兴"
+    },
+    {
+        "enword": "delightful",
+        "cnword": "adj. 令人愉快的, 令人高兴的"
+    },
+    {
+        "enword": "deliver",
+        "cnword": "v. 递送, 交付, 发表"
+    },
+    {
+        "enword": "delivery",
+        "cnword": "n. 递送, 交付, 分娩"
+    },
+    {
+        "enword": "demand",
+        "cnword": "n. 要求, 需求 v. 要求, 需要"
+    },
+    {
+        "enword": "demand to do",
+        "cnword": "要求做"
+    },
+    {
+        "enword": "meet the demand of sb.",
+        "cnword": "满足某人的要求"
+    },
+    {
+        "enword": "demanding",
+        "cnword": "adj. 要求高的, 苛求的"
+    },
+    {
+        "enword": "democracy",
+        "cnword": "n. 民主, 民主制度"
+    },
+    {
+        "enword": "democratic",
+        "cnword": "adj. 民主的, 民主主义的"
+    },
+    {
+        "enword": "dentist",
+        "cnword": "n. 牙医"
+    },
+    {
+        "enword": "dental",
+        "cnword": "adj. 牙齿的, 牙科的"
+    },
+    {
+        "enword": "deny",
+        "cnword": "v. 否认, 拒绝"
+    },
+    {
+        "enword": "denial",
+        "cnword": "n. 否认, 拒绝"
+    },
+    {
+        "enword": "deny having done sth.",
+        "cnword": "否认做过某事"
+    },
+    {
+        "enword": "depart",
+        "cnword": "v. 离开, 出发"
+    },
+    {
+        "enword": "department",
+        "cnword": "n. 部门, 系"
+    },
+    {
+        "enword": "departure",
+        "cnword": "n. 离开, 出发"
+    },
+    {
+        "enword": "depend",
+        "cnword": "v. 依靠, 依赖"
+    },
+    {
+        "enword": "That depends",
+        "cnword": "那得看情况"
+    },
+    {
+        "enword": "dependence",
+        "cnword": "n. 依靠, 依赖"
+    },
+    {
+        "enword": "dependent",
+        "cnword": "adj. 依靠的, 依赖的"
+    },
+    {
+        "enword": "deposit",
+        "cnword": "n. 存款, 押金 v. 存放, 押金"
+    },
+    {
+        "enword": "depress",
+        "cnword": "v. 使沮丧, 使消沉"
+    },
+    {
+        "enword": "depressed",
+        "cnword": "adj. 沮丧的, 消沉的"
+    },
+    {
+        "enword": "depressing",
+        "cnword": "adj. 使人沮丧的, 使人消沉的"
+    },
+    {
+        "enword": "depression",
+        "cnword": "n. 沮丧, 消沉"
+    },
+    {
+        "enword": "depressive",
+        "cnword": "adj. 沮丧的, 消沉的"
+    },
+    {
+        "enword": "depth",
+        "cnword": "n. 深度, 深厚"
+    },
+    {
+        "enword": "describe",
+        "cnword": "v. 描述, 形容"
+    },
+    {
+        "enword": "descriptive",
+        "cnword": "adj. 描述的, 描写的"
+    },
+    {
+        "enword": "description",
+        "cnword": "n. 描述, 形容"
+    },
+    {
+        "enword": "desert",
+        "cnword": "n. 沙漠 v. 遗弃, 擅离"
+    },
+    {
+        "enword": "deserve",
+        "cnword": "v. 应受, 值得"
+    },
+    {
+        "enword": "deserve to do",
+        "cnword": "应该做"
+    },
+    {
+        "enword": "deserve to be done",
+        "cnword": "应该已经完成"
+    },
+    {
+        "enword": "deserving",
+        "cnword": "adj. 值得的, 应得的"
+    },
+    {
+        "enword": "design",
+        "cnword": "n. 设计, 图案 v. 设计, 构思"
+    },
+    {
+        "enword": "designer",
+        "cnword": "n. 设计者, 构思者"
+    },
+    {
+        "enword": "desire",
+        "cnword": "n. 欲望, 愿望 v. 渴望, 想要"
+    },
+    {
+        "enword": "desire to do sth.",
+        "cnword": "渴望做某事"
+    },
+    {
+        "enword": "desirable",
+        "cnword": "adj. 值得拥有的, 合意的"
+    },
+    {
+        "enword": "desk",
+        "cnword": "n. 书桌, 办公桌"
+    },
+    {
+        "enword": "despair",
+        "cnword": "n. 绝望, 绝望的人 v. 绝望"
+    },
+    {
+        "enword": "desperate",
+        "cnword": "adj. 绝望的, 不顾一切的"
+    },
+    {
+        "enword": "be desperate for",
+        "cnword": "渴望得到"
+    },
+    {
+        "enword": "despite",
+        "cnword": "prep. 尽管, 不管"
+    },
+    {
+        "enword": "dessert",
+        "cnword": "n. 甜点, 甜食"
+    },
+    {
+        "enword": "destination",
+        "cnword": "n. 目的地, 终点"
+    },
+    {
+        "enword": "destroy",
+        "cnword": "v. 破坏, 毁灭"
+    },
+    {
+        "enword": "destructive",
+        "cnword": "adj. 破坏性的, 毁灭性的"
+    },
+    {
+        "enword": "destruction",
+        "cnword": "n. 破坏, 毁灭"
+    },
+    {
+        "enword": "detail",
+        "cnword": "n. 细节, 详情 v. 详述, 详细说明"
+    },
+    {
+        "enword": "detailed",
+        "cnword": "adj. 详细的, 详尽的"
+    },
+    {
+        "enword": "detective",
+        "cnword": "n. 侦探, 侦探小说"
+    },
+    {
+        "enword": "detect",
+        "cnword": "v. 发现, 察觉"
+    },
+    {
+        "enword": "determination",
+        "cnword": "n. 决心, 决定"
+    },
+    {
+        "enword": "determine",
+        "cnword": "v. 决定, 确定"
+    },
+    {
+        "enword": "determined",
+        "cnword": "adj. 坚决的, 有决心的"
+    },
+    {
+        "enword": "develop",
+        "cnword": "v. 发展, 发育, 开发"
+    },
+    {
+        "enword": "developed",
+        "cnword": "adj. 发达的, 发达国家的"
+    },
+    {
+        "enword": "developing",
+        "cnword": "adj. 发展中的, 发展中国家的"
+    },
+    {
+        "enword": "underdeveloped",
+        "cnword": "adj. 不发达的, 发展不充分的"
+    },
+    {
+        "enword": "developer",
+        "cnword": "n. 开发者, 发展者"
+    },
+    {
+        "enword": "development",
+        "cnword": "n. 发展, 发育, 开发"
+    },
+    {
+        "enword": "with the rapid development of",
+        "cnword": "随着...的迅速发展"
+    },
+    {
+        "enword": "device",
+        "cnword": "n. 设备, 装置"
+    },
+    {
+        "enword": "devote",
+        "cnword": "v. 奉献, 投入"
+    },
+    {
+        "enword": "devote oneself to",
+        "cnword": "致力于"
+    },
+    {
+        "enword": "devoted",
+        "cnword": "adj. 忠诚的, 忠实的"
+    },
+    {
+        "enword": "devotion",
+        "cnword": "n. 奉献, 忠诚"
+    },
+    {
+        "enword": "dial",
+        "cnword": "n. 钟面, 拨号盘 v. 拨号"
+    },
+    {
+        "enword": "dialect",
+        "cnword": "n. 方言, 土语"
+    },
+    {
+        "enword": "dialogue",
+        "cnword": "n. 对话, 交谈"
+    },
+    {
+        "enword": "diamond",
+        "cnword": "n. 钻石, 金刚石"
+    },
+    {
+        "enword": "diary",
+        "cnword": "n. 日记, 日记簿"
+    },
+    {
+        "enword": "keep a diary",
+        "cnword": "写日记"
+    },
+    {
+        "enword": "dictate",
+        "cnword": "v. 口述, 命令"
+    },
+    {
+        "enword": "dictation",
+        "cnword": "n. 听写, 口述"
+    },
+    {
+        "enword": "dictionary",
+        "cnword": "n. 字典, 词典"
+    },
+    {
+        "enword": "look up ... in the dictionary",
+        "cnword": "在字典中查找..."
+    },
+    {
+        "enword": "walking dictionary",
+        "cnword": "活字典"
+    },
+    {
+        "enword": "die",
+        "cnword": "v. 死, 枯萎 n. 骰子"
+    },
+    {
+        "enword": "die out",
+        "cnword": "灭绝, 消失"
+    },
+    {
+        "enword": "die off",
+        "cnword": "逐渐消失"
+    },
+    {
+        "enword": "be dying for",
+        "cnword": "渴望得到"
+    },
+    {
+        "enword": "dying",
+        "cnword": "adj. 垂死的, 临终的"
+    },
+    {
+        "enword": "diet",
+        "cnword": "n. 饮食, 食物 v. 节食"
+    },
+    {
+        "enword": "on diet",
+        "cnword": "节食"
+    },
+    {
+        "enword": "differ",
+        "cnword": "v. 不同, 相异"
+    },
+    {
+        "enword": "difference",
+        "cnword": "n. 差别, 不同"
+    },
+    {
+        "enword": "different",
+        "cnword": "adj. 不同的, 相异的"
+    },
+    {
+        "enword": "make a difference",
+        "cnword": "有影响, 有重要性"
+    },
+    {
+        "enword": "difficult",
+        "cnword": "adj. 困难的, 难做的"
+    },
+    {
+        "enword": "difficulty",
+        "cnword": "n. 困难, 难题"
+    },
+    {
+        "enword": "have difficulty in doing",
+        "cnword": "做某事有困难"
+    },
+    {
+        "enword": "dig",
+        "cnword": "v. 挖, 掘"
+    },
+    {
+        "enword": "digest",
+        "cnword": "v. 消化, 领会 n. 摘要, 消化"
+    },
+    {
+        "enword": "digestion",
+        "cnword": "n. 消化, 消化作用"
+    },
+    {
+        "enword": "digestive",
+        "cnword": "adj. 消化的, 消化系统的"
+    },
+    {
+        "enword": "digit",
+        "cnword": "n. 数字, 手指"
+    },
+    {
+        "enword": "digital",
+        "cnword": "adj. 数字的, 数字式的"
+    },
+    {
+        "enword": "dignity",
+        "cnword": "n. 尊严, 高贵"
+    },
+    {
+        "enword": "dignify",
+        "cnword": "v. 使尊严, 使高贵"
+    },
+    {
+        "enword": "dignified",
+        "cnword": "adj. 庄严的, 高贵的"
+    },
+    {
+        "enword": "diligent",
+        "cnword": "adj. 勤奋的, 用功的"
+    },
+    {
+        "enword": "diligence",
+        "cnword": "n. 勤奋, 用功"
+    },
+    {
+        "enword": "dim",
+        "cnword": "adj. 昏暗的, 暗淡的 v. 变暗淡"
+    },
+    {
+        "enword": "dine",
+        "cnword": "v. 进餐, 用餐"
+    },
+    {
+        "enword": "dining room",
+        "cnword": "n. 餐厅, 饭厅"
+    },
+    {
+        "enword": "diner",
+        "cnword": "n. 用餐者, 餐馆"
+    },
+    {
+        "enword": "dinner",
+        "cnword": "n. 正餐, 晚餐"
+    },
+    {
+        "enword": "dioxide",
+        "cnword": "n. 二氧化物"
+    },
+    {
+        "enword": "dip",
+        "cnword": "v. 浸, 蘸 n. 浸, 蘸"
+    },
+    {
+        "enword": "diploma",
+        "cnword": "n. 毕业文凭, 学位证书"
+    },
+    {
+        "enword": "diplomat",
+        "cnword": "n. 外交官, 外交家"
+    },
+    {
+        "enword": "diplomacy",
+        "cnword": "n. 外交, 外交手腕"
+    },
+    {
+        "enword": "diplomatic",
+        "cnword": "adj. 外交的, 外交上的"
+    },
+    {
+        "enword": "direct",
+        "cnword": "adj. 直接的, 直率的 v. 指导, 指挥"
+    },
+    {
+        "enword": "directly",
+        "cnword": "adv. 直接地, 立即"
+    },
+    {
+        "enword": "indirect",
+        "cnword": "adj. 间接的, 迂回的"
+    },
+    {
+        "enword": "direction",
+        "cnword": "n. 方向, 指导"
+    },
+    {
+        "enword": "from all directions",
+        "cnword": "从四面八方"
+    },
+    {
+        "enword": "follow the directions",
+        "cnword": "按照指示"
+    },
+    {
+        "enword": "director",
+        "cnword": "n. 主任, 董事, 导演"
+    },
+    {
+        "enword": "dirt",
+        "cnword": "n. 污垢, 泥土"
+    },
+    {
+        "enword": "dirty",
+        "cnword": "adj. 肮脏的, 污秽的 v. 弄脏"
+    },
+    {
+        "enword": "disabled",
+        "cnword": "adj. 残废的, 有缺陷的"
+    },
+    {
+        "enword": "disadvantage",
+        "cnword": "n. 不利, 缺点"
+    },
+    {
+        "enword": "disability",
+        "cnword": "n. 残疾, 无能"
+    },
+    {
+        "enword": "disadvantageous",
+        "cnword": "adj. 不利的, 有害的"
+    },
+    {
+        "enword": "disagreeable",
+        "cnword": "adj. 不愉快的, 不合意的"
+    },
+    {
+        "enword": "disappear",
+        "cnword": "v. 消失, 不见"
+    },
+    {
+        "enword": "disappearance",
+        "cnword": "n. 消失, 失踪"
+    },
+    {
+        "enword": "disappoint",
+        "cnword": "v. 使失望, 使受挫折"
+    },
+    {
+        "enword": "be disappointed with",
+        "cnword": "对...感到失望"
+    },
+    {
+        "enword": "disappointed",
+        "cnword": "adj. 失望的, 受挫折的"
+    },
+    {
+        "enword": "disappointing",
+        "cnword": "adj. 令人失望的, 令人沮丧的"
+    },
+    {
+        "enword": "disappointment",
+        "cnword": "n. 失望, 沮丧"
+    },
+    {
+        "enword": "disapproval",
+        "cnword": "n. 不赞成, 反对"
+    },
+    {
+        "enword": "disapprove",
+        "cnword": "v. 不赞成, 反对"
+    },
+    {
+        "enword": "disaster",
+        "cnword": "n. 灾难, 灾祸"
+    },
+    {
+        "enword": "disastrous",
+        "cnword": "adj. 灾难性的, 惨重的"
+    },
+    {
+        "enword": "disk",
+        "cnword": "n. 磁盘, 光盘"
+    },
+    {
+        "enword": "discipline",
+        "cnword": "n. 纪律"
+    },
+    {
+        "enword": "self-discipline",
+        "cnword": "自律"
+    },
+    {
+        "enword": "disco",
+        "cnword": "n. 迪斯科舞厅"
+    },
+    {
+        "enword": "disconcert",
+        "cnword": "v. 使困惑, 使不安"
+    },
+    {
+        "enword": "discount",
+        "cnword": "n. 折扣"
+    },
+    {
+        "enword": "discourage",
+        "cnword": "v. 使泄气, 使沮丧"
+    },
+    {
+        "enword": "discouraged",
+        "cnword": "adj. 沮丧的, 泄气的"
+    },
+    {
+        "enword": "discouraging",
+        "cnword": "adj. 令人泄气的, 令人沮丧的"
+    },
+    {
+        "enword": "discouragement",
+        "cnword": "n. 沮丧, 泄气"
+    },
+    {
+        "enword": "discover",
+        "cnword": "v. 发现, 发觉"
+    },
+    {
+        "enword": "discovery",
+        "cnword": "n. 发现, 发觉"
+    },
+    {
+        "enword": "discuss",
+        "cnword": "v. 讨论, 商量"
+    },
+    {
+        "enword": "discussion",
+        "cnword": "n. 讨论, 商议"
+    },
+    {
+        "enword": "disease",
+        "cnword": "n. 疾病, 病害"
+    },
+    {
+        "enword": "dish",
+        "cnword": "n. 盘, 碟, 菜肴"
+    },
+    {
+        "enword": "dishwasher",
+        "cnword": "n. 洗碗机"
+    },
+    {
+        "enword": "disobey",
+        "cnword": "v. 不服从, 违抗"
+    },
+    {
+        "enword": "disobedient",
+        "cnword": "adj. 不服从的, 违抗的"
+    },
+    {
+        "enword": "disorder",
+        "cnword": "n. 混乱, 杂乱"
+    },
+    {
+        "enword": "disorderly",
+        "cnword": "adj. 无秩序的, 杂乱的"
+    },
+    {
+        "enword": "display",
+        "cnword": "v. 展示, 显示 n. 展览, 显示"
+    },
+    {
+        "enword": "dissatisfy",
+        "cnword": "v. 使不满意, 使不高兴"
+    },
+    {
+        "enword": "dissatisfied",
+        "cnword": "adj. 不满意的, 不高兴的"
+    },
+    {
+        "enword": "dissolve",
+        "cnword": "v. 溶解, 解散"
+    },
+    {
+        "enword": "distance",
+        "cnword": "n. 距离, 远处 v. 使疏远"
+    },
+    {
+        "enword": "in the distance",
+        "cnword": "在远处"
+    },
+    {
+        "enword": "distant",
+        "cnword": "adj. 遥远的, 冷淡的"
+    },
+    {
+        "enword": "distinct",
+        "cnword": "adj. 明显的, 清楚的"
+    },
+    {
+        "enword": "distinction",
+        "cnword": "n. 区别, 差别"
+    },
+    {
+        "enword": "distinguished",
+        "cnword": "adj. 卓越的, 杰出的"
+    },
+    {
+        "enword": "distinguish",
+        "cnword": "v. 区别, 辨别"
+    },
+    {
+        "enword": "distress",
+        "cnword": "n. 苦恼, 痛苦 v. 使苦恼, 使痛苦"
+    },
+    {
+        "enword": "distressed",
+        "cnword": "adj. 苦恼的, 痛苦的"
+    },
+    {
+        "enword": "distressful",
+        "cnword": "adj. 使人痛苦的, 使人苦恼的"
+    },
+    {
+        "enword": "district",
+        "cnword": "n. 区, 区域"
+    },
+    {
+        "enword": "distrust",
+        "cnword": "n. 不信任, 怀疑 v. 不信任, 怀疑"
+    },
+    {
+        "enword": "disturb",
+        "cnword": "v. 打扰, 扰乱"
+    },
+    {
+        "enword": "disturbance",
+        "cnword": "n. 打扰, 骚乱"
+    },
+    {
+        "enword": "ditch",
+        "cnword": "n. 沟, 沟渠"
+    },
+    {
+        "enword": "dive",
+        "cnword": "v. 跳水, 潜水"
+    },
+    {
+        "enword": "diver",
+        "cnword": "n. 潜水员, 跳水员"
+    },
+    {
+        "enword": "divide",
+        "cnword": "v. 分割, 分开"
+    },
+    {
+        "enword": "divide ... into",
+        "cnword": "把...分成"
+    },
+    {
+        "enword": "division",
+        "cnword": "n. 分割, 分开"
+    },
+    {
+        "enword": "divorce",
+        "cnword": "n. 离婚 v. 离婚"
+    },
+    {
+        "enword": "dizzy",
+        "cnword": "adj. 头晕目眩的, 眩晕的"
+    },
+    {
+        "enword": "do",
+        "cnword": "v. 做, 干 n. 行为, 事情"
+    },
+    {
+        "enword": "do well in",
+        "cnword": "在...方面做得好"
+    },
+    {
+        "enword": "undone",
+        "cnword": "adj. 未完成的, 未做的"
+    },
+    {
+        "enword": "doctor",
+        "cnword": "n. 医生, 博士 v. 诊治"
+    },
+    {
+        "enword": "see a doctor",
+        "cnword": "看医生"
+    },
+    {
+        "enword": "document",
+        "cnword": "n. 文件, 文献 v. 记录, 证明"
+    },
+    {
+        "enword": "dog",
+        "cnword": "n. 狗"
+    },
+    {
+        "enword": "dog-eared",
+        "cnword": "adj. 翻旧的, 破旧的"
+    },
+    {
+        "enword": "doll",
+        "cnword": "n. 玩偶, 洋娃娃"
+    },
+    {
+        "enword": "dollar",
+        "cnword": "n. 美元"
+    },
+    {
+        "enword": "dolphin",
+        "cnword": "n. 海豚"
+    },
+    {
+        "enword": "domestic",
+        "cnword": "adj. 国内的, 家庭的"
+    },
+    {
+        "enword": "domestic animals",
+        "cnword": "家畜"
+    },
+    {
+        "enword": "dominant",
+        "cnword": "adj. 占优势的, 支配的"
+    },
+    {
+        "enword": "dominate",
+        "cnword": "v. 支配, 统治"
+    },
+    {
+        "enword": "donkey",
+        "cnword": "n. 驴"
+    },
+    {
+        "enword": "donate",
+        "cnword": "v. 捐赠, 赠送"
+    },
+    {
+        "enword": "donate to",
+        "cnword": "捐赠给"
+    },
+    {
+        "enword": "door",
+        "cnword": "n. 门"
+    },
+    {
+        "enword": "from door to door",
+        "cnword": "挨家挨户"
+    },
+    {
+        "enword": "next-door",
+        "cnword": "adj. 隔壁的, 邻近的"
+    },
+    {
+        "enword": "dormitory",
+        "cnword": "n. 宿舍, 宿舍楼"
+    },
+    {
+        "enword": "dot",
+        "cnword": "n. 点, 圆点 v. 点缀, 点状分布"
+    },
+    {
+        "enword": "double",
+        "cnword": "adj. 双的, 两倍的 v. 使加倍"
+    },
+    {
+        "enword": "doubt",
+        "cnword": "n. 怀疑, 疑虑 v. 怀疑, 疑惑"
+    },
+    {
+        "enword": "there is no doubt that",
+        "cnword": "毫无疑问"
+    },
+    {
+        "enword": "doubtful",
+        "cnword": "adj. 可疑的, 不确定的"
+    },
+    {
+        "enword": "doubtless",
+        "cnword": "adj. 无疑的, 毫无疑问的"
+    },
+    {
+        "enword": "undoubted",
+        "cnword": "adj. 无疑的, 毫无疑问的"
+    },
+    {
+        "enword": "down",
+        "cnword": "adv. 向下, 下去 adj. 向下的, 下去的 n. 绒毛, 羽绒"
+    },
+    {
+        "enword": "download",
+        "cnword": "v. 下载"
+    },
+    {
+        "enword": "downstairs",
+        "cnword": "adv. 在楼下 adj. 楼下的"
+    },
+    {
+        "enword": "downtown",
+        "cnword": "adv. 在市区 adj. 市区的"
+    },
+    {
+        "enword": "in the downtown area",
+        "cnword": "在市区"
+    },
+    {
+        "enword": "dozen",
+        "cnword": "n. 一打, 一十二个"
+    },
+    {
+        "enword": "dozens of",
+        "cnword": "许多, 大量"
+    },
+    {
+        "enword": "Dr.",
+        "cnword": "abbr. 博士"
+    },
+    {
+        "enword": "draft",
+        "cnword": "n. 草稿, 草案 v. 起草, 草拟"
+    },
+    {
+        "enword": "drag",
+        "cnword": "v. 拖, 拉 n. 拖, 拉"
+    },
+    {
+        "enword": "dragon",
+        "cnword": "n. 龙"
+    },
+    {
+        "enword": "drain",
+        "cnword": "v. 排水, 流干 n. 排水沟, 下水道"
+    },
+    {
+        "enword": "be a great drain on",
+        "cnword": "对...是一个巨大的消耗"
+    },
+    {
+        "enword": "drama",
+        "cnword": "n. 戏剧, 剧本"
+    },
+    {
+        "enword": "dramatist",
+        "cnword": "n. 剧作家, 戏剧家"
+    },
+    {
+        "enword": "dramatic",
+        "cnword": "adj. 戏剧的, 戏剧性的"
+    },
+    {
+        "enword": "dramatically",
+        "cnword": "adv. 戏剧性地, 显著地"
+    },
+    {
+        "enword": "draw",
+        "cnword": "v. 画, 拉 n. 平局, 抽签"
+    },
+    {
+        "enword": "be drawing near",
+        "cnword": "临近"
+    },
+    {
+        "enword": "drawer",
+        "cnword": "n. 抽屉"
+    },
+    {
+        "enword": "drawing",
+        "cnword": "n. 图画, 素描"
+    },
+    {
+        "enword": "dream",
+        "cnword": "n. 梦, 梦想 v. 做梦, 梦想"
+    },
+    {
+        "enword": "realize one's dream",
+        "cnword": "实现梦想"
+    },
+    {
+        "enword": "daydream",
+        "cnword": "白日梦"
+    },
+    {
+        "enword": "dress",
+        "cnword": "n. 连衣裙, 礼服 v. 穿衣, 打扮"
+    },
+    {
+        "enword": "dress oneself in",
+        "cnword": "穿上"
+    },
+    {
+        "enword": "be dressed in",
+        "cnword": "穿着"
+    },
+    {
+        "enword": "dress well",
+        "cnword": "穿得好看"
+    },
+    {
+        "enword": "drift",
+        "cnword": "v. 漂流, 漂移 n. 漂流, 漂移"
+    },
+    {
+        "enword": "drifter",
+        "cnword": "n. 漂泊者, 流浪者"
+    },
+    {
+        "enword": "drill",
+        "cnword": "n. 钻头, 钻孔机 v. 钻孔, 训练"
+    },
+    {
+        "enword": "drink",
+        "cnword": "n. 饮料, 酒 v. 喝, 饮"
+    },
+    {
+        "enword": "soft drink",
+        "cnword": "软饮料"
+    },
+    {
+        "enword": "drunk",
+        "cnword": "adj. 醉的, 喝醉的"
+    },
+    {
+        "enword": "drunken",
+        "cnword": "adj. 醉的, 喝醉的"
+    },
+    {
+        "enword": "drip",
+        "cnword": "v. 滴下, 漏水 n. 滴, 漏水"
+    },
+    {
+        "enword": "drive",
+        "cnword": "v. 驾驶, 驱使 n. 驾驶,"
+    },
+    {
+        "enword": "drive sb. home",
+        "cnword": "送某人回家"
+    },
+    {
+        "enword": "driver",
+        "cnword": "n. 司机, 驾驶员"
+    },
+    {
+        "enword": "drop",
+        "cnword": "v. 落下, 下降 n. 滴,"
+    },
+    {
+        "enword": "drop in on sb.",
+        "cnword": "顺便拜访某人"
+    },
+    {
+        "enword": "drown",
+        "cnword": "v. 淹死, 溺死"
+    },
+    {
+        "enword": "drug",
+        "cnword": "n. 药, 药物 v. 下毒"
+    },
+    {
+        "enword": "drugstore",
+        "cnword": "n. 药店, 药房"
+    },
+    {
+        "enword": "drum",
+        "cnword": "n. 鼓 v. 敲鼓"
+    },
+    {
+        "enword": "drummer",
+        "cnword": "n. 鼓手"
+    },
+    {
+        "enword": "dry",
+        "cnword": "adj. 干的, 干燥的 v. 使干,"
+    },
+    {
+        "enword": "dry up",
+        "cnword": "干涸, 枯竭"
+    },
+    {
+        "enword": "drought",
+        "cnword": "n. 干旱, 旱灾"
+    },
+    {
+        "enword": "dryer",
+        "cnword": "n. 烘干机, 干燥机"
+    },
+    {
+        "enword": "duck",
+        "cnword": "n. 鸭 v. 闪避, 躲避"
+    },
+    {
+        "enword": "due",
+        "cnword": "adj. 到期的, 到期应付的,"
+    },
+    {
+        "enword": "due to",
+        "cnword": "由于"
+    },
+    {
+        "enword": "dull",
+        "cnword": "adj. 钝的, 无趣的, 阴暗的"
+    },
+    {
+        "enword": "dumb",
+        "cnword": "adj. 哑的, 无言的，愚蠢的"
+    },
+    {
+        "enword": "dump",
+        "cnword": "v. 倾倒, 倾卸 n. 垃圾场,"
+    },
+    {
+        "enword": "dumpling",
+        "cnword": "n. 饺子, 水饺"
+    },
+    {
+        "enword": "during",
+        "cnword": "prep. 在...期间"
+    },
+    {
+        "enword": "dusk",
+        "cnword": "n. 黄昏, 薄暮"
+    },
+    {
+        "enword": "at dusk",
+        "cnword": "在黄昏时"
+    },
+    {
+        "enword": "dust",
+        "cnword": "n. 灰尘, 尘土 v. 擦净,"
+    },
+    {
+        "enword": "dustman",
+        "cnword": "n. 清洁工,"
+    },
+    {
+        "enword": "dustbin",
+        "cnword": "n. 垃圾箱, 垃圾桶"
+    },
+    {
+        "enword": "dusty",
+        "cnword": "adj. 满是灰尘的, 灰蒙蒙的"
+    },
+    {
+        "enword": "duty",
+        "cnword": "n. 责任, 义务, 关税"
+    },
+    {
+        "enword": "on duty",
+        "cnword": "值班, 在岗"
+    },
+    {
+        "enword": "off duty",
+        "cnword": "下班, 下岗"
+    },
+    {
+        "enword": "dynamite",
+        "cnword": "n. 炸药 v. 炸毁"
+    },
+    {
+        "enword": "dynasty",
+        "cnword": "n. 朝代, 王朝"
+    }
+]

@@ -6,6 +6,15 @@
         "name": "Senior High School",
         "file": "highschool.json"
     }, {
+        "name": "高中英语词汇手册",
+        "file": "highschool2.json"
+    }, {
+        "name": "CET 4",
+        "file": "cet4.json"
+    }, {
+        "name": "CET 6",
+        "file": "cet6.json"
+    }, {
         "name": "TOEFL",
         "file": "TOEFL.json"
     }

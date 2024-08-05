@@ -37,7 +37,9 @@ export class TypingExercisesComponent {
   };
   allFiles: TypingDataFile[] = [];
   selectedFile?: TypingDataFile;
-  countOfItems = 10;
+  countOfItems = 20;
+  showWordExplain = true;
+  playWordVoice = true;
   sourceAudioFile = '';
   // Table for result
   dataSourceResult: TypingQueueResult[] = [];
@@ -169,6 +171,10 @@ export class TypingExercisesComponent {
       this.sourceAudioFile = '';
       this.sourceAudioFile = existingsrc;
     }
+  }
+
+  onShowExplaination() {
+    this.showWordExplain = !this.showWordExplain;
   }
 
   onNextWord() {
