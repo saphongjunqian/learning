@@ -1,0 +1,23 @@
+:host,
+.recite-page {
+  // Ensures that the footer is pushed to the bottom if the page is too short.
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.recite-page-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.control-full-width {
+  width: 100%;
+}

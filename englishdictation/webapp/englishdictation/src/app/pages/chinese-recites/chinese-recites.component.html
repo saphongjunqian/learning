@@ -1,0 +1,94 @@
+<main focusOnNavigation aria-label="Recites page" class="recite-page">
+  <div class="recite-page-content">
+    @if (isRecitingNotStarted)
+    {
+    <mat-toolbar class="control-full-width">
+      <mat-toolbar-row>
+        <span>
+          <h5>Reciting</h5>
+        </span>
+        <span class="toolbar-spacer"></span>
+        <mat-form-field>
+          <mat-label>Files</mat-label>
+          <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
+            <mat-option value="">None</mat-option>
+            @for (file of allFiles; track file.name ) {
+            <mat-option [value]="file">{{file.name}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Count</mat-label>
+          <input matInput type="number" [(ngModel)]="countOfItems">
+          <span matSuffix>{{reciteContentCount}}</span>
+        </mat-form-field>
+        <section>
+          <div class="example-button-container">
+            <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
+              <mat-icon>slideshow</mat-icon>
+              Start
+            </button>
+          </div>
+        </section>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    }
+
+    @if (isRecitingInProgress) {
+      <mat-toolbar class="control-full-width">
+        <mat-toolbar-row>
+          <span class="toolbar-spacer"></span>
+          <section>
+            <div class="example-button-container">
+              <button mat-fab extended (click)="onNeedHint()">
+                <mat-icon>info</mat-icon>
+                Hint
+              </button>
+            </div>
+          </section>
+        </mat-toolbar-row>
+      </mat-toolbar>
+
+      <div class="mat-typography">
+        <!-- This header will be styled as `title` because it is inside `.mat-typography` -->
+        <h2>{{currentReciteContentSubject}}</h2>
+        <h3>{{currentReciteContentAuthor}}</h3>
+    
+        <!-- This paragraph will be styled as `body-1` because it is inside `.mat-typography` -->
+        @for (cont of currentReciteContentContent; track cont.contentidx) {
+          <mat-form-field class="control-full-width">
+            <input matInput type="text" [(ngModel)]="cont.inputted">
+            <span matSuffix>{{cont.suffix}}</span>
+          </mat-form-field>
+        }
+      </div>
+
+      <mat-divider></mat-divider>
+      <mat-toolbar class="control-full-width">
+        <mat-toolbar-row>
+          <span class="toolbar-spacer"></span>
+          <section>
+            <div class="example-button-container">
+              <button mat-raised-button (click)="onNextWord()">
+                Jump to Next
+              </button>
+              <button mat-flat-button (click)="onSubmitToNext()" [disabled]="!isCurrentReciteContentCorrect">
+                Submit to Next
+              </button>
+            </div>
+          </section>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    }
+
+    @if (isRecitingCompleted) {
+      <div class="result-content">
+        <div>Score: {{currentStatus.correctCount }} / {{currentStatus.totalCount}} </div>
+        <div>Time cost (in seconds): {{( currentStatus.endTime.getTime() - currentStatus.startTime.getTime() ) / 1000}}</div>
+      </div>
+    }
+
+  </div>
+</main>
+
+<app-footer></app-footer>

@@ -53,7 +53,7 @@ export class TypingExercisesComponent {
   }
   get isTypingCompleted(): boolean {
     return this.currentStatus.status === TypingStatusEnum.Completed;
-  }  
+  }
   get chararray(): TypingWord[] {
     return this._arwords;
   }

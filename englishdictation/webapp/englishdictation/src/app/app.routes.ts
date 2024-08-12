@@ -11,6 +11,10 @@ const routeConfig: Routes = [
     loadComponent: () => import('./pages/typing-exercises').then(m => m.TypingExercisesComponent)
   },
   {
+    path: 'reciting',
+    loadComponent: () => import('./pages/chinese-recites').then(m => m.ChineseRecitesComponent)
+  },
+  {
     path: '404',
     loadComponent: () => import('./pages/not-found').then(m => m.NotFound)
   },
