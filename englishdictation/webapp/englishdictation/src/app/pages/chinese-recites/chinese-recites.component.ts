@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFormFieldModule,  } from '@angular/material/form-field';
+import { MatFormFieldModule, } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
@@ -9,18 +9,21 @@ import { MatTableModule } from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { FormsModule } from '@angular/forms';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from "@angular/material/divider";
 
 import { Footer } from "../../shared/footer/footer";
-import { ChineseReciteDataFile, ChineseReciteStatus, ChineseReciteStatusEnum, ChineseReciteContent, ChineseReciteQueue,
-    ChineseReciteQueueItem, ChineseReciteQueueItemTypeEnum
+import {
+    ChineseReciteDataFile, ChineseReciteStatus, ChineseReciteStatusEnum, ChineseReciteContent, ChineseReciteQueue,
+    ChineseReciteQueueItem, ChineseReciteQueueItemTypeEnum, ChineseReciteLevelEnum,
+    ChineseReciteQueueItemGroup
 } from "../../interfaces";
 
 @Component({
     selector: 'app-chinese-recite',
     standalone: true,
     imports: [Footer, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule,
-        MatIconModule, MatButtonModule, MatTableModule, MatCheckboxModule, MatDividerModule ],
+        MatIconModule, MatButtonModule, MatTableModule, MatCheckboxModule, MatDividerModule, MatProgressBarModule],
     templateUrl: './chinese-recites.component.html',
     styleUrl: './chinese-recites.component.scss'
 })
@@ -28,8 +31,9 @@ export class ChineseRecitesComponent implements OnInit {
     allFiles: ChineseReciteDataFile[] = [];
     selectedFile?: ChineseReciteDataFile;
     countOfItems = 2;
-    currentStatus: ChineseReciteStatus = { 
+    currentStatus: ChineseReciteStatus = {
         status: ChineseReciteStatusEnum.NotStarted,
+        level: ChineseReciteLevelEnum.Normal,
         correctCount: 0,
         incorrectCount: 0,
         totalCount: 0,
@@ -38,8 +42,13 @@ export class ChineseRecitesComponent implements OnInit {
     };
     recitequeues: ChineseReciteQueue[] = [];
     queueidx: number = -1;  // Current Queue
-    
-    get isRecitingNotStarted(): boolean { 
+    allLevels = [
+        { value: ChineseReciteLevelEnum.Easy, label: 'Easy' },
+        { value: ChineseReciteLevelEnum.Normal, label: 'Normal' },
+        { value: ChineseReciteLevelEnum.Hard, label: 'Hard' },
+    ];
+
+    get isRecitingNotStarted(): boolean {
         return this.currentStatus.status === ChineseReciteStatusEnum.NotStarted;
     }
     get isRecitingInProgress(): boolean {
@@ -52,22 +61,46 @@ export class ChineseRecitesComponent implements OnInit {
         return this.recitequeues.length;
     }
     get currentReciteContentSubject(): string {
-        return this.recitequeues[this.queueidx].items.find((item) => item.type === ChineseReciteQueueItemTypeEnum.subject)!.inputted;
+        return this.recitequeues[this.queueidx].subject.inputted;
     }
     get currentReciteContentAuthor(): string {
-        return this.recitequeues[this.queueidx].items.find((item) => item.type === ChineseReciteQueueItemTypeEnum.author)!.inputted;
+        return this.recitequeues[this.queueidx].author.inputted;
     }
-    get currentReciteContentContent(): ChineseReciteQueueItem[] {
-        return this.recitequeues[this.queueidx].items.filter((item) => item.type === ChineseReciteQueueItemTypeEnum.content);
+    get currentReciteContentAudio(): string {
+        return this.recitequeues[this.queueidx].audio ?? '';
+    }
+    get currentReciteContentItems(): ChineseReciteQueueItem[] {
+        return this.recitequeues[this.queueidx].items;
+    }
+    get currentReciteContentItemsCount(): number {
+        return this.recitequeues[this.queueidx].items.length;
+    }
+    get currentReciteContentGroups(): ChineseReciteQueueItemGroup[] {
+        return this.recitequeues[this.queueidx].groups;
+    }
+    get currentReciteContentGroupsCount(): number {
+        return this.recitequeues[this.queueidx].groups.length;
     }
     get isCurrentReciteContentCorrect(): boolean {
         let allcorrect = true;
         this.recitequeues[this.queueidx].items.forEach((item) => {
-            if (item.inputted === item.original) {
+            if (allcorrect && !item.disabled && item.inputted !== item.original) {
                 allcorrect = false;
             }
         });
+        if (allcorrect) {
+            this.recitequeues[this.queueidx].groups.forEach((grp) => {
+                grp.items.forEach((item) => {
+                    if (allcorrect && !item.disabled && item.inputted !== item.original) {
+                        allcorrect = false;
+                    }
+                });
+            });
+        }
         return allcorrect;
+    }
+    get currentProgress(): number {
+        return this.reciteContentCount === 0 ? 100 : this.queueidx * 100 / this.reciteContentCount;
     }
 
     constructor(private http: HttpClient) {
@@ -77,11 +110,11 @@ export class ChineseRecitesComponent implements OnInit {
     ngOnInit(): void {
         // Using Angular HTTPClient to fetch the data from the server
         const datafile$ = this.http.get<ChineseReciteDataFile[]>('data/chinese.json');
-    
+
         // 3. subscribe Observable
         datafile$.subscribe(df => {
-          // console.log(df);
-          this.allFiles = df;
+            // console.log(df);
+            this.allFiles = df;
         });
     }
 
@@ -89,54 +122,137 @@ export class ChineseRecitesComponent implements OnInit {
         // Read the file.
         const datafile$ = this.http.get<ChineseReciteContent[]>(`data/${event.value.file}`);
         datafile$.subscribe(df => {
-          // console.log(df);
-   
-          this.recitequeues = [];
-          df.forEach((val) => {
-            let items: ChineseReciteQueueItem[] = [];
-            items.push({
-              type: ChineseReciteQueueItemTypeEnum.subject,
-              contentidx: 0,
-              original: val.subject,
-              inputted: val.subject,
-              correct: true,
-              suffix: '',
-            });
-            items.push({
-              type: ChineseReciteQueueItemTypeEnum.author,
-              contentidx: 1,
-              original: val.author,
-              inputted: val.author,
-              correct: true,
-              suffix: ''
-            });
+            this.recitequeues = [];
+            df.forEach((val) => {
+                let items: ChineseReciteQueueItem[] = [];
+                let grps: ChineseReciteQueueItemGroup[] = [];
+                let subjectitem: ChineseReciteQueueItem = {
+                    type: ChineseReciteQueueItemTypeEnum.subject,
+                    contentidx: 0,
+                    original: val.subject,
+                    inputted: val.subject,
+                    correct: true,
+                    suffix: '',
+                    disabled: true,
+                };
+                let authoritem: ChineseReciteQueueItem = {
+                    type: ChineseReciteQueueItemTypeEnum.author,
+                    contentidx: 1,
+                    original: val.author,
+                    inputted: val.author,
+                    correct: true,
+                    suffix: '',
+                    disabled: true,
+                };
 
-            let nprv = 0;
-            let nitem = 0;
-            for(let i = 0; i < val.content.length; i++) {
-                if (val.content[i] === '，' || val.content[i] === '。' || val.content[i] === '！' || val.content[i] === '：' || val.content[i] === '？') {
-                    console.log(val.content.slice(nprv, i));
-                    items.push({
-                        type: ChineseReciteQueueItemTypeEnum.content,
-                        contentidx: nitem + 1,
-                        original: val.content.slice(nprv, i),
-                        inputted: '', // val.content.slice(nprv, i),
-                        correct: false,
-                        suffix: val.content[i],
-                    });
-                    nprv = i + 1;
-                    nitem++;
+                if (val.contentlength === undefined && val.content) {
+                    let nprv = 0;
+                    let nitem = 0;
+                    for (let i = 0; i < val.content.length; i++) {
+                        if (val.content[i] === '，' || val.content[i] === '。' || val.content[i] === '；' || val.content[i] === '！' || val.content[i] === '：' || val.content[i] === '？') {
+                            // console.log(val.content.slice(nprv, i));
+                            let needinput = false;
+                            if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
+                                needinput = Math.random() < 0.2;
+                            } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
+                                needinput = Math.random() < 0.5;
+                            } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
+                                needinput = true;
+                            }
+
+                            items.push({
+                                type: ChineseReciteQueueItemTypeEnum.content,
+                                contentidx: (nitem * 10) + 1,
+                                original: val.content.slice(nprv, i),
+                                inputted: needinput ? '' : val.content.slice(nprv, i),
+                                correct: false,
+                                suffix: val.content[i],
+                                disabled: needinput ? false : true,
+                            });
+                            nprv = i + 1;
+                            nitem++;
+                        }
+                    }
+
+                    let allItemsNotEmpty = items.every((item) => item.inputted !== '');
+                    if (allItemsNotEmpty) {
+                        // Handle the case where all items have non-empty inputted values
+                        // For example, proceed with the next step or take appropriate action
+                        let nidx = Math.floor(Math.random() * items.length);
+                        items[nidx].inputted = '';
+                        items[nidx].disabled = false;
+                    }
+
+                    // Sort items by the contentidx
+                    items = items.sort((a, b) => a.contentidx - b.contentidx);
+                } else if (val.contentlength) {
+                    // For multiple content case
+                    for (let i = 1; i <= val.contentlength; i++) {
+                        let curgrp: ChineseReciteQueueItemGroup = {
+                            grpidx: i,
+                            items: []
+                        };
+                        let content = val[`content${i}` as keyof ChineseReciteContent] as string;
+                        if (content) {
+                            let nprv = 0;
+                            let nitem = 0;
+                            for (let i = 0; i < content.length; i++) {
+                                if (content[i] === '，' || content[i] === '。' || content[i] === '；' || content[i] === '！' || content[i] === '：' || content[i] === '？') {
+                                    // console.log(val.content.slice(nprv, i));
+                                    let needinput = false;
+                                    if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
+                                        needinput = Math.random() < 0.2;
+                                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
+                                        needinput = Math.random() < 0.5;
+                                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
+                                        needinput = true;
+                                    }
+
+                                    curgrp.items.push({
+                                        type: ChineseReciteQueueItemTypeEnum.content,
+                                        contentidx: (nitem * 10) + 1,
+                                        original: content.slice(nprv, i),
+                                        inputted: needinput ? '' : content.slice(nprv, i),
+                                        correct: false,
+                                        suffix: content[i],
+                                        disabled: needinput ? false : true,
+                                    });
+                                    nprv = i + 1;
+                                    nitem++;
+                                }
+                            }
+
+                            let allItemsNotEmpty = curgrp.items.every((item) => item.inputted !== '');
+                            if (allItemsNotEmpty) {
+                                // Handle the case where all items have non-empty inputted values
+                                // For example, proceed with the next step or take appropriate action
+                                let nidx = Math.floor(Math.random() * curgrp.items.length);
+                                curgrp.items[nidx].inputted = '';
+                                curgrp.items[nidx].disabled = false;
+                            }
+
+                            // Sort items by the contentidx
+                            curgrp.items = curgrp.items.sort((a, b) => a.contentidx - b.contentidx);
+
+                            if (curgrp.items.length > 0) {
+                                grps.push(curgrp);
+                            }
+                        }
+                    }
                 }
-            }
 
-            this.recitequeues.push({
-                items: items,
-                completed: false
+                this.recitequeues.push({
+                    subject: subjectitem,
+                    author: authoritem,
+                    audio: val.audio,
+                    items: items,
+                    groups: grps,
+                    completed: false
+                });
             });
-          });
         });
     }
-    
+
     onStart() {
         if (this.recitequeues.length > this.countOfItems) {
             // Randomize the array `this.wordqueues`
@@ -144,7 +260,7 @@ export class ChineseRecitesComponent implements OnInit {
             // Keep only the first `this.countOfItems` items
             this.recitequeues = this.recitequeues.slice(0, this.countOfItems);
         }
-      
+
         this.queueidx = 0;
         this.currentStatus.status = ChineseReciteStatusEnum.InProgress;
         this.currentStatus.startTime = new Date();
@@ -152,7 +268,21 @@ export class ChineseRecitesComponent implements OnInit {
     }
 
     onNeedHint() {
-
+        // Find the first item that is not correct and correct it
+        if (this.recitequeues[this.queueidx].items.length > 0) {
+            let itemidx = this.recitequeues[this.queueidx].items.findIndex((item) => item.disabled === false && item.inputted !== item.original);
+            if (itemidx !== -1) {
+                this.recitequeues[this.queueidx].items[itemidx].inputted = this.recitequeues[this.queueidx].items[itemidx].original;
+            }    
+        } else {
+            for(let grpidx = 0; grpidx < this.recitequeues[this.queueidx].groups.length; grpidx++) {
+                let itemidx = this.recitequeues[this.queueidx].groups[grpidx].items.findIndex((item) => item.disabled === false && item.inputted !== item.original);
+                if (itemidx !== -1) {
+                    this.recitequeues[this.queueidx].groups[grpidx].items[itemidx].inputted = this.recitequeues[this.queueidx].groups[grpidx].items[itemidx].original;
+                    return;
+                }
+            }
+        }
     }
 
     onSubmitToNext() {
@@ -172,24 +302,23 @@ export class ChineseRecitesComponent implements OnInit {
 
     setQueueIndex(idx = 0) {
         if (idx >= 0 && idx < this.recitequeues.length) {
-          if (this.queueidx !== -1) {
-            this.recitequeues[this.queueidx].completed = true;
-          }
-    
-          this.queueidx = idx;
+            if (this.queueidx !== -1) {
+                this.recitequeues[this.queueidx].completed = true;
+            }
+
+            this.queueidx = idx;
         } else if (idx === this.recitequeues.length) {
-          if (this.queueidx !== -1) {
-            this.recitequeues[this.queueidx].completed = true;
-          }
-    
-          let iscompled = this.recitequeues.findIndex((que) => que.completed === false) === -1 ? true : false;
-          if (iscompled) {
-            this.currentStatus.status = ChineseReciteStatusEnum.Completed;
-            this.currentStatus.endTime = new Date();
-            // this.currentStatus.correctCount = this.dataSourceResult.filter((val) => val.correct === true).length;
-            // this.currentStatus.incorrectCount = this.dataSourceResult.filter((val) => val.correct === false).length;
-          }
+            if (this.queueidx !== -1) {
+                this.recitequeues[this.queueidx].completed = true;
+            }
+
+            let iscompled = this.recitequeues.findIndex((que) => que.completed === false) === -1 ? true : false;
+            if (iscompled) {
+                this.currentStatus.status = ChineseReciteStatusEnum.Completed;
+                this.currentStatus.endTime = new Date();
+                // this.currentStatus.correctCount = this.dataSourceResult.filter((val) => val.correct === true).length;
+                // this.currentStatus.incorrectCount = this.dataSourceResult.filter((val) => val.correct === false).length;
+            }
         }
     }
-    
 };

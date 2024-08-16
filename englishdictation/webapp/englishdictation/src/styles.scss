@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 @use '@angular/material' as mat;
 @use './app-theme';
 @use './styles/api';
@@ -23,3 +22,8 @@ $theme: mat.define-theme((
 :root {
   @include mat.all-component-themes($theme);
 }
+
+// Using tailwindcss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -2,6 +2,9 @@
     {
         "name": "初中文言文必备",
         "file": "chinese1.json"
-            
+    }, 
+    {
+        "name": "高中文言文必备",
+        "file": "chinese2.json"
     }
 ]

@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
 import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FormsModule } from '@angular/forms';
 
 import { TypingQueue, TypingWord, TypingDataFile, TypingWordList, TypingQueueResult, TypingStatusEnum, TypingStatus } from '../../interfaces';
@@ -18,7 +19,7 @@ import { Footer } from "../../shared/footer/footer";
   selector: 'app-typing-exercises',
   standalone: true,
   imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, 
-    MatIconModule, MatTableModule, MatCheckboxModule, Footer],
+    MatProgressBarModule, MatIconModule, MatTableModule, MatCheckboxModule, Footer],
   templateUrl: './typing-exercises.component.html',
   styleUrl: './typing-exercises.component.scss'
 })
@@ -65,6 +66,9 @@ export class TypingExercisesComponent {
   }
   get wordQueueCount(): number {
     return this.wordqueues.length;
+  }
+  get currentProgress(): number {
+    return this.wordQueueCount === 0? 100 : this._queueidx * 100 / this.wordQueueCount;
   }
 
   @HostListener('document:keyup', ['$event'])

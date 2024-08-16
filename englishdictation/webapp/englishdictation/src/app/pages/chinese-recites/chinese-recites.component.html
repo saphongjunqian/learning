@@ -2,42 +2,58 @@
   <div class="recite-page-content">
     @if (isRecitingNotStarted)
     {
-    <mat-toolbar class="control-full-width">
-      <mat-toolbar-row>
-        <span>
-          <h5>Reciting</h5>
-        </span>
-        <span class="toolbar-spacer"></span>
-        <mat-form-field>
-          <mat-label>Files</mat-label>
-          <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
-            <mat-option value="">None</mat-option>
-            @for (file of allFiles; track file.name ) {
-            <mat-option [value]="file">{{file.name}}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>Count</mat-label>
-          <input matInput type="number" [(ngModel)]="countOfItems">
-          <span matSuffix>{{reciteContentCount}}</span>
-        </mat-form-field>
-        <section>
-          <div class="example-button-container">
-            <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
-              <mat-icon>slideshow</mat-icon>
-              Start
-            </button>
-          </div>
-        </section>
-      </mat-toolbar-row>
-    </mat-toolbar>
+      <mat-toolbar class="control-full-width">
+        <mat-toolbar-row>
+          <span>
+            <h5>Reciting</h5>
+          </span>
+          <span class="toolbar-spacer"></span>
+          <mat-form-field>
+            <mat-label>Files</mat-label>
+            <mat-select matNativeControl [(value)]="currentStatus.level">
+              @for (lvl of allLevels; track lvl.value ) {
+                <mat-option [value]="lvl.value">{{lvl.label}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Files</mat-label>
+            <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
+              <mat-option value="">None</mat-option>
+              @for (file of allFiles; track file.name ) {
+                <mat-option [value]="file">{{file.name}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Count</mat-label>
+            <input matInput type="number" [(ngModel)]="countOfItems">
+            <span matSuffix>{{reciteContentCount}}</span>
+          </mat-form-field>
+          <section>
+            <div class="example-button-container">
+              <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
+                <mat-icon>slideshow</mat-icon>
+                Start
+              </button>
+            </div>
+          </section>
+        </mat-toolbar-row>
+      </mat-toolbar>
     }
 
     @if (isRecitingInProgress) {
       <mat-toolbar class="control-full-width">
         <mat-toolbar-row>
           <span class="toolbar-spacer"></span>
+          <section>
+            <div class="example-button-container">
+              <mat-progress-bar
+                mode="determinate"
+                [value]="currentProgress">
+              </mat-progress-bar>
+            </div>
+          </section>
           <section>
             <div class="example-button-container">
               <button mat-fab extended (click)="onNeedHint()">
@@ -49,17 +65,44 @@
         </mat-toolbar-row>
       </mat-toolbar>
 
-      <div class="mat-typography">
-        <!-- This header will be styled as `title` because it is inside `.mat-typography` -->
-        <h2>{{currentReciteContentSubject}}</h2>
-        <h3>{{currentReciteContentAuthor}}</h3>
+      <div class="container">
+        @if(currentReciteContentAudio) {
+          <audio autoplay [src]="currentReciteContentAudio">
+          </audio>  
+        }
+
+        <div class="text-2xl text-center">{{currentReciteContentSubject}}</div>
+        <div class="text-xl text-right">{{currentReciteContentAuthor}}</div>
     
-        <!-- This paragraph will be styled as `body-1` because it is inside `.mat-typography` -->
-        @for (cont of currentReciteContentContent; track cont.contentidx) {
-          <mat-form-field class="control-full-width">
-            <input matInput type="text" [(ngModel)]="cont.inputted">
-            <span matSuffix>{{cont.suffix}}</span>
-          </mat-form-field>
+        @if(currentReciteContentItemsCount > 0) {
+          <div class="grid grid-cols-2 gap-4">
+            @for (item of currentReciteContentItems; track item.contentidx) {
+              <div class="w-full">
+                <mat-form-field class="control-full-width">
+                  <input matInput type="text" [(ngModel)]="item.inputted" [disabled]="item.disabled">
+                  <span matSuffix>{{item.suffix}}</span>
+                </mat-form-field>    
+              </div>
+            }
+          </div>
+        }
+        @if(currentReciteContentGroupsCount > 0) {
+          <div class="basis-full">
+            @for (grp of currentReciteContentGroups; track grp.grpidx) {
+              <div class="basis-full">
+                <div class="grid grid-cols-4 gap-4">
+                  @for (item of grp.items; track item.contentidx) {
+                    <div class="w-full">
+                      <mat-form-field class="control-full-width">
+                        <input matInput type="text" [(ngModel)]="item.inputted" [disabled]="item.disabled">
+                        <span matSuffix>{{item.suffix}}</span>
+                      </mat-form-field>    
+                    </div>
+                  }
+                </div>    
+              </div>
+            }  
+          </div>
         }
       </div>
 
@@ -70,10 +113,10 @@
           <section>
             <div class="example-button-container">
               <button mat-raised-button (click)="onNextWord()">
-                Jump to Next
+                Skip
               </button>
               <button mat-flat-button (click)="onSubmitToNext()" [disabled]="!isCurrentReciteContentCorrect">
-                Submit to Next
+                Submit
               </button>
             </div>
           </section>
@@ -87,7 +130,6 @@
         <div>Time cost (in seconds): {{( currentStatus.endTime.getTime() - currentStatus.startTime.getTime() ) / 1000}}</div>
       </div>
     }
-
   </div>
 </main>
 

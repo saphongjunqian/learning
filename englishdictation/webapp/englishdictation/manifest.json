@@ -3,7 +3,7 @@
   "sap.app": {
     "id": "ac.englishdict_ui",
     "applicationVersion": {
-      "version": "1.0.1"
+      "version": "1.0.6"
     }
   },
   "sap.cloud": {
