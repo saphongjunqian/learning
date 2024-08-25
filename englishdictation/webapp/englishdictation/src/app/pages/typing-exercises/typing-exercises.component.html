@@ -26,6 +26,14 @@
           </mat-form-field>
           <section>
             <div class="example-button-container">
+              <button mat-fab extended (click)="onPrint()">
+                <mat-icon>print</mat-icon>
+                Print
+              </button>
+            </div>
+          </section>
+          <section>
+            <div class="example-button-container">
               <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0 || (!showWordExplain && !playWordVoice)">
                 <mat-icon>slideshow</mat-icon>
                 Start

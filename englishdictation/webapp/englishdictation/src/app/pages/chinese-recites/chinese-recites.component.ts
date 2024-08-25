@@ -102,6 +102,15 @@ export class ChineseRecitesComponent implements OnInit {
     get currentProgress(): number {
         return this.reciteContentCount === 0 ? 100 : this.queueidx * 100 / this.reciteContentCount;
     }
+    get getLevelString(): string {
+        switch(this.currentStatus.level) {
+            case ChineseReciteLevelEnum.Easy: return 'Easy';
+            case ChineseReciteLevelEnum.Normal: return 'Normal';
+            case ChineseReciteLevelEnum.Hard: 
+            default: 
+                return 'Hard';
+        }
+    }
 
     constructor(private http: HttpClient) {
         // Constructor
@@ -268,29 +277,56 @@ export class ChineseRecitesComponent implements OnInit {
     }
 
     onPrint() {
-        // let page = document.getElementById('reciter-container');
-        let objdiv = document.createElement('div');
+        let printqueues = this.recitequeues.slice();
 
-        for(let qidx = 0; qidx < this.recitequeues.length; qidx++) {
+        if (printqueues.length > this.countOfItems) {
+            // Randomize the array `this.wordqueues`
+            printqueues = printqueues.sort(() => Math.random() - 0.5);
+            // Keep only the first `this.countOfItems` items
+            printqueues = printqueues.slice(0, this.countOfItems);
+        }
+
+        let objdiv = document.createElement('div');
+        objdiv.classList.add('w-full');
+        objdiv.style.fontSize = '24px';
+        objdiv.style.margin = '10px';
+    
+        // Selected the document
+        let titlep = document.createElement('p');
+        titlep.innerText = this.selectedFile?.name!;
+        objdiv.appendChild(titlep);
+        // Level
+        let levelp = document.createElement('p');
+        levelp.innerText = this.getLevelString;
+        objdiv.appendChild(levelp);
+        // Count of items
+        let countp = document.createElement('p');
+        countp.innerText = `Count of items: ${printqueues.length}`;
+        objdiv.appendChild(countp);
+        // Date
+        let datep = document.createElement('p');
+        datep.innerText = new Date().toLocaleString();
+        datep.style.paddingBottom = '20px';
+        objdiv.appendChild(datep);
+    
+        for(let qidx = 0; qidx < printqueues.length; qidx++) {
             let qdiv = document.createElement('div');
             qdiv.style.width = '100%';
-            qdiv.style.fontSize = '30px';
-            qdiv.style.margin = '10px';
 
             let subjectp = document.createElement('p');
             let authorp = document.createElement('p');
 
-            subjectp.innerText = this.recitequeues[qidx].subject.original;
-            authorp.innerText = this.recitequeues[qidx].author.original;
+            subjectp.innerText = "名称：" + printqueues[qidx].subject.original;
+            authorp.innerText = "作者：" + printqueues[qidx].author.original;
 
             qdiv.appendChild(subjectp);
             qdiv.appendChild(authorp);
 
             // Items
-            if (this.recitequeues[qidx].items.length > 0) {
+            if (printqueues[qidx].items.length > 0) {
                 let subjectitem = document.createElement('p');
-                for(let itemidx = 0; itemidx < this.recitequeues[qidx].items.length; itemidx++) {
-                    let item = this.recitequeues[qidx].items[itemidx];
+                for(let itemidx = 0; itemidx < printqueues[qidx].items.length; itemidx++) {
+                    let item = printqueues[qidx].items[itemidx];
                     let itemspan = document.createElement('span');
                     if (item.disabled === false) {
                         itemspan.innerText = item.original + item.suffix;
@@ -304,11 +340,11 @@ export class ChineseRecitesComponent implements OnInit {
             }
 
             // Groups
-            for(let grpidx = 0; grpidx < this.recitequeues[qidx].groups.length; grpidx++) {
+            for(let grpidx = 0; grpidx < printqueues[qidx].groups.length; grpidx++) {
                 let subjectitem = document.createElement('p');
-                if (this.recitequeues[qidx].groups[grpidx].items.length > 0) {
-                    for(let itemidx = 0; itemidx < this.recitequeues[qidx].groups[grpidx].items.length; itemidx++) {
-                        let item = this.recitequeues[qidx].groups[grpidx].items[itemidx];
+                if (printqueues[qidx].groups[grpidx].items.length > 0) {
+                    for(let itemidx = 0; itemidx < printqueues[qidx].groups[grpidx].items.length; itemidx++) {
+                        let item = printqueues[qidx].groups[grpidx].items[itemidx];
                         let itemspan = document.createElement('span');
                         if (item.disabled === false) {
                             itemspan.innerText = item.original + item.suffix;
@@ -323,12 +359,12 @@ export class ChineseRecitesComponent implements OnInit {
 
             objdiv.appendChild(qdiv);
         }
-        // Date
-        let datep = document.createElement('p');
-        datep.innerText = new Date().toLocaleString();
-        objdiv.appendChild(datep);
-        let horz = document.createElement('hr');
-        objdiv.appendChild(horz);
+
+        // Final
+        let finalp = document.createElement('p');
+        finalp.innerText = '_________________________T_H_E_____E_N_D_______________________________';
+        finalp.style.paddingBottom = '20px';
+        objdiv.appendChild(finalp);
         document.body.appendChild(objdiv);
 
         html2PDF(objdiv, {

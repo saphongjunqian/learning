@@ -25,7 +25,11 @@
               "zone.js"
             ],
             "allowedCommonJsDependencies": [
-              "howler"
+              "howler",
+              "rgbcolor",
+              "raf",
+              "core-js",
+              "jspdf-html2canvas"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [

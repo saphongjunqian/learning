@@ -9,7 +9,7 @@
           </span>
           <span class="toolbar-spacer"></span>
           <mat-form-field>
-            <mat-label>Files</mat-label>
+            <mat-label>Level</mat-label>
             <mat-select matNativeControl [(value)]="currentStatus.level">
               @for (lvl of allLevels; track lvl.value ) {
                 <mat-option [value]="lvl.value">{{lvl.label}}</mat-option>
@@ -30,6 +30,14 @@
             <input matInput type="number" [(ngModel)]="countOfItems">
             <span matSuffix>{{reciteContentCount}}</span>
           </mat-form-field>
+          <section>
+            <div class="example-button-container">
+              <button mat-fab extended (click)="onPrint()">
+                <mat-icon>print</mat-icon>
+                Print
+              </button>
+            </div>
+          </section>
           <section>
             <div class="example-button-container">
               <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
@@ -56,14 +64,6 @@
           </section>
           <section>
             <div class="example-button-container">
-              <button mat-fab extended (click)="onPrint()">
-                <mat-icon>print</mat-icon>
-                Print
-              </button>
-            </div>
-          </section>
-          <section>
-            <div class="example-button-container">
               <button mat-fab extended (click)="onNeedHint()">
                 <mat-icon>info</mat-icon>
                 Hint
@@ -74,11 +74,6 @@
       </mat-toolbar>
 
       <div class="container" id="reciter-container">
-        @if(currentReciteContentAudio) {
-          <audio autoplay [src]="currentReciteContentAudio">
-          </audio>  
-        }       
-
         <div class="text-2xl text-center">{{currentReciteContentSubject}}</div>
         <div class="text-xl text-right">{{currentReciteContentAuthor}}</div>
     

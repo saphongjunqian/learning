@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFormFieldModule,  } from '@angular/material/form-field';
+import { MatFormFieldModule, } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FormsModule } from '@angular/forms';
+import html2PDF from 'jspdf-html2canvas';
 
 import { TypingQueue, TypingWord, TypingDataFile, TypingWordList, TypingQueueResult, TypingStatusEnum, TypingStatus } from '../../interfaces';
 import { AudioService } from '../../services';
@@ -18,7 +19,7 @@ import { Footer } from "../../shared/footer/footer";
 @Component({
   selector: 'app-typing-exercises',
   standalone: true,
-  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule, 
+  imports: [MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, MatButtonModule,
     MatProgressBarModule, MatIconModule, MatTableModule, MatCheckboxModule, Footer],
   templateUrl: './typing-exercises.component.html',
   styleUrl: './typing-exercises.component.scss'
@@ -28,7 +29,7 @@ export class TypingExercisesComponent {
   private _arwords: TypingWord[] = [];
   private _queueidx = -1;
   private _wordidx = -1;
-  currentStatus: TypingStatus = { 
+  currentStatus: TypingStatus = {
     status: TypingStatusEnum.NotStarted,
     correctWordCount: 0,
     incorrectWordCount: 0,
@@ -46,7 +47,7 @@ export class TypingExercisesComponent {
   dataSourceResult: TypingQueueResult[] = [];
   displayedColumns: string[] = ['word', 'correct'];
 
-  get isTypingNotStarted(): boolean { 
+  get isTypingNotStarted(): boolean {
     return this.currentStatus.status === TypingStatusEnum.NotStarted;
   }
   get isTypingInProgress(): boolean {
@@ -68,7 +69,7 @@ export class TypingExercisesComponent {
     return this.wordqueues.length;
   }
   get currentProgress(): number {
-    return this.wordQueueCount === 0? 100 : this._queueidx * 100 / this.wordQueueCount;
+    return this.wordQueueCount === 0 ? 100 : this._queueidx * 100 / this.wordQueueCount;
   }
 
   @HostListener('document:keyup', ['$event'])
@@ -134,6 +135,100 @@ export class TypingExercisesComponent {
         });
       });
     });
+  }
+
+  onPrint() {
+    // Copy wordqueues to localqueues
+    let printqueues = this.wordqueues.slice();
+    if (printqueues.length > this.countOfItems) {
+      // Randomize the array `this.wordqueues`
+      printqueues = printqueues.sort(() => Math.random() - 0.5);
+      // Keep only the first `this.countOfItems` items
+      printqueues = printqueues.slice(0, this.countOfItems);
+    }
+
+    let objdiv = document.createElement('div');
+    objdiv.classList.add('w-full');
+    objdiv.style.fontSize = '16px';
+    objdiv.style.margin = '10px';
+
+    // Selected the document
+    let titlep = document.createElement('p');
+    titlep.innerText = this.selectedFile?.name!;
+    objdiv.appendChild(titlep);
+    // Count of items
+    let countp = document.createElement('p');
+    countp.innerText = `Count of items: ${printqueues.length}`;
+    objdiv.appendChild(countp);
+    // Date
+    let datep = document.createElement('p');
+    datep.innerText = new Date().toLocaleString();
+    datep.style.paddingBottom = '20px';
+    objdiv.appendChild(datep);
+
+    let containdiv = document.createElement('div');
+    containdiv.classList.add('grid'); 
+    containdiv.classList.add('grid-cols-4');
+    containdiv.classList.add('gap-4');
+    objdiv.appendChild(containdiv);
+
+    for (let qidx = 0; qidx < printqueues.length; qidx++) {
+      let qdiv = document.createElement('div');
+      qdiv.classList.add('w-full');
+      qdiv.innerText = printqueues[qidx].cnword.slice(0, 30);
+      containdiv.appendChild(qdiv);
+      
+      qdiv = document.createElement('div');
+      qdiv.classList.add('w-full');
+      qdiv.innerText = '________________________';
+      containdiv.appendChild(qdiv);
+    }
+
+    // Date
+    let splitp = document.createElement('p');
+    splitp.classList.add('w-full');
+    splitp.style.paddingTop = '40px';
+    splitp.style.paddingBottom = '40px';
+    splitp.innerText = '__________________________ANSWER BELOW______________________';
+    objdiv.appendChild(splitp);
+
+    // Answer
+    let awrdiv = document.createElement('div');
+    awrdiv.classList.add('w-full');
+    awrdiv.classList.add('grid'); 
+    awrdiv.classList.add('grid-cols-6');
+    awrdiv.classList.add('gap-2');
+    objdiv.appendChild(awrdiv);
+
+    for (let qidx = 0; qidx < printqueues.length; qidx++) {
+      let qdiv = document.createElement('div');
+      qdiv.classList.add('w-full');
+      qdiv.innerText = printqueues[qidx].enword;
+      awrdiv.appendChild(qdiv);
+    }
+
+    // Finally one.
+    let finalp = document.createElement('p');
+    finalp.innerText = 'The End';
+    finalp.style.paddingBottom = '20px';
+    objdiv.appendChild(finalp);
+
+    document.body.appendChild(objdiv);
+
+    html2PDF(objdiv, {
+      jsPDF: {
+        format: 'a4',
+      },
+      margin: {
+        top: 10,
+        right: 10,
+        bottom: 10,
+        left: 10
+      },
+      output: 'a4.pdf',
+    });
+
+    document.body.removeChild(objdiv);
   }
 
   onStart() {
