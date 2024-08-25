@@ -56,6 +56,14 @@
           </section>
           <section>
             <div class="example-button-container">
+              <button mat-fab extended (click)="onPrint()">
+                <mat-icon>print</mat-icon>
+                Print
+              </button>
+            </div>
+          </section>
+          <section>
+            <div class="example-button-container">
               <button mat-fab extended (click)="onNeedHint()">
                 <mat-icon>info</mat-icon>
                 Hint
@@ -65,11 +73,11 @@
         </mat-toolbar-row>
       </mat-toolbar>
 
-      <div class="container">
+      <div class="container" id="reciter-container">
         @if(currentReciteContentAudio) {
           <audio autoplay [src]="currentReciteContentAudio">
           </audio>  
-        }
+        }       
 
         <div class="text-2xl text-center">{{currentReciteContentSubject}}</div>
         <div class="text-xl text-right">{{currentReciteContentAuthor}}</div>

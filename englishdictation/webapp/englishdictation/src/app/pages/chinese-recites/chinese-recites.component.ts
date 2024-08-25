@@ -11,7 +11,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
 import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from "@angular/material/divider";
-
+import html2PDF from 'jspdf-html2canvas';
 import { Footer } from "../../shared/footer/footer";
 import {
     ChineseReciteDataFile, ChineseReciteStatus, ChineseReciteStatusEnum, ChineseReciteContent, ChineseReciteQueue,
@@ -265,6 +265,86 @@ export class ChineseRecitesComponent implements OnInit {
         this.currentStatus.status = ChineseReciteStatusEnum.InProgress;
         this.currentStatus.startTime = new Date();
         this.currentStatus.totalCount = this.recitequeues.length;
+    }
+
+    onPrint() {
+        // let page = document.getElementById('reciter-container');
+        let objdiv = document.createElement('div');
+
+        for(let qidx = 0; qidx < this.recitequeues.length; qidx++) {
+            let qdiv = document.createElement('div');
+            qdiv.style.width = '100%';
+            qdiv.style.fontSize = '30px';
+            qdiv.style.margin = '10px';
+
+            let subjectp = document.createElement('p');
+            let authorp = document.createElement('p');
+
+            subjectp.innerText = this.recitequeues[qidx].subject.original;
+            authorp.innerText = this.recitequeues[qidx].author.original;
+
+            qdiv.appendChild(subjectp);
+            qdiv.appendChild(authorp);
+
+            // Items
+            if (this.recitequeues[qidx].items.length > 0) {
+                let subjectitem = document.createElement('p');
+                for(let itemidx = 0; itemidx < this.recitequeues[qidx].items.length; itemidx++) {
+                    let item = this.recitequeues[qidx].items[itemidx];
+                    let itemspan = document.createElement('span');
+                    if (item.disabled === false) {
+                        itemspan.innerText = item.original + item.suffix;
+                    } else {
+                        itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
+                    }
+                    subjectitem.appendChild(itemspan);
+                }
+
+                qdiv.appendChild(subjectitem);
+            }
+
+            // Groups
+            for(let grpidx = 0; grpidx < this.recitequeues[qidx].groups.length; grpidx++) {
+                let subjectitem = document.createElement('p');
+                if (this.recitequeues[qidx].groups[grpidx].items.length > 0) {
+                    for(let itemidx = 0; itemidx < this.recitequeues[qidx].groups[grpidx].items.length; itemidx++) {
+                        let item = this.recitequeues[qidx].groups[grpidx].items[itemidx];
+                        let itemspan = document.createElement('span');
+                        if (item.disabled === false) {
+                            itemspan.innerText = item.original + item.suffix;
+                        } else {
+                            itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
+                        }
+                        subjectitem.appendChild(itemspan);
+                    }    
+                }
+                qdiv.appendChild(subjectitem);
+            }
+
+            objdiv.appendChild(qdiv);
+        }
+        // Date
+        let datep = document.createElement('p');
+        datep.innerText = new Date().toLocaleString();
+        objdiv.appendChild(datep);
+        let horz = document.createElement('hr');
+        objdiv.appendChild(horz);
+        document.body.appendChild(objdiv);
+
+        html2PDF(objdiv, {
+            jsPDF: {
+              format: 'a4',
+            },
+            margin: {
+                top: 10,
+                right: 10,
+                bottom: 10,
+                left: 10
+            },
+            output: 'a4.pdf',
+        });
+
+        document.body.removeChild(objdiv);
     }
 
     onNeedHint() {
