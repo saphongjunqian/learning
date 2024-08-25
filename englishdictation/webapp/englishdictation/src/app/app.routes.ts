@@ -15,6 +15,10 @@ const routeConfig: Routes = [
     loadComponent: () => import('./pages/chinese-recites').then(m => m.ChineseRecitesComponent)
   },
   {
+    path: 'formatter',
+    loadComponent: () => import('./pages/formatter-recites').then(m => m.FormatterRecitesComponent)
+  },
+  {
     path: '404',
     loadComponent: () => import('./pages/not-found').then(m => m.NotFound)
   },

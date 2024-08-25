@@ -1,0 +1,12 @@
+[
+    {
+        "name": "一元二次方程求根公式",
+        "math": true,
+        "value": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+    },
+    {
+        "name": "整数指数幂加法公式",
+        "math": true,
+        "value": "a^ma^n=a^{m+n}"
+    }
+]

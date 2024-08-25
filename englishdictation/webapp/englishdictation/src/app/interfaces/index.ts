@@ -5,3 +5,5 @@ export * from './typing-status';
 export * from './chinese-recite-data';
 export * from './chinese-recite-queue';
 export * from './chinese-recite-status';
+export * from './formatter-recite-data';
+export * from './formatter-recite-queue';

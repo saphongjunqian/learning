@@ -15,6 +15,7 @@ Set-Location -Path "englishdictation"
 npm ci
 npm run build:prod
 Set-Location -Path ".."
+Echo "Application built successfully"
 
 Echo "================================================================="
 Echo "2. Copy resources"
@@ -31,6 +32,8 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host "Copy resources failed. Exiting..."
     exit 1
 }
+
+Echo "Resource copied successfully"
 
 Echo "================================================================="
 Echo "3. Building MTA resources"
@@ -56,11 +59,13 @@ Echo "================================================================="
 cf deploy mta_archives/archive.mtar --retries 1
 
 Echo "================================================================="
-Echo "6. Clear temprary files"
+Echo "6. Clear temporary files"
 Echo "================================================================="
 if (Test-Path ".\router\resources") {
     Remove-Item -Path ".\router\resources" -Recurse -Force
 }
+Echo "Temporary file cleared successfully"
+
 
 Echo "================================================================="
 Echo "7. DONE"

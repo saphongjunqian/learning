@@ -47,6 +47,7 @@ export interface ChineseReciteQueueItemGroup {
     grpidx: number;
     items: ChineseReciteQueueItem[];
 }
+
 export interface ChineseReciteQueue {
     subject: ChineseReciteQueueItem;
     author: ChineseReciteQueueItem;

@@ -7,7 +7,7 @@ import {Title} from '@angular/platform-browser';
 @Injectable({providedIn: 'root'})
 export class ComponentPageTitle {
   _title = '';
-  _originalTitle = 'English Dictation';
+  _originalTitle = 'Dictation & Reciter';
 
   get title(): string {
     return this._title;
@@ -16,7 +16,7 @@ export class ComponentPageTitle {
   set title(title: string) {
     this._title = title;
     if (title !== '') {
-      title = `${title} | English Dictation`;
+      title = `${title} | Dictation & Reciter`;
     } else {
       title = this._originalTitle;
     }

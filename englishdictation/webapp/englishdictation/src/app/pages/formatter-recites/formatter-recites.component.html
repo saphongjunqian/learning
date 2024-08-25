@@ -1,0 +1,44 @@
+<main focusOnNavigation aria-label="Formatter Recites page" class="formatter-page">
+  <div class="formatter-page-content">
+    <mat-toolbar class="control-full-width">
+      <mat-toolbar-row>
+        <span>
+          <h5>Reciting</h5>
+        </span>
+        <span class="toolbar-spacer"></span>
+        <mat-form-field>
+          <mat-label>Files</mat-label>
+          <mat-select matNativeControl [(value)]="selectedFile" (selectionChange)="onFileSelectionChanged($event)">
+            <mat-option value="">None</mat-option>
+            @for (file of allFiles; track file.name ) {
+            <mat-option [value]="file">{{file.name}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Count</mat-label>
+          <input matInput type="number" [(ngModel)]="countOfItems">
+          <span matSuffix>{{reciteContentCount}}</span>
+        </mat-form-field>
+        <section>
+          <div class="example-button-container">
+            <button mat-fab extended (click)="onPrint()">
+              <mat-icon>print</mat-icon>
+              Print
+            </button>
+          </div>
+        </section>
+        <section>
+          <div class="example-button-container">
+            <button mat-fab extended (click)="onStart()" [disabled]="!selectedFile || countOfItems <= 0">
+              <mat-icon>slideshow</mat-icon>
+              Start
+            </button>
+          </div>
+        </section>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</main>
+
+<app-footer></app-footer>

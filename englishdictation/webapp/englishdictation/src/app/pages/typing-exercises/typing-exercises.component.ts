@@ -184,7 +184,7 @@ export class TypingExercisesComponent {
       containdiv.appendChild(qdiv);
     }
 
-    // Date
+    // Splitter
     let splitp = document.createElement('p');
     splitp.classList.add('w-full');
     splitp.style.paddingTop = '40px';

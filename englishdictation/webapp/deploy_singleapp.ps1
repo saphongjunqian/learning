@@ -50,7 +50,7 @@ Echo "=========================================================="
 npm ci
 npm run deploy
 Echo "=========================================================="
-Echo "6. Clear temprary files"
+Echo "6. Clear temporary files"
 Echo "=========================================================="
 if (Test-Path ".\dist") {
     Remove-Item -Path ".\dist" -Recurse -Force
