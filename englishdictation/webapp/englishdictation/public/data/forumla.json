@@ -2,5 +2,9 @@
     {
         "name": "Senior High School",
         "file": "highschoolmath.json"
+    },
+    {
+        "name": "Junior High School",
+        "file": "juniorschoolmath.json"
     }
 ]

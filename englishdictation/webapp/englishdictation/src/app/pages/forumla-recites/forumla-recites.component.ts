@@ -15,20 +15,20 @@ import html2PDF from 'jspdf-html2canvas';
 
 import { Footer } from "../../shared/footer/footer";
 import {
-    FormatterReciteContent, FormatterReciteDataFile,
+    ForumlaReciteContent, ForumlaReciteDataFile,
 } from "../../interfaces";
 
 @Component({
-    selector: 'app-formatter-recite',
+    selector: 'app-forumla-recite',
     standalone: true,
     imports: [Footer, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule,
         MatIconModule, MatButtonModule, MatTableModule, MatCheckboxModule, MatDividerModule, MatProgressBarModule],
-    templateUrl: './formatter-recites.component.html',
-    styleUrl: './formatter-recites.component.scss',
+    templateUrl: './forumla-recites.component.html',
+    styleUrl: './forumla-recites.component.scss',
 })
-export class FormatterRecitesComponent implements OnInit, OnDestroy {
-    allFiles: FormatterReciteDataFile[] = [];
-    selectedFile?: FormatterReciteDataFile;
+export class ForumlaRecitesComponent implements OnInit, OnDestroy {
+    allFiles: ForumlaReciteDataFile[] = [];
+    selectedFile?: ForumlaReciteDataFile;
     countOfItems = 2;
     // currentStatus: ChineseReciteStatus = {
     //     status: ChineseReciteStatusEnum.NotStarted,
@@ -39,7 +39,7 @@ export class FormatterRecitesComponent implements OnInit, OnDestroy {
     //     startTime: new Date(),
     //     endTime: new Date(),
     // };
-    recitequeues: FormatterReciteContent[] = [];
+    recitequeues: ForumlaReciteContent[] = [];
     queueidx: number = -1;  // Current Queue
     scriptElement?: HTMLScriptElement;
 
@@ -58,7 +58,7 @@ export class FormatterRecitesComponent implements OnInit, OnDestroy {
         document.head.appendChild(this.scriptElement);
 
         // Using Angular HTTPClient to fetch the data from the server
-        const datafile$ = this.http.get<FormatterReciteDataFile[]>('data/formatter.json');
+        const datafile$ = this.http.get<ForumlaReciteDataFile[]>('data/forumla.json');
 
         // 3. subscribe Observable
         datafile$.subscribe(df => {
@@ -76,7 +76,7 @@ export class FormatterRecitesComponent implements OnInit, OnDestroy {
 
     onFileSelectionChanged(event: any) {
         // Read the file.
-        const datafile$ = this.http.get<FormatterReciteContent[]>(`data/${event.value.file}`);
+        const datafile$ = this.http.get<ForumlaReciteContent[]>(`data/${event.value.file}`);
         datafile$.subscribe(df => {
             this.recitequeues = [];
             df.forEach((val) => {

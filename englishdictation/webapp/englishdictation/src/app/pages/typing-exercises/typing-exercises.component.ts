@@ -149,8 +149,8 @@ export class TypingExercisesComponent {
 
     let objdiv = document.createElement('div');
     objdiv.classList.add('w-full');
-    objdiv.style.fontSize = '16px';
-    objdiv.style.margin = '10px';
+    objdiv.style.fontSize = '24px';
+    objdiv.style.margin = '20px';
 
     // Selected the document
     let titlep = document.createElement('p');
