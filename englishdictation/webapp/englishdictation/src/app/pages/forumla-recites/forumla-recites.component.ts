@@ -119,7 +119,7 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
 
         let objdiv = document.createElement('div');
         objdiv.classList.add('w-full');
-        objdiv.style.fontSize = '24px';
+        objdiv.style.fontSize = '30px';
         objdiv.style.margin = '10px';
     
         // Selected the document

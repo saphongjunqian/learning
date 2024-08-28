@@ -1,13 +1,8 @@
 [
     {
-        "name": "两数和的平方",
+        "name": "完全平方公式",
         "math": true,
-        "value": "(a+b)^2=a^2+b^2+2ab"
-    },
-    {
-        "name": "两数差的平方",
-        "math": true,
-        "value": "(a-b)^2=a^2+b^2-2ab=(a+b)^2-4ab"
+        "value": "(a+b)^2=a^2+2ab+b^2; (a-b)^2=a^2-2ab+b^2"
     },
     {
         "name": "平方差公式",
@@ -48,21 +43,50 @@
         "name": "三角形面积之边角边SAS公理",
         "math": true,
         "value": "S=\\frac{1}{2}sin{B}ac"
-    }, {
+    },
+    {
         "name": "等差数列通项公式",
         "math": true,
         "value": "a_n=a_1+(n-1)d"
-    }, {
+    },
+    {
         "name": "等差数列求和公式",
         "math": true,
         "value": "S_n=\\frac{n(a_1+a_n)}{2}"
-    }, {
+    },
+    {
         "name": "等比数列通项公式",
         "math": true,
         "value": "a_n=a_1q^{n-1}"
-    }, {
+    },
+    {
         "name": "等比数列求和公式",
         "math": true,
         "value": "S_n=\\frac{a_1(1-q^n)}{1-q}"
+    },
+    {
+        "name": "同底数幂相乘",
+        "math": true,
+        "value": "a^m*a^n=a^{m+n}"
+    },
+    {
+        "name": "同底数幂相除",
+        "math": true,
+        "value": "\\frac{a^m}{a^n}=a^{m-n}"
+    },
+    {
+        "name": "幂的乘方",
+        "math": true,
+        "value": "(a^m)^n=a^{mn}"
+    },
+    {
+        "name": "积的乘方",
+        "math": true,
+        "value": "(ab)^n=a^nb^n"
+    },
+    {
+        "name": "分式乘方",
+        "math": true,
+        "value": "(\\frac{a}{b})^n=\\frac{a^n}{b^n}"
     }
 ]

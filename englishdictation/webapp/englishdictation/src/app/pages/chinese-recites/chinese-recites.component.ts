@@ -159,37 +159,19 @@ export class ChineseRecitesComponent implements OnInit {
                     let nitem = 0;
                     for (let i = 0; i < val.content.length; i++) {
                         if (val.content[i] === '，' || val.content[i] === '。' || val.content[i] === '；' || val.content[i] === '！' || val.content[i] === '：' || val.content[i] === '？') {
-                            // console.log(val.content.slice(nprv, i));
-                            let needinput = false;
-                            if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
-                                needinput = Math.random() < 0.2;
-                            } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
-                                needinput = Math.random() < 0.5;
-                            } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
-                                needinput = true;
-                            }
-
+                            let orgval = val.content.slice(nprv, i);
                             items.push({
                                 type: ChineseReciteQueueItemTypeEnum.content,
                                 contentidx: (nitem * 10) + 1,
-                                original: val.content.slice(nprv, i),
-                                inputted: needinput ? '' : val.content.slice(nprv, i),
+                                original: orgval,
+                                inputted: orgval,
                                 correct: false,
                                 suffix: val.content[i],
-                                disabled: needinput ? false : true,
+                                disabled: true,
                             });
                             nprv = i + 1;
                             nitem++;
                         }
-                    }
-
-                    let allItemsNotEmpty = items.every((item) => item.inputted !== '');
-                    if (allItemsNotEmpty) {
-                        // Handle the case where all items have non-empty inputted values
-                        // For example, proceed with the next step or take appropriate action
-                        let nidx = Math.floor(Math.random() * items.length);
-                        items[nidx].inputted = '';
-                        items[nidx].disabled = false;
                     }
 
                     // Sort items by the contentidx
@@ -207,37 +189,19 @@ export class ChineseRecitesComponent implements OnInit {
                             let nitem = 0;
                             for (let i = 0; i < content.length; i++) {
                                 if (content[i] === '，' || content[i] === '。' || content[i] === '；' || content[i] === '！' || content[i] === '：' || content[i] === '？') {
-                                    // console.log(val.content.slice(nprv, i));
-                                    let needinput = false;
-                                    if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
-                                        needinput = Math.random() < 0.2;
-                                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
-                                        needinput = Math.random() < 0.5;
-                                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
-                                        needinput = true;
-                                    }
-
+                                    let orgval = content.slice(nprv, i);
                                     curgrp.items.push({
                                         type: ChineseReciteQueueItemTypeEnum.content,
                                         contentidx: (nitem * 10) + 1,
-                                        original: content.slice(nprv, i),
-                                        inputted: needinput ? '' : content.slice(nprv, i),
+                                        original: orgval,
+                                        inputted: orgval,
                                         correct: false,
                                         suffix: content[i],
-                                        disabled: needinput ? false : true,
+                                        disabled: true,
                                     });
                                     nprv = i + 1;
                                     nitem++;
                                 }
-                            }
-
-                            let allItemsNotEmpty = curgrp.items.every((item) => item.inputted !== '');
-                            if (allItemsNotEmpty) {
-                                // Handle the case where all items have non-empty inputted values
-                                // For example, proceed with the next step or take appropriate action
-                                let nidx = Math.floor(Math.random() * curgrp.items.length);
-                                curgrp.items[nidx].inputted = '';
-                                curgrp.items[nidx].disabled = false;
                             }
 
                             // Sort items by the contentidx
@@ -270,10 +234,72 @@ export class ChineseRecitesComponent implements OnInit {
             this.recitequeues = this.recitequeues.slice(0, this.countOfItems);
         }
 
+        // Adjust queue by the level
+        this.adjustQueueByLevel(this.recitequeues);
+
         this.queueidx = 0;
         this.currentStatus.status = ChineseReciteStatusEnum.InProgress;
         this.currentStatus.startTime = new Date();
         this.currentStatus.totalCount = this.recitequeues.length;
+    }
+
+    adjustQueueByLevel(queues: ChineseReciteQueue[]) {
+        for(let i = 0; i < queues.length; i++) {
+            // Group
+            for(let j = 0; j < queues[i].groups.length; j++) {
+                for(let l = 0; l < queues[i].groups[j].items.length; l++) {
+                    let needinput = false;
+                    if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
+                        needinput = Math.random() < 0.2;
+                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
+                        needinput = Math.random() < 0.5;
+                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
+                        needinput = true;
+                    }
+
+                    if (needinput) {
+                        queues[i].groups[j].items[l].inputted = '';
+                        queues[i].groups[j].items[l].disabled = false;
+                    }
+                }
+
+                let allItemsNotEmpty = queues[i].groups[j].items.every((item) => item.inputted !== '');
+                if (allItemsNotEmpty) {
+                    // Handle the case where all items have non-empty inputted values
+                    // For example, proceed with the next step or take appropriate action
+                    let nidx = Math.floor(Math.random() * queues[i].groups[j].items.length);
+                    queues[i].groups[j].items[nidx].inputted = '';
+                    queues[i].groups[j].items[nidx].disabled = false;
+                }
+            }
+
+            // Items
+            for (let k = 0; k < queues[i].items.length; k++) {
+                let needinput = false;
+                if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
+                    needinput = Math.random() <= 0.2;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
+                    needinput = Math.random() <= 0.5;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
+                    needinput = true;
+                }
+
+                if (needinput) {
+                    queues[i].items[k].inputted = '';
+                    queues[i].items[k].disabled = false;
+                }
+            }
+            if (queues[i].items.length > 0) {
+                let allItemsNotEmpty = queues[i].items.every((item) => item.inputted !== '');
+                if (allItemsNotEmpty) {
+                    // Handle the case where all items have non-empty inputted values
+                    // For example, proceed with the next step or take appropriate action
+                    let nidx = Math.floor(Math.random() * queues[i].items.length);
+                    queues[i].items[nidx].inputted = '';
+                    queues[i].items[nidx].disabled = false;
+                }
+            }
+        }
     }
 
     onPrint() {
@@ -285,6 +311,8 @@ export class ChineseRecitesComponent implements OnInit {
             // Keep only the first `this.countOfItems` items
             printqueues = printqueues.slice(0, this.countOfItems);
         }
+        // Adjust queue by the level
+        this.adjustQueueByLevel(printqueues);
 
         let objdiv = document.createElement('div');
         objdiv.classList.add('w-full');
@@ -328,7 +356,7 @@ export class ChineseRecitesComponent implements OnInit {
                 for(let itemidx = 0; itemidx < printqueues[qidx].items.length; itemidx++) {
                     let item = printqueues[qidx].items[itemidx];
                     let itemspan = document.createElement('span');
-                    if (item.disabled === false) {
+                    if (item.disabled === true) {
                         itemspan.innerText = item.original + item.suffix;
                     } else {
                         itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
@@ -346,7 +374,7 @@ export class ChineseRecitesComponent implements OnInit {
                     for(let itemidx = 0; itemidx < printqueues[qidx].groups[grpidx].items.length; itemidx++) {
                         let item = printqueues[qidx].groups[grpidx].items[itemidx];
                         let itemspan = document.createElement('span');
-                        if (item.disabled === false) {
+                        if (item.disabled === true) {
                             itemspan.innerText = item.original + item.suffix;
                         } else {
                             itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
