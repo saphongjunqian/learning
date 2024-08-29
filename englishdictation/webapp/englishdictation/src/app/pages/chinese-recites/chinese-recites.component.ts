@@ -316,7 +316,7 @@ export class ChineseRecitesComponent implements OnInit {
 
         let objdiv = document.createElement('div');
         objdiv.classList.add('w-full');
-        objdiv.style.fontSize = '24px';
+        objdiv.style.fontSize = '20px';
         objdiv.style.margin = '10px';
     
         // Selected the document
