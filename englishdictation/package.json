@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@sap/cds": "^7",
+    "@sap/cds": "^8.1.1",
     "@sap/xssec": "^4.1.1",
     "ac-toolset": "file:",
     "express": "^4",
