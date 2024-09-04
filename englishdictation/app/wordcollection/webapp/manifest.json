@@ -1,11 +1,11 @@
 {
-    "_version": "1.49.0",
+    "_version": "1.58.0",
     "sap.app": {
         "id": "ac.wordcollection",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
-            "version": "0.0.1"
+            "version": "0.0.2"
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
@@ -37,7 +37,7 @@
                     "action": "maintain",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
-                    "icon": ""
+                    "icon": "documents"
                 }
             }
         }
@@ -55,7 +55,7 @@
         "deviceTypes": {
             "desktop": true,
             "tablet": true,
-            "phone": true
+            "phone": false
         }
     },
     "sap.ui5": {

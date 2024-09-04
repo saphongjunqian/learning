@@ -5,7 +5,7 @@
     {
       "source": "^/odata/(.*)$",
       "target": "/odata/$1",
-      "destination": "fqm-toolset-srv-api",
+      "destination": "ac-toolset-srv-api",
       "authenticationType": "xsuaa",
       "csrfProtection": false
     },
