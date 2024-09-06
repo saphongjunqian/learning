@@ -1,7 +1,35 @@
 using WordCollectionService as service from '../../srv/word-collection-service';
 
-annotate service.WordCollection with @(
-    UI.LineItem : [
+// Enable Draft
+annotate service.WordCollection with @odata.draft.enabled;
+
+// Annoation for Text
+annotate service.WordCollection {
+    @Common          : {
+        SemanticObject: 'TestCases',
+        Text          : name
+    }
+
+    @Common.Label: 'Name'
+    name;
+
+    @Common.Label: 'Description'
+    descr;
+
+    @Common.Label: 'Details'
+    Details;
+
+    @Common.Label: 'Cover'
+    Cover;
+};
+
+// UI Annotations
+annotate service.WordCollection with @(UI: {
+    SelectionFields : [
+        name,
+        descr,
+    ],
+    LineItem : [
         {
             $Type : 'UI.DataField',
             Value : name,
@@ -10,15 +38,14 @@ annotate service.WordCollection with @(
             $Type : 'UI.DataField',
             Value : descr,
         },
-        {
-            $Type : 'UI.DataField',
-            Label : 'Details',
-            Value : Details,
-        },
-    ]
-);
-annotate service.WordCollection with @(
-    UI.FieldGroup #GeneratedGroup1 : {
+    ],
+    HeaderInfo         : {
+        TypeName      : 'Word Collection',
+        TypeNamePlural: 'Word Collections',
+        Title         : {Value: name},
+        Description   : {Value: descr}
+    },
+    FieldGroup #GeneratedGroup1 : {
         $Type : 'UI.FieldGroupType',
         Data : [
             {
@@ -31,12 +58,15 @@ annotate service.WordCollection with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Details',
                 Value : Details,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Cover,
             },
         ],
     },
-    UI.Facets : [
+    Facets : [
         {
             $Type : 'UI.ReferenceFacet',
             ID : 'GeneratedFacet1',
@@ -44,4 +74,4 @@ annotate service.WordCollection with @(
             Target : '@UI.FieldGroup#GeneratedGroup1',
         },
     ]
-);
+});

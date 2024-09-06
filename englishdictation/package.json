@@ -1,6 +1,6 @@
 {
   "name": "ac-toolset",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@sap/cds": "^8.1.1",
+    "@sap/cds-hana": "^2.0.0",
     "@sap/xssec": "^4.1.1",
     "express": "^4",
     "passport": "^0.7.0"
   },
   "devDependencies": {
+    "@cap-js/cds-typer": "^0.25.0",
     "@cap-js/sqlite": "^1",
     "@sap/ux-specification": "^1.120.12",
     "rimraf": "^5.0.7"
@@ -28,5 +30,28 @@
   },
   "sapux": [
     "app/wordcollection"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db/wordcollection.sqlite"
+        }
+      },
+      "[production]": {
+        "auth": "xsuaa",
+        "db": {
+          "kind": "hana-cloud",
+          "impl": "@sap/cds-hana",
+          "deploy-format": "hdbtable"
+        }
+      }
+    },
+    "server": {
+      "body_parser": {
+        "limit": "1mb"
+      }
+    }
+  }
 }
