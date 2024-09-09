@@ -21,9 +21,6 @@ annotate service.WordCollection {
 
     @Common.Label: 'Cover'
     Cover;
-
-    @Common.Label: 'Text File'
-    TextFile;
 };
 
 // UI Annotations
@@ -66,10 +63,6 @@ annotate service.WordCollection with @(UI: {
             {
                 $Type : 'UI.DataField',
                 Value : Cover,
-            },
-            {
-                $Type : 'UI.DataField',
-                Value : TextFile,
             },
         ],
     },
