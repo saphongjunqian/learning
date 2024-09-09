@@ -1,4 +1,4 @@
-namespace ac.financesystem;
+namespace alvachien.learning.accounts;
 
 using {
     cuid,
