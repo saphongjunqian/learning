@@ -1,0 +1,167 @@
+_schema-version: 3.3.0
+ID: accounts
+version: 1.0.1
+description: "Accounting service and the Fiori apps."
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production
+
+modules:
+  - name: account-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      buildpack: nodejs_buildpack
+      readiness-health-check-type: http
+      readiness-health-check-http-endpoint: /health
+      memory: 256M
+      disk-quota: 256M
+    build-parameters:
+      builder: npm
+    provides:
+      - name: srv-api # required by consumers of CAP services (e.g. approuter)
+        properties:
+          srv-url: ${default-url}
+    requires:
+      - name: account-auth
+      - name: fqm-btp-hana-hdi
+
+  - name: account-db-deployer
+    type: hdb
+    path: gen/db
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+      - name: fqm-btp-hana-hdi
+
+  - name: account-destination-content
+    type: com.sap.application.content
+    requires:
+      - name: account-destination-service
+        parameters:
+          content-target: true
+      - name: account_html_repo_host
+        parameters:
+          service-key:
+            name: account_html_repo_host-key
+      - name: account-auth
+        parameters:
+          service-key:
+            name: account-auth-key
+    parameters:
+      content:
+        instance:
+          destinations:
+            - Name: account_html_repo_host
+              ServiceInstanceName: account-html5-app-host-service
+              ServiceKeyName: account_html_repo_host-key
+              sap.cloud.service: aclearning
+            - Authentication: OAuth2UserTokenExchange
+              Name: account_auth
+              ServiceInstanceName: account-auth
+              ServiceKeyName: ac-account-key
+              sap.cloud.service: aclearning
+          existing_destinations_policy: ignore
+    build-parameters:
+      no-source: true
+
+  - name: account-app-content
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: account_html_repo_host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - artifacts:
+            - accountsapp.zip
+          name: accountapp
+          target-path: resources/
+        - artifacts:
+            - accountcategoriesapp.zip
+          name: accountcategoryapp
+          target-path: resources/
+  
+  - name: accountcategoryapp
+    type: html5
+    path: app/accountcategories
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+
+  - name: accountapp
+    type: html5
+    path: app/accounts
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+
+resources:
+  - name: fqm-btp-hana-hdi
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+  
+  - name: account-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+      config:
+        xsappname: aclearning-account-${space}
+        tenant-mode: dedicated
+
+  - name: account-destination-service
+    type: org.cloudfoundry.managed-service
+    parameters:
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          instance:
+            destinations:
+              - Authentication: NoAuthentication
+                Name: ui5
+                ProxyType: Internet
+                Type: HTTP
+                URL: https://ui5.sap.com
+              - Authentication: NoAuthentication
+                HTML5.DynamicDestination: true
+                HTML5.ForwardAuthToken: true
+                Name: account-srv-api
+                ProxyType: Internet
+                Type: HTTP
+                URL: ~{srv-api/srv-url}
+            existing_destinations_policy: update
+        version: 1.0.0
+      service: destination
+      service-name: account-destination-service
+      service-plan: lite
+    requires:
+      - name: srv-api
+
+  - name: account_html_repo_host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-name: account-html5-app-host-service
+      service-plan: app-host

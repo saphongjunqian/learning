@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="AccountsService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="AccountCategories" EntityType="AccountsService.AccountCategories">
+                    <NavigationPropertyBinding Path="texts" Target="AccountCategories_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="AccountCategories_texts"/>
+                    <NavigationPropertyBinding Path="SiblingEntity" Target="AccountCategories"/>
+                </EntitySet>
+                <EntitySet Name="Accounts" EntityType="AccountsService.Accounts">
+                    <NavigationPropertyBinding Path="Category" Target="AccountCategories"/>
+                    <NavigationPropertyBinding Path="texts" Target="Accounts_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="Accounts_texts"/>
+                    <NavigationPropertyBinding Path="SiblingEntity" Target="Accounts"/>
+                </EntitySet>
+                <EntitySet Name="AccountCategories_texts" EntityType="AccountsService.AccountCategories_texts"/>
+                <EntitySet Name="Accounts_texts" EntityType="AccountsService.Accounts_texts"/>
+            </EntityContainer>
+            <EntityType Name="AccountCategories">
+                <Key>
+                    <PropertyRef Name="Category"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="Category" Type="Edm.String" MaxLength="5" Nullable="false"/>
+                <Property Name="ExcludedFromIEReport" Type="Edm.Boolean"/>
+                <Property Name="ExcludedFromBSReport" Type="Edm.Boolean"/>
+                <NavigationProperty Name="texts" Type="Collection(AccountsService.AccountCategories_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="AccountsService.AccountCategories_texts">
+                    <ReferentialConstraint Property="Category" ReferencedProperty="Category"/>
+                </NavigationProperty>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="true"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Type="AccountsService.DraftAdministrativeData" ContainsTarget="true"/>
+                <NavigationProperty Name="SiblingEntity" Type="AccountsService.AccountCategories"/>
+            </EntityType>
+            <EntityType Name="Accounts">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <NavigationProperty Name="Category" Type="AccountsService.AccountCategories">
+                    <ReferentialConstraint Property="Category_Category" ReferencedProperty="Category"/>
+                </NavigationProperty>
+                <Property Name="Category_Category" Type="Edm.String" MaxLength="5"/>
+                <Property Name="Expired" Type="Edm.Boolean"/>
+                <NavigationProperty Name="texts" Type="Collection(AccountsService.Accounts_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="AccountsService.Accounts_texts">
+                    <ReferentialConstraint Property="ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="true"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Type="AccountsService.DraftAdministrativeData" ContainsTarget="true"/>
+                <NavigationProperty Name="SiblingEntity" Type="AccountsService.Accounts"/>
+            </EntityType>
+            <EntityType Name="DraftAdministrativeData">
+                <Key>
+                    <PropertyRef Name="DraftUUID"/>
+                </Key>
+                <Property Name="DraftUUID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="CreationDateTime" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="CreatedByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="DraftIsCreatedByMe" Type="Edm.Boolean"/>
+                <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="InProcessByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="DraftIsProcessedByMe" Type="Edm.Boolean"/>
+            </EntityType>
+            <EntityType Name="AccountCategories_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="Category"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="Category" Type="Edm.String" MaxLength="5" Nullable="false"/>
+            </EntityType>
+            <EntityType Name="Accounts_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+            </EntityType>
+            <Action Name="draftPrepare" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.AccountCategories"/>
+                <Parameter Name="SideEffectsQualifier" Type="Edm.String"/>
+                <ReturnType Type="AccountsService.AccountCategories"/>
+            </Action>
+            <Action Name="draftPrepare" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.Accounts"/>
+                <Parameter Name="SideEffectsQualifier" Type="Edm.String"/>
+                <ReturnType Type="AccountsService.Accounts"/>
+            </Action>
+            <Action Name="draftActivate" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.AccountCategories"/>
+                <ReturnType Type="AccountsService.AccountCategories"/>
+            </Action>
+            <Action Name="draftActivate" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.Accounts"/>
+                <ReturnType Type="AccountsService.Accounts"/>
+            </Action>
+            <Action Name="draftEdit" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.AccountCategories"/>
+                <Parameter Name="PreserveChanges" Type="Edm.Boolean"/>
+                <ReturnType Type="AccountsService.AccountCategories"/>
+            </Action>
+            <Action Name="draftEdit" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="AccountsService.Accounts"/>
+                <Parameter Name="PreserveChanges" Type="Edm.Boolean"/>
+                <ReturnType Type="AccountsService.Accounts"/>
+            </Action>
+            <Annotations Target="AccountsService.AccountCategories">
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="name"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="AccountsService.EntityContainer/AccountCategories">
+                <Annotation Term="Common.DraftRoot">
+                    <Record Type="Common.DraftRootType">
+                        <PropertyValue Property="ActivationAction" String="AccountsService.draftActivate"/>
+                        <PropertyValue Property="EditAction" String="AccountsService.draftEdit"/>
+                        <PropertyValue Property="PreparationAction" String="AccountsService.draftPrepare"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="AccountsService.AccountCategories/name">
+                <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                </Annotations>
+                <Annotations Target="AccountsService.AccountCategories/descr">
+                    <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                    </Annotations>
+                    <Annotations Target="AccountsService.AccountCategories/IsActiveEntity">
+                        <Annotation Term="UI.Hidden" Bool="true"/>
+                    </Annotations>
+                    <Annotations Target="AccountsService.AccountCategories/HasActiveEntity">
+                        <Annotation Term="UI.Hidden" Bool="true"/>
+                    </Annotations>
+                    <Annotations Target="AccountsService.AccountCategories/HasDraftEntity">
+                        <Annotation Term="UI.Hidden" Bool="true"/>
+                    </Annotations>
+                    <Annotations Target="AccountsService.AccountCategories/DraftAdministrativeData">
+                        <Annotation Term="UI.Hidden" Bool="true"/>
+                    </Annotations>
+                    <Annotations Target="AccountsService.Accounts">
+                        <Annotation Term="UI.Identification">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="name"/>
+                                </Record>
+                            </Collection>
+                        </Annotation>
+                    </Annotations>
+                    <Annotations Target="AccountsService.EntityContainer/Accounts">
+                        <Annotation Term="Common.DraftRoot">
+                            <Record Type="Common.DraftRootType">
+                                <PropertyValue Property="ActivationAction" String="AccountsService.draftActivate"/>
+                                <PropertyValue Property="EditAction" String="AccountsService.draftEdit"/>
+                                <PropertyValue Property="PreparationAction" String="AccountsService.draftPrepare"/>
+                            </Record>
+                        </Annotation>
+                    </Annotations>
+                    <Annotations Target="AccountsService.Accounts/createdAt">
+                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                        <Annotation Term="Core.Immutable" Bool="true"/>
+                        <Annotation Term="Core.Computed" Bool="true"/>
+                        <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                        </Annotations>
+                        <Annotations Target="AccountsService.Accounts/createdBy">
+                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                            <Annotation Term="Core.Immutable" Bool="true"/>
+                            <Annotation Term="Core.Computed" Bool="true"/>
+                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                </Annotations>
+                                <Annotations Target="AccountsService.Accounts/modifiedAt">
+                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                    <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                    </Annotations>
+                                    <Annotations Target="AccountsService.Accounts/modifiedBy">
+                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                            <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                            </Annotations>
+                                            <Annotations Target="AccountsService.Accounts/name">
+                                                <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                </Annotations>
+                                                <Annotations Target="AccountsService.Accounts/descr">
+                                                    <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.Accounts/Category_Category">
+                                                        <Annotation Term="Common.ValueList">
+                                                            <Record Type="Common.ValueListType">
+                                                                <PropertyValue Property="Label" String="AccountCategories"/>
+                                                                <PropertyValue Property="CollectionPath" String="AccountCategories"/>
+                                                                <PropertyValue Property="Parameters">
+                                                                    <Collection>
+                                                                        <Record Type="Common.ValueListParameterInOut">
+                                                                            <PropertyValue Property="LocalDataProperty" PropertyPath="Category_Category"/>
+                                                                            <PropertyValue Property="ValueListProperty" String="Category"/>
+                                                                        </Record>
+                                                                        <Record Type="Common.ValueListParameterDisplayOnly">
+                                                                            <PropertyValue Property="ValueListProperty" String="name"/>
+                                                                        </Record>
+                                                                    </Collection>
+                                                                </PropertyValue>
+                                                            </Record>
+                                                        </Annotation>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.Accounts/IsActiveEntity">
+                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.Accounts/HasActiveEntity">
+                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.Accounts/HasDraftEntity">
+                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.Accounts/DraftAdministrativeData">
+                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                    </Annotations>
+                                                    <Annotations Target="AccountsService.DraftAdministrativeData">
+                                                        <Annotation Term="Common.Label" String="{i18n>Draft_DraftAdministrativeData}"/>
+                                                        </Annotations>
+                                                        <Annotations Target="AccountsService.DraftAdministrativeData/DraftUUID">
+                                                            <Annotation Term="UI.Hidden" Bool="true"/>
+                                                            <Annotation Term="Common.Label" String="{i18n>Draft_DraftUUID}"/>
+                                                            </Annotations>
+                                                            <Annotations Target="AccountsService.DraftAdministrativeData/CreationDateTime">
+                                                                <Annotation Term="Common.Label" String="{i18n>Draft_CreationDateTime}"/>
+                                                                </Annotations>
+                                                                <Annotations Target="AccountsService.DraftAdministrativeData/CreatedByUser">
+                                                                    <Annotation Term="Common.Label" String="{i18n>Draft_CreatedByUser}"/>
+                                                                    </Annotations>
+                                                                    <Annotations Target="AccountsService.DraftAdministrativeData/DraftIsCreatedByMe">
+                                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                                        <Annotation Term="Common.Label" String="{i18n>Draft_DraftIsCreatedByMe}"/>
+                                                                        </Annotations>
+                                                                        <Annotations Target="AccountsService.DraftAdministrativeData/LastChangeDateTime">
+                                                                            <Annotation Term="Common.Label" String="{i18n>Draft_LastChangeDateTime}"/>
+                                                                            </Annotations>
+                                                                            <Annotations Target="AccountsService.DraftAdministrativeData/LastChangedByUser">
+                                                                                <Annotation Term="Common.Label" String="{i18n>Draft_LastChangedByUser}"/>
+                                                                                </Annotations>
+                                                                                <Annotations Target="AccountsService.DraftAdministrativeData/InProcessByUser">
+                                                                                    <Annotation Term="Common.Label" String="{i18n>Draft_InProcessByUser}"/>
+                                                                                    </Annotations>
+                                                                                    <Annotations Target="AccountsService.DraftAdministrativeData/DraftIsProcessedByMe">
+                                                                                        <Annotation Term="UI.Hidden" Bool="true"/>
+                                                                                        <Annotation Term="Common.Label" String="{i18n>Draft_DraftIsProcessedByMe}"/>
+                                                                                        </Annotations>
+                                                                                        <Annotations Target="AccountsService.AccountCategories_texts/locale">
+                                                                                            <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                                                            </Annotations>
+                                                                                            <Annotations Target="AccountsService.AccountCategories_texts/name">
+                                                                                                <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                </Annotations>
+                                                                                                <Annotations Target="AccountsService.AccountCategories_texts/descr">
+                                                                                                    <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                    </Annotations>
+                                                                                                    <Annotations Target="AccountsService.Accounts_texts/locale">
+                                                                                                        <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                                                                        </Annotations>
+                                                                                                        <Annotations Target="AccountsService.Accounts_texts/name">
+                                                                                                            <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                            </Annotations>
+                                                                                                            <Annotations Target="AccountsService.Accounts_texts/descr">
+                                                                                                                <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                                </Annotations>
+                                                                                                            </Schema>
+                                                                                                        </edmx:DataServices>
+                                                                                                    </edmx:Edmx>
