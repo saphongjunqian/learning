@@ -3,3 +3,10 @@ accounts/
 documents/
 organizations/
 reports/
+app/
+db/
+srv/
+gen/
+mta_archives/
+mode_modules/
+@cds-models/
