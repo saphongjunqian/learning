@@ -8,5 +8,5 @@ db/
 srv/
 gen/
 mta_archives/
-mode_modules/
+node_modules/
 @cds-models/
