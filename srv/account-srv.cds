@@ -1,4 +1,5 @@
-using { alvachien.learning.accounts as db } from '../db/schema';
+using { ac.finance.db as db } from '../db/schema';
+namespace ac.finance.service;
 
 service AccountsService {
   entity AccountCategories as projection on db.AccountCategories;

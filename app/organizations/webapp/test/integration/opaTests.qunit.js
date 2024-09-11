@@ -1,15 +1,16 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'aclearning/organizations/test/integration/FirstJourney',
-		'aclearning/organizations/test/integration/pages/OrganizationsList',
-		'aclearning/organizations/test/integration/pages/OrganizationsObjectPage'
+        'acfinance/organizations/test/integration/FirstJourney',
+		'acfinance/organizations/test/integration/pages/OrganizationsList',
+		'acfinance/organizations/test/integration/pages/OrganizationsObjectPage',
+		'acfinance/organizations/test/integration/pages/OrganizationMembersObjectPage'
     ],
-    function(JourneyRunner, opaJourney, OrganizationsList, OrganizationsObjectPage) {
+    function(JourneyRunner, opaJourney, OrganizationsList, OrganizationsObjectPage, OrganizationMembersObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('aclearning/organizations') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('acfinance/organizations') + '/index.html'
         });
 
        
@@ -17,7 +18,8 @@ sap.ui.require(
             {
                 pages: { 
 					onTheOrganizationsList: OrganizationsList,
-					onTheOrganizationsObjectPage: OrganizationsObjectPage
+					onTheOrganizationsObjectPage: OrganizationsObjectPage,
+					onTheOrganizationMembersObjectPage: OrganizationMembersObjectPage
                 }
             },
             opaJourney.run

@@ -5,7 +5,7 @@
       {
         "source": "^/odata/(.*)$",
         "target": "/odata/$1",
-        "destination": "account-srv-api",
+        "destination": "ac-finance-srv-api",
         "authenticationType": "xsuaa",
         "csrfProtection": false
       },

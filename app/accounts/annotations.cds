@@ -1,4 +1,4 @@
-using AccountsService as service from '../../srv/account-srv';
+using ac.finance.service.AccountsService as service from '../../srv/account-srv';
 
 // Annoation for Text
 annotate service.Accounts {

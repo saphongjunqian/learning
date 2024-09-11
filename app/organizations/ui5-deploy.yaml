@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
 specVersion: '3.2'
 metadata:
-  name: aclearning.organizations
+  name: acfinance.organizations
 type: application
 resources:
   configuration:

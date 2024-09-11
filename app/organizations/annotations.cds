@@ -1,9 +1,9 @@
-using OrgService as service from '../../srv/org-srv';
+using ac.finance.service.OrgService as service from '../../srv/org-srv';
 
 // Annoation for Text
 annotate service.Organizations {
     @Common          : {
-        SemanticObject: 'Organizations',
+        SemanticObject: 'Accounts',
         Text          : name
     }
 
@@ -13,11 +13,22 @@ annotate service.Organizations {
     @Common.Label: 'Description'
     descr;
 
-    @Common.Label: 'Host'
-    Host;
+    @Common.Label: 'Members'
+    Members;
 
     @Common.Label: 'Currency'
     Currency;
+
+    @Common.Label: 'Host'
+    Host;
+};
+
+annotate service.OrganizationMembers {
+    @Common.Label: 'Organization'
+    Organization;
+
+    @Common.Label: 'Member'
+    Member;
 };
 
 // UI Annotations
@@ -37,6 +48,14 @@ annotate service.Organizations with @(UI: {
             $Type : 'UI.DataField',
             Value : descr,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : Currency_code,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Host,
+        }
     ],
     HeaderInfo         : {
         TypeName      : 'Organization',
@@ -74,3 +93,4 @@ annotate service.Organizations with @(UI: {
         },
     ]
 });
+

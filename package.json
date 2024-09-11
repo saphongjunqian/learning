@@ -1,5 +1,5 @@
 {
-  "name": "accounts",
+  "name": "acfinance",
   "version": "1.0.1",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
@@ -28,7 +28,7 @@
       "db": {
         "kind": "sqlite",
         "credentials": {
-          "url": "db/accounts.sqlite"
+          "url": "db/acfinance.sqlite"
         }
       },
       "[production]": {
@@ -42,6 +42,7 @@
   },
   "sapux": [
     "app/accountcategories",
-    "app/accounts"
+    "app/accounts",
+    "app/organizations"
   ]
 }

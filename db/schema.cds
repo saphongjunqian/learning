@@ -1,4 +1,4 @@
-namespace alvachien.learning.accounts;
+namespace ac.finance.db;
 
 using {
     cuid,
@@ -10,25 +10,33 @@ using {
 
 type AccountCategoryType  : String(5);
 type OrganizationIDType   : String(10);
-// // type DocumentNumberType   : Integer;
-// // type DocumentLineItemType : Integer;
+// type DocumentNumberType   : Integer;
+// type DocumentLineItemType : Integer;
 // type AmountType           : Decimal(14, 2);
 
 entity Organizations : cuid, managed, sap.common.CodeList {
     Host  : User @cds.on.insert : $user @cds.on.update : $user;
     Currency: Currency;
+    Members: Composition of many OrganizationMembers on Members.Organization = $self;
+}
+
+entity OrganizationMembers: cuid, managed {
+    @assert.notNull
+    Organization : Association to Organizations;
+    @assert.notNull
+    Member       : User;
 }
 
 entity AccountCategories : sap.common.CodeList {
-    key Organization         : OrganizationIDType;
     key Category             : AccountCategoryType;
+        Organization         : Association to Organizations;
         ExcludedFromIEReport : Boolean;
         ExcludedFromBSReport : Boolean;
 }
 
 entity Accounts : cuid, managed, sap.common.CodeList {
     @assert.notNull
-    Organization         : OrganizationIDType;
+    Organization         : Association to Organizations;
     @assert.notNull
     Category : Association to AccountCategories;
     Expired  : Boolean;

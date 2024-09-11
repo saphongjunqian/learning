@@ -1,7 +1,7 @@
 {
   "_version": "1.49.0",
   "sap.app": {
-    "id": "aclearning.accounts",
+    "id": "accounts",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -84,8 +84,10 @@
         "settings": {
           "bundleName": "aclearning.accounts.i18n.i18n",
           "supportedLocales": [
-            ""
-          ]
+            "en",
+            "zh-CN"
+          ],
+          "fallbackLocale": "en"
         }
       },
       "": {
@@ -164,6 +166,6 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "aclearning"
+    "service": "acfinance"
   }
 }

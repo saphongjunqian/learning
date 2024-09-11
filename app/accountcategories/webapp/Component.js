@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("aclearning.accountcategories.Component", {
+        return Component.extend("acfinance.accountcategories.Component", {
             metadata: {
                 manifest: "json"
             }

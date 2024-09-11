@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Mon Sep 09 2024 17:29:04 GMT+0800 (China Standard Time)|
+|**Generation Date and Time**<br>Wed Sep 11 2024 09:27:24 GMT+0800 (China Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.10.0|
 |**Generation Platform**<br>Visual Studio Code|
@@ -10,14 +10,14 @@
 |**Service URL**<br>http://localhost:4004/org/
 |**Module Name**<br>organizations|
 |**Application Title**<br>Organizations|
-|**Namespace**<br>aclearning|
+|**Namespace**<br>acfinance|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.128.0|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Organizations|
-|**Navigation Entity**<br>None|
+|**Navigation Entity**<br>Members|
 
 ## organizations
 

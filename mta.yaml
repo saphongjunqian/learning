@@ -1,5 +1,5 @@
 _schema-version: 3.3.0
-ID: accounts
+ID: acfinance
 version: 1.0.1
 description: "Accounting service and the Fiori apps."
 parameters:
@@ -13,7 +13,7 @@ build-parameters:
         - npx cds build --production
 
 modules:
-  - name: account-srv
+  - name: ac-finance-srv
     type: nodejs
     path: gen/srv
     parameters:
@@ -29,10 +29,10 @@ modules:
         properties:
           srv-url: ${default-url}
     requires:
-      - name: account-auth
+      - name: ac-finance-auth
       - name: fqm-btp-hana-hdi
 
-  - name: account-db-deployer
+  - name: ac-finance-db-deployer
     type: hdb
     path: gen/db
     parameters:
@@ -40,42 +40,42 @@ modules:
     requires:
       - name: fqm-btp-hana-hdi
 
-  - name: account-destination-content
+  - name: ac-finance-destination-content
     type: com.sap.application.content
     requires:
-      - name: account-destination-service
+      - name: ac-finance-destination-service
         parameters:
           content-target: true
-      - name: account_html_repo_host
+      - name: ac-finance_html_repo_host
         parameters:
           service-key:
-            name: account_html_repo_host-key
-      - name: account-auth
+            name: ac-finance_html_repo_host-key
+      - name: ac-finance-auth
         parameters:
           service-key:
-            name: account-auth-key
+            name: ac-finance-auth-key
     parameters:
       content:
         instance:
           destinations:
-            - Name: account_html_repo_host
-              ServiceInstanceName: account-html5-app-host-service
-              ServiceKeyName: account_html_repo_host-key
-              sap.cloud.service: aclearning
+            - Name: ac-finance_html_repo_host
+              ServiceInstanceName: ac-finance-html5-app-host-service
+              ServiceKeyName: ac-finance_html_repo_host-key
+              sap.cloud.service: acfinance
             - Authentication: OAuth2UserTokenExchange
-              Name: account_auth
-              ServiceInstanceName: account-auth
-              ServiceKeyName: ac-account-key
-              sap.cloud.service: aclearning
+              Name: ac-finance_auth
+              ServiceInstanceName: ac-finance-auth
+              ServiceKeyName: ac-finance-key
+              sap.cloud.service: acfinance
           existing_destinations_policy: ignore
     build-parameters:
       no-source: true
 
-  - name: account-app-content
+  - name: ac-finance-app-content
     type: com.sap.application.content
     path: .
     requires:
-      - name: account_html_repo_host
+      - name: ac-finance_html_repo_host
         parameters:
           content-target: true
     build-parameters:
@@ -88,6 +88,10 @@ modules:
         - artifacts:
             - accountcategoriesapp.zip
           name: accountcategoryapp
+          target-path: resources/
+        - artifacts:
+            - organizationsapp.zip
+          name: organizationapp
           target-path: resources/
   
   - name: accountcategoryapp
@@ -114,6 +118,18 @@ modules:
       supported-platforms:
         []
 
+  - name: organizationapp
+    type: html5
+    path: app/organizations
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+
 resources:
   - name: fqm-btp-hana-hdi
     type: com.sap.xs.hdi-container
@@ -121,17 +137,17 @@ resources:
       service: hana
       service-plan: hdi-shared
   
-  - name: account-auth
+  - name: ac-finance-auth
     type: org.cloudfoundry.managed-service
     parameters:
       service: xsuaa
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: aclearning-account-${space}
+        xsappname: ac-finance-${space}
         tenant-mode: dedicated
 
-  - name: account-destination-service
+  - name: ac-finance-destination-service
     type: org.cloudfoundry.managed-service
     parameters:
       config:
@@ -147,21 +163,21 @@ resources:
               - Authentication: NoAuthentication
                 HTML5.DynamicDestination: true
                 HTML5.ForwardAuthToken: true
-                Name: account-srv-api
+                Name: ac-finance-srv-api
                 ProxyType: Internet
                 Type: HTTP
                 URL: ~{srv-api/srv-url}
             existing_destinations_policy: update
         version: 1.0.0
       service: destination
-      service-name: account-destination-service
+      service-name: ac-finance-destination-service
       service-plan: lite
     requires:
       - name: srv-api
 
-  - name: account_html_repo_host
+  - name: ac-finance_html_repo_host
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
-      service-name: account-html5-app-host-service
+      service-name: ac-finance-html5-app-host-service
       service-plan: app-host

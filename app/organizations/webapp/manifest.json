@@ -1,7 +1,7 @@
 {
     "_version": "1.49.0",
     "sap.app": {
-        "id": "aclearning.organizations",
+        "id": "acfinance.organizations",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -13,7 +13,7 @@
         "sourceTemplate": {
             "id": "@sap/generator-fiori:lrop",
             "version": "1.10.0",
-            "toolsId": "57fd0859-bded-43ee-a2be-673f05fddfe0"
+            "toolsId": "2d762e53-ab73-4b66-b2a4-c118a5334252"
         },
         "dataSources": {
             "mainService": {
@@ -28,12 +28,12 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "aclearning-organizations-inbound": {
+                "acfinance-organizations-inbound": {
                     "signature": {
                         "parameters": {},
                         "additionalParameters": "allowed"
                     },
-                    "semanticObject": "Organizations",
+                    "semanticObject": "Organization",
                     "action": "maintain",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
@@ -77,7 +77,9 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "aclearning.organizations.i18n.i18n"
+                    "bundleName": "acfinance.organizations.i18n.i18n",
+					"supportedLocales": ["en", "zh-CN"],
+					"fallbackLocale": "en"
                 }
             },
             "": {
@@ -110,6 +112,11 @@
                     "pattern": "Organizations({key}):?query:",
                     "name": "OrganizationsObjectPage",
                     "target": "OrganizationsObjectPage"
+                },
+                {
+                    "pattern": "Organizations({key})/Members({key2}):?query:",
+                    "name": "OrganizationMembersObjectPage",
+                    "target": "OrganizationMembersObjectPage"
                 }
             ],
             "targets": {
@@ -138,7 +145,25 @@
                     "options": {
                         "settings": {
                             "editableHeaderContent": false,
-                            "entitySet": "Organizations"
+                            "entitySet": "Organizations",
+                            "navigation": {
+                                "Members": {
+                                    "detail": {
+                                        "route": "OrganizationMembersObjectPage"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "OrganizationMembersObjectPage": {
+                    "type": "Component",
+                    "id": "OrganizationMembersObjectPage",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings": {
+                            "editableHeaderContent": false,
+                            "entitySet": "OrganizationMembers"
                         }
                     }
                 }
@@ -148,9 +173,5 @@
     "sap.fiori": {
         "registrationIds": [],
         "archeType": "transactional"
-    },
-    "sap.cloud": {
-        "public": true,
-        "service": "aclearning"
-    }    
+    }
 }

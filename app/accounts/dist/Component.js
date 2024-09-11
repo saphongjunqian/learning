@@ -1,2 +1,2 @@
-sap.ui.define(["sap/fe/core/AppComponent"],function(n){"use strict";return n.extend("aclearning.accounts.Component",{metadata:{manifest:"json"}})});
+sap.ui.define(["sap/fe/core/AppComponent"],function(n){"use strict";return n.extend("acfinance.accounts.Component",{metadata:{manifest:"json"}})});
 //# sourceMappingURL=Component.js.map
