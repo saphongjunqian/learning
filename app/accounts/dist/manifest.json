@@ -1,7 +1,7 @@
 {
   "_version": "1.49.0",
   "sap.app": {
-    "id": "accounts",
+    "id": "acfinance.accounts",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -60,7 +60,7 @@
     "deviceTypes": {
       "desktop": true,
       "tablet": true,
-      "phone": true
+      "phone": false
     }
   },
   "sap.ui5": {
@@ -82,7 +82,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "aclearning.accounts.i18n.i18n",
+          "bundleName": "acfinance.accounts.i18n.i18n",
           "supportedLocales": [
             "en",
             "zh-CN"
@@ -166,6 +166,6 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "acfinance"
+    "service": "finance.service"
   }
 }

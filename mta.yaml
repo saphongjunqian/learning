@@ -61,12 +61,12 @@ modules:
             - Name: ac-finance_html_repo_host
               ServiceInstanceName: ac-finance-html5-app-host-service
               ServiceKeyName: ac-finance_html_repo_host-key
-              sap.cloud.service: acfinance
+              sap.cloud.service: finance.service
             - Authentication: OAuth2UserTokenExchange
               Name: ac-finance_auth
               ServiceInstanceName: ac-finance-auth
               ServiceKeyName: ac-finance-key
-              sap.cloud.service: acfinance
+              sap.cloud.service: finance.service
           existing_destinations_policy: ignore
     build-parameters:
       no-source: true

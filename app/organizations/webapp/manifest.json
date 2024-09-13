@@ -55,7 +55,7 @@
         "deviceTypes": {
             "desktop": true,
             "tablet": true,
-            "phone": true
+            "phone": false
         }
     },
     "sap.ui5": {
@@ -173,5 +173,9 @@
     "sap.fiori": {
         "registrationIds": [],
         "archeType": "transactional"
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "finance.service"
     }
 }
