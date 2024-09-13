@@ -1,5 +1,14 @@
 # English Dictation
 
+## Folder 
+
+|Folder|Content|
+|-|-|
+|app|Folder contains Fiori apps|
+|db|Folder for DB schema|
+|srv|Folder for Service|
+|webapp|Folder for web apps|
+
 ## Deploy Steps
 
 There are two deploy steps.
