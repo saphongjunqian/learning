@@ -1,7 +1,7 @@
 _schema-version: "3.1"
-ID: ac-toolset
-description: AC toolset, built with SAP CAP.
-version: 1.1.3
+ID: ac-learning
+description: AC learning, built with SAP CAP.
+version: 1.1.6
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
@@ -13,7 +13,7 @@ build-parameters:
         - npx cds build --production
 
 modules:
-  - name: ac-toolset-srv
+  - name: ac-learning-srv
     type: nodejs
     path: gen/srv
     provides:
@@ -22,15 +22,15 @@ modules:
           srv-url: ${default-url}
     parameters:
       buildpack: nodejs_buildpack
-      memory: 512M
+      memory: 256M
       disk-quota: 1024M
     build-parameters:
       builder: npm-ci
     requires:
       - name: fqm-btp-hana-hdi
-      - name: ac-toolset-auth
+      - name: ac-learning-auth
 
-  - name: ac-toolset-db-deployer
+  - name: ac-learning-db-deployer
     type: hdb
     path: gen/db
     requires:
@@ -38,42 +38,42 @@ modules:
     parameters:
       buildpack: nodejs_buildpack
 
-  - name: ac-toolset-destination-content
+  - name: ac-learning-destination-content
     type: com.sap.application.content
     requires:
-      - name: ac-toolset-destination-service
+      - name: ac-learning-destination-service
         parameters:
           content-target: true
-      - name: ac-toolset_html_repo_host
+      - name: ac-learning_html_repo_host
         parameters:
           service-key:
-            name: ac-toolset_html_repo_host-key
-      - name: ac-toolset-auth
+            name: ac-learning_html_repo_host-key
+      - name: ac-learning-auth
         parameters:
           service-key:
-            name: ac-toolset-auth-key
+            name: ac-learning-auth-key
     parameters:
       content:
         instance:
           destinations:
-            - Name: btp_ac_toolset_html_repo_host
-              ServiceInstanceName: ac-toolset-html5-app-host-service
-              ServiceKeyName: ac-toolset_html_repo_host-key
-              sap.cloud.service: ac
+            - Name: ac_learning_html_repo_host
+              ServiceInstanceName: ac-learning-html5-app-host-service
+              ServiceKeyName: ac-learning_html_repo_host-key
+              sap.cloud.service: learning.service
             - Authentication: OAuth2UserTokenExchange
-              Name: btp_ac_toolset_auth
-              ServiceInstanceName: ac-toolset-auth
-              ServiceKeyName: ac-toolset-auth-key
-              sap.cloud.service: ac
+              Name: ac_learning_auth
+              ServiceInstanceName: ac-learning-auth
+              ServiceKeyName: ac-learning-auth-key
+              sap.cloud.service: learning.service
           existing_destinations_policy: ignore
     build-parameters:
       no-source: true
 
-  - name: ac-toolset-app-content
+  - name: ac-learning-app-content
     type: com.sap.application.content
     path: .
     requires:
-      - name: ac-toolset_html_repo_host
+      - name: ac-learning_html_repo_host
         parameters:
           content-target: true
     build-parameters:
@@ -102,16 +102,16 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
-  - name: ac-toolset-auth
+  - name: ac-learning-auth
     type: org.cloudfoundry.managed-service
     parameters:
       config:
         tenant-mode: dedicated
-        xsappname: ac-toolset-${space}
+        xsappname: ac-learning-${space}
       path: ./xs-security.json
       service: xsuaa
       service-plan: application
-  - name: ac-toolset-destination-service
+  - name: ac-learning-destination-service
     type: org.cloudfoundry.managed-service
     parameters:
       config:
@@ -127,20 +127,21 @@ resources:
               - Authentication: NoAuthentication
                 HTML5.DynamicDestination: true
                 HTML5.ForwardAuthToken: true
-                Name: ac-toolset-srv-api
+                Name: ac-learning-srv-api
                 ProxyType: Internet
                 Type: HTTP
                 URL: ~{srv-api/srv-url}
             existing_destinations_policy: update
         version: 1.0.0
       service: destination
-      service-name: ac-toolset-destination-service
+      service-name: ac-learning-destination-service
       service-plan: lite
     requires:
       - name: srv-api
-  - name: ac-toolset_html_repo_host
+
+  - name: ac-learning_html_repo_host
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
-      service-name: ac-toolset-html5-app-host-service
+      service-name: ac-learning-html5-app-host-service
       service-plan: app-host

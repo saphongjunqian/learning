@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'ac.wordcollection',
+            appId: 'aclearning.wordcollection',
             componentId: 'WordCollectionList',
             entitySet: 'WordCollection'
         },

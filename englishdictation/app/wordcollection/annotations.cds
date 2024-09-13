@@ -1,8 +1,5 @@
 using WordCollectionService as service from '../../srv/word-collection-service';
 
-// Enable Draft
-annotate service.WordCollection with @odata.draft.enabled;
-
 // Annoation for Text
 annotate service.WordCollection {
     @Common          : {

@@ -30,6 +30,7 @@
                 <Property Name="name" Type="Edm.String" MaxLength="255"/>
                 <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
                 <Property Name="Details" Type="Edm.Stream"/>
+                <Property Name="Cover" Type="Edm.Stream"/>
                 <NavigationProperty Name="texts" Type="Collection(WordCollectionService.WordCollection_texts)">
                     <OnDelete Action="Cascade"/>
                 </NavigationProperty>
@@ -88,6 +89,9 @@
                                             </Annotations>
                                             <Annotations Target="WordCollectionService.WordCollection/Details">
                                                 <Annotation Term="Core.MediaType" String="application/json"/>
+                                            </Annotations>
+                                            <Annotations Target="WordCollectionService.WordCollection/Cover">
+                                                <Annotation Term="Core.MediaType" String="image/jpeg"/>
                                             </Annotations>
                                             <Annotations Target="WordCollectionService.WordCollection_texts/locale">
                                                 <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>

@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Jun 20 2024 12:25:54 GMT+0800 (China Standard Time)|
+|**Generation Date and Time**<br>Thu Sep 12 2024 16:50:13 GMT+0800 (China Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.10.0|
 |**Generation Platform**<br>Visual Studio Code|
@@ -10,9 +10,9 @@
 |**Service URL**<br>http://localhost:4004/word-collection/
 |**Module Name**<br>wordcollection|
 |**Application Title**<br>Word Collection|
-|**Namespace**<br>ac|
+|**Namespace**<br>aclearning|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.125.1|
+|**UI5 Version**<br>1.128.0|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|

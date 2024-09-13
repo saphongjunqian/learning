@@ -1,6 +1,6 @@
 {
-  "name": "ac-toolset",
-  "version": "1.1.5",
+  "name": "english-dictation",
+  "version": "1.1.6",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
@@ -26,9 +26,10 @@
     "watch-wordcollection": "cds watch --open wordcollection/webapp/index.html?sap-ui-xx-viewCache=false",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-    "undeploy": "cf undeploy ac-toolset --delete-services"
+    "undeploy": "cf undeploy ac-learning --delete-services"
   },
   "sapux": [
+    "app/wordcollection",
     "app/wordcollection"
   ],
   "cds": {

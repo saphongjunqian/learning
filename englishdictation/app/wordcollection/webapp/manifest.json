@@ -1,11 +1,11 @@
 {
-    "_version": "1.58.0",
+    "_version": "1.49.0",
     "sap.app": {
-        "id": "ac.wordcollection",
+        "id": "aclearning.wordcollection",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
-            "version": "0.0.5"
+            "version": "0.0.1"
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
@@ -13,7 +13,7 @@
         "sourceTemplate": {
             "id": "@sap/generator-fiori:lrop",
             "version": "1.10.0",
-            "toolsId": "e6378b69-f719-458d-85f4-b58e934250f1"
+            "toolsId": "b183346f-1bbd-458c-8fdd-be7ece723193"
         },
         "dataSources": {
             "mainService": {
@@ -28,7 +28,7 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "ac-wordcollection-inbound": {
+                "aclearning-wordcollection-inbound": {
                     "signature": {
                         "parameters": {},
                         "additionalParameters": "allowed"
@@ -61,7 +61,7 @@
     "sap.ui5": {
         "flexEnabled": true,
         "dependencies": {
-            "minUI5Version": "1.127.0",
+            "minUI5Version": "1.128.0",
             "libs": {
                 "sap.m": {},
                 "sap.ui.core": {},
@@ -77,7 +77,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "ac.wordcollection.i18n.i18n"
+                    "bundleName": "aclearning.wordcollection.i18n.i18n"
                 }
             },
             "": {
@@ -151,6 +151,6 @@
     },
     "sap.cloud": {
         "public": true,
-        "service": "ac"
+        "service": "learning.service"
     }
 }
