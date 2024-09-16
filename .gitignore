@@ -1,5 +1,13 @@
 englishdictation/
 .vscode/
+resources/
+resources
+resources\
+app/*/dist/
+app/*/dist
+app/*/node_modules/
+app/*/node_modules
+
 
 # CAP accounts
 _out
@@ -36,19 +44,3 @@ mta_archives/
 # @cap-js/cds-typer
 @cds-models
 
-app/*/dist/
-app/*/dist
-app/*/node_modules/
-app/*/node_modules
-resources
-resources\
-*/dist/
-*/dist
-*/node_modules/
-*\dist\
-*\node_modules\
-resources/
-app/organizations/dist/
-app/accountcategories/dist/accountcategoriesapp.zip
-app/organizations/dist/organizationsapp.zip
-app/accounts/dist/accountsapp.zip
