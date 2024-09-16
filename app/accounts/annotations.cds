@@ -13,8 +13,19 @@ annotate service.Accounts {
     @Common.Label: 'Description'
     descr;
 
-    @Common.Label: 'Category'
+    @Common : {
+        Label           : 'Category',
+        Text            : Category.name,
+        TextArrangement : #TextFirst
+    }
     Category;
+
+    @Common : {
+        Label           : 'Organization',
+        Text            : Organization.name,
+        TextArrangement : #TextFirst
+    }
+    Organization;
 
     @Common.Label: 'Expired'
     Expired;
@@ -24,6 +35,7 @@ annotate service.Accounts {
 annotate service.Accounts with @(UI: {
     SelectionFields : [
         name,
+        Organization_ID,
         descr,
         Category_Category,
         Expired,
@@ -32,6 +44,10 @@ annotate service.Accounts with @(UI: {
         {
             $Type : 'UI.DataField',
             Value : name,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Organization_ID,
         },
         {
             $Type : 'UI.DataField',
@@ -62,6 +78,10 @@ annotate service.Accounts with @(UI: {
             {
                 $Type : 'UI.DataField',
                 Value : descr,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Organization_ID,
             },
             {
                 $Type : 'UI.DataField',

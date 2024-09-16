@@ -16,6 +16,13 @@ annotate service.AccountCategories {
     @Common.Label: 'Category'
     Category;
 
+    @Common.Label: 'Organization'
+    @Common          : {
+        Text           : Organization.name,
+        TextArrangement: #TextFirst
+    }
+    Organization;
+
     @Common.Label: 'Exclude from Income/Expense Report'
     ExcludedFromIEReport;
 
@@ -29,6 +36,7 @@ annotate service.AccountCategories with @(UI: {
         name,
         descr,
         Category,
+        Organization_ID,
         ExcludedFromIEReport,
         ExcludedFromBSReport
     ],
@@ -44,6 +52,10 @@ annotate service.AccountCategories with @(UI: {
         {
             $Type : 'UI.DataField',
             Value : Category,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Organization_ID,
         },
         {
             $Type : 'UI.DataField',
@@ -74,6 +86,10 @@ annotate service.AccountCategories with @(UI: {
             {
                 $Type : 'UI.DataField',
                 Value : Category,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Organization_ID,
             },
             {
                 $Type : 'UI.DataField',

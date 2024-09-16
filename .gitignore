@@ -11,10 +11,6 @@ default-*.json
 gen/
 node_modules/
 target/
-resources
-resources/
-*/dist/
-*/node_modules/
 
 # Web IDE, App Studio
 .che/
@@ -39,4 +35,10 @@ mta_archives/
 
 # @cap-js/cds-typer
 @cds-models
+
+app/*/dist/
+app/*/node_modules/
+resources/
+*/dist/
+*/node_modules/
 

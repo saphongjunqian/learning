@@ -1,0 +1,179 @@
+{
+    "_version": "1.49.0",
+    "sap.app": {
+        "id": "acfinance.documents",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:lrop",
+            "version": "1.10.0",
+            "toolsId": "dfc52232-5814-4815-95b5-fc89f2c8add6"
+        },
+        "dataSources": {
+            "mainService": {
+                "uri": "/odata/v4/documents/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "4.0"
+                }
+            }
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "acfinance-documents-inbound": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Documents",
+                    "action": "maintain",
+                    "title": "{{flpTitle}}",
+                    "subTitle": "{{flpSubtitle}}",
+                    "icon": ""
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": false
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.128.1",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.ushell": {},
+                "sap.fe.templates": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "acfinance.documents.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true
+                }
+            },
+            "@i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "routing": {
+            "config": {},
+            "routes": [
+                {
+                    "pattern": ":?query:",
+                    "name": "DocumentsList",
+                    "target": "DocumentsList"
+                },
+                {
+                    "pattern": "Documents({key}):?query:",
+                    "name": "DocumentsObjectPage",
+                    "target": "DocumentsObjectPage"
+                },
+                {
+                    "pattern": "Documents({key})/Items({key2}):?query:",
+                    "name": "DocumentItemsObjectPage",
+                    "target": "DocumentItemsObjectPage"
+                }
+            ],
+            "targets": {
+                "DocumentsList": {
+                    "type": "Component",
+                    "id": "DocumentsList",
+                    "name": "sap.fe.templates.ListReport",
+                    "options": {
+                        "settings": {
+                            "entitySet": "Documents",
+                            "variantManagement": "Page",
+                            "navigation": {
+                                "Documents": {
+                                    "detail": {
+                                        "route": "DocumentsObjectPage"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "DocumentsObjectPage": {
+                    "type": "Component",
+                    "id": "DocumentsObjectPage",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings": {
+                            "editableHeaderContent": false,
+                            "entitySet": "Documents",
+                            "navigation": {
+                                "Items": {
+                                    "detail": {
+                                        "route": "DocumentItemsObjectPage"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "DocumentItemsObjectPage": {
+                    "type": "Component",
+                    "id": "DocumentItemsObjectPage",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings": {
+                            "editableHeaderContent": false,
+                            "entitySet": "DocumentItems"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sap.fiori": {
+        "registrationIds": [],
+        "archeType": "transactional"
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "finance.service"
+    }
+}

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="ac.finance.service.DocumentsService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="TransactionTypes" EntityType="ac.finance.service.DocumentsService.TransactionTypes">
+                    <NavigationPropertyBinding Path="Organization" Target="Organizations"/>
+                    <NavigationPropertyBinding Path="texts" Target="TransactionTypes_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="TransactionTypes_texts"/>
+                    <NavigationPropertyBinding Path="SiblingEntity" Target="TransactionTypes"/>
+                </EntitySet>
+                <EntitySet Name="Organizations" EntityType="ac.finance.service.DocumentsService.Organizations">
+                    <NavigationPropertyBinding Path="Currency" Target="Currencies"/>
+                    <NavigationPropertyBinding Path="Members" Target="OrganizationMembers"/>
+                    <NavigationPropertyBinding Path="texts" Target="Organizations_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="Organizations_texts"/>
+                </EntitySet>
+                <EntitySet Name="Currencies" EntityType="ac.finance.service.DocumentsService.Currencies">
+                    <NavigationPropertyBinding Path="texts" Target="Currencies_texts"/>
+                    <NavigationPropertyBinding Path="localized" Target="Currencies_texts"/>
+                </EntitySet>
+                <EntitySet Name="OrganizationMembers" EntityType="ac.finance.service.DocumentsService.OrganizationMembers">
+                    <NavigationPropertyBinding Path="Organization" Target="Organizations"/>
+                </EntitySet>
+                <EntitySet Name="TransactionTypes_texts" EntityType="ac.finance.service.DocumentsService.TransactionTypes_texts"/>
+                <EntitySet Name="Organizations_texts" EntityType="ac.finance.service.DocumentsService.Organizations_texts"/>
+                <EntitySet Name="Currencies_texts" EntityType="ac.finance.service.DocumentsService.Currencies_texts"/>
+            </EntityContainer>
+            <EntityType Name="TransactionTypes">
+                <Key>
+                    <PropertyRef Name="TransactionType"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="TransactionType" Type="Edm.String" MaxLength="5" Nullable="false"/>
+                <NavigationProperty Name="Organization" Type="ac.finance.service.DocumentsService.Organizations">
+                    <ReferentialConstraint Property="Organization_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="Organization_ID" Type="Edm.Guid"/>
+                <NavigationProperty Name="texts" Type="Collection(ac.finance.service.DocumentsService.TransactionTypes_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="ac.finance.service.DocumentsService.TransactionTypes_texts">
+                    <ReferentialConstraint Property="TransactionType" ReferencedProperty="TransactionType"/>
+                </NavigationProperty>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="true"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" Nullable="false" DefaultValue="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Type="ac.finance.service.DocumentsService.DraftAdministrativeData" ContainsTarget="true"/>
+                <NavigationProperty Name="SiblingEntity" Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+            </EntityType>
+            <EntityType Name="Organizations">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="Host" Type="Edm.String" MaxLength="255"/>
+                <NavigationProperty Name="Currency" Type="ac.finance.service.DocumentsService.Currencies">
+                    <ReferentialConstraint Property="Currency_code" ReferencedProperty="code"/>
+                </NavigationProperty>
+                <Property Name="Currency_code" Type="Edm.String" MaxLength="3"/>
+                <NavigationProperty Name="Members" Type="Collection(ac.finance.service.DocumentsService.OrganizationMembers)" Partner="Organization">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="texts" Type="Collection(ac.finance.service.DocumentsService.Organizations_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="ac.finance.service.DocumentsService.Organizations_texts">
+                    <ReferentialConstraint Property="ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+            </EntityType>
+            <EntityType Name="Currencies">
+                <Key>
+                    <PropertyRef Name="code"/>
+                </Key>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="code" Type="Edm.String" MaxLength="3" Nullable="false"/>
+                <Property Name="symbol" Type="Edm.String" MaxLength="5"/>
+                <NavigationProperty Name="texts" Type="Collection(ac.finance.service.DocumentsService.Currencies_texts)">
+                    <OnDelete Action="Cascade"/>
+                </NavigationProperty>
+                <NavigationProperty Name="localized" Type="ac.finance.service.DocumentsService.Currencies_texts">
+                    <ReferentialConstraint Property="code" ReferencedProperty="code"/>
+                </NavigationProperty>
+            </EntityType>
+            <EntityType Name="OrganizationMembers">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <NavigationProperty Name="Organization" Type="ac.finance.service.DocumentsService.Organizations" Partner="Members">
+                    <ReferentialConstraint Property="Organization_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="Organization_ID" Type="Edm.Guid"/>
+                <Property Name="Member" Type="Edm.String" MaxLength="255"/>
+            </EntityType>
+            <EntityType Name="DraftAdministrativeData">
+                <Key>
+                    <PropertyRef Name="DraftUUID"/>
+                </Key>
+                <Property Name="DraftUUID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="CreationDateTime" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="CreatedByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="DraftIsCreatedByMe" Type="Edm.Boolean"/>
+                <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="InProcessByUser" Type="Edm.String" MaxLength="256"/>
+                <Property Name="DraftIsProcessedByMe" Type="Edm.Boolean"/>
+            </EntityType>
+            <EntityType Name="TransactionTypes_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="TransactionType"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="TransactionType" Type="Edm.String" MaxLength="5" Nullable="false"/>
+            </EntityType>
+            <EntityType Name="Organizations_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+            </EntityType>
+            <EntityType Name="Currencies_texts">
+                <Key>
+                    <PropertyRef Name="locale"/>
+                    <PropertyRef Name="code"/>
+                </Key>
+                <Property Name="locale" Type="Edm.String" MaxLength="14" Nullable="false"/>
+                <Property Name="name" Type="Edm.String" MaxLength="255"/>
+                <Property Name="descr" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="code" Type="Edm.String" MaxLength="3" Nullable="false"/>
+            </EntityType>
+            <Action Name="draftPrepare" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+                <Parameter Name="SideEffectsQualifier" Type="Edm.String"/>
+                <ReturnType Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+            </Action>
+            <Action Name="draftActivate" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+                <ReturnType Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+            </Action>
+            <Action Name="draftEdit" IsBound="true" EntitySetPath="in">
+                <Parameter Name="in" Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+                <Parameter Name="PreserveChanges" Type="Edm.Boolean"/>
+                <ReturnType Type="ac.finance.service.DocumentsService.TransactionTypes"/>
+            </Action>
+            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes">
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="name"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ac.finance.service.DocumentsService.EntityContainer/TransactionTypes">
+                <Annotation Term="Common.DraftRoot">
+                    <Record Type="Common.DraftRootType">
+                        <PropertyValue Property="ActivationAction" String="ac.finance.service.DocumentsService.draftActivate"/>
+                        <PropertyValue Property="EditAction" String="ac.finance.service.DocumentsService.draftEdit"/>
+                        <PropertyValue Property="PreparationAction" String="ac.finance.service.DocumentsService.draftPrepare"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/createdAt">
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                <Annotation Term="Core.Immutable" Bool="true"/>
+                <Annotation Term="Core.Computed" Bool="true"/>
+                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                </Annotations>
+                <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/createdBy">
+                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                    <Annotation Term="Core.Immutable" Bool="true"/>
+                    <Annotation Term="Core.Computed" Bool="true"/>
+                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                        </Annotations>
+                        <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/modifiedAt">
+                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                            <Annotation Term="Core.Computed" Bool="true"/>
+                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                            </Annotations>
+                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/modifiedBy">
+                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                <Annotation Term="Core.Computed" Bool="true"/>
+                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                    </Annotations>
+                                    <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/name">
+                                        <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                        </Annotations>
+                                        <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/descr">
+                                            <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/Organization_ID">
+                                                <Annotation Term="Common.ValueList">
+                                                    <Record Type="Common.ValueListType">
+                                                        <PropertyValue Property="Label" String="Organizations"/>
+                                                        <PropertyValue Property="CollectionPath" String="Organizations"/>
+                                                        <PropertyValue Property="Parameters">
+                                                            <Collection>
+                                                                <Record Type="Common.ValueListParameterInOut">
+                                                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Organization_ID"/>
+                                                                    <PropertyValue Property="ValueListProperty" String="ID"/>
+                                                                </Record>
+                                                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                                                    <PropertyValue Property="ValueListProperty" String="name"/>
+                                                                </Record>
+                                                            </Collection>
+                                                        </PropertyValue>
+                                                    </Record>
+                                                </Annotation>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/IsActiveEntity">
+                                                <Annotation Term="UI.Hidden" Bool="true"/>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/HasActiveEntity">
+                                                <Annotation Term="UI.Hidden" Bool="true"/>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/HasDraftEntity">
+                                                <Annotation Term="UI.Hidden" Bool="true"/>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes/DraftAdministrativeData">
+                                                <Annotation Term="UI.Hidden" Bool="true"/>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations">
+                                                <Annotation Term="UI.Identification">
+                                                    <Collection>
+                                                        <Record Type="UI.DataField">
+                                                            <PropertyValue Property="Value" Path="name"/>
+                                                        </Record>
+                                                    </Collection>
+                                                </Annotation>
+                                            </Annotations>
+                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations/createdAt">
+                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                <Annotation Term="Core.Immutable" Bool="true"/>
+                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                </Annotations>
+                                                <Annotations Target="ac.finance.service.DocumentsService.Organizations/createdBy">
+                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                    <Annotation Term="Core.Immutable" Bool="true"/>
+                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                        </Annotations>
+                                                        <Annotations Target="ac.finance.service.DocumentsService.Organizations/modifiedAt">
+                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                            </Annotations>
+                                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations/modifiedBy">
+                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                    </Annotations>
+                                                                    <Annotations Target="ac.finance.service.DocumentsService.Organizations/name">
+                                                                        <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                        </Annotations>
+                                                                        <Annotations Target="ac.finance.service.DocumentsService.Organizations/descr">
+                                                                            <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                            </Annotations>
+                                                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations/Host">
+                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                    <Annotation Term="Common.Label" String="{i18n>UserID}"/>
+                                                                                    </Annotations>
+                                                                                    <Annotations Target="ac.finance.service.DocumentsService.Organizations/Currency">
+                                                                                        <Annotation Term="Common.Label" String="{i18n>Currency}"/>
+                                                                                            <Annotation Term="Core.Description" String="{i18n>CurrencyCode.Description}"/>
+                                                                                            </Annotations>
+                                                                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations/Currency_code">
+                                                                                                <Annotation Term="Common.Label" String="{i18n>Currency}"/>
+                                                                                                    <Annotation Term="Common.ValueList">
+                                                                                                        <Record Type="Common.ValueListType">
+                                                                                                            <PropertyValue Property="Label" String="{i18n>Currency}"/>
+                                                                                                                <PropertyValue Property="CollectionPath" String="Currencies"/>
+                                                                                                                <PropertyValue Property="Parameters">
+                                                                                                                    <Collection>
+                                                                                                                        <Record Type="Common.ValueListParameterInOut">
+                                                                                                                            <PropertyValue Property="LocalDataProperty" PropertyPath="Currency_code"/>
+                                                                                                                            <PropertyValue Property="ValueListProperty" String="code"/>
+                                                                                                                        </Record>
+                                                                                                                        <Record Type="Common.ValueListParameterDisplayOnly">
+                                                                                                                            <PropertyValue Property="ValueListProperty" String="name"/>
+                                                                                                                        </Record>
+                                                                                                                    </Collection>
+                                                                                                                </PropertyValue>
+                                                                                                            </Record>
+                                                                                                        </Annotation>
+                                                                                                        <Annotation Term="Core.Description" String="{i18n>CurrencyCode.Description}"/>
+                                                                                                        </Annotations>
+                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.Currencies">
+                                                                                                            <Annotation Term="UI.Identification">
+                                                                                                                <Collection>
+                                                                                                                    <Record Type="UI.DataField">
+                                                                                                                        <PropertyValue Property="Value" Path="name"/>
+                                                                                                                    </Record>
+                                                                                                                </Collection>
+                                                                                                            </Annotation>
+                                                                                                        </Annotations>
+                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.Currencies/name">
+                                                                                                            <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                            </Annotations>
+                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.Currencies/descr">
+                                                                                                                <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                                </Annotations>
+                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.Currencies/code">
+                                                                                                                    <Annotation Term="Common.Text" Path="name"/>
+                                                                                                                    <Annotation Term="Common.Label" String="{i18n>CurrencyCode}"/>
+                                                                                                                    </Annotations>
+                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.Currencies/symbol">
+                                                                                                                        <Annotation Term="Common.Label" String="{i18n>CurrencySymbol}"/>
+                                                                                                                        </Annotations>
+                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/createdAt">
+                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                            <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                            <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                                                            </Annotations>
+                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/createdBy">
+                                                                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                                                    </Annotations>
+                                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/modifiedAt">
+                                                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                                                        </Annotations>
+                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/modifiedBy">
+                                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                                                                </Annotations>
+                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/Organization_ID">
+                                                                                                                                                    <Annotation Term="Common.ValueList">
+                                                                                                                                                        <Record Type="Common.ValueListType">
+                                                                                                                                                            <PropertyValue Property="Label" String="Organizations"/>
+                                                                                                                                                            <PropertyValue Property="CollectionPath" String="Organizations"/>
+                                                                                                                                                            <PropertyValue Property="Parameters">
+                                                                                                                                                                <Collection>
+                                                                                                                                                                    <Record Type="Common.ValueListParameterInOut">
+                                                                                                                                                                        <PropertyValue Property="LocalDataProperty" PropertyPath="Organization_ID"/>
+                                                                                                                                                                        <PropertyValue Property="ValueListProperty" String="ID"/>
+                                                                                                                                                                    </Record>
+                                                                                                                                                                    <Record Type="Common.ValueListParameterDisplayOnly">
+                                                                                                                                                                        <PropertyValue Property="ValueListProperty" String="name"/>
+                                                                                                                                                                    </Record>
+                                                                                                                                                                </Collection>
+                                                                                                                                                            </PropertyValue>
+                                                                                                                                                        </Record>
+                                                                                                                                                    </Annotation>
+                                                                                                                                                </Annotations>
+                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.OrganizationMembers/Member">
+                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>UserID}"/>
+                                                                                                                                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                        </Annotations>
+                                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData">
+                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>Draft_DraftAdministrativeData}"/>
+                                                                                                                                                            </Annotations>
+                                                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/DraftUUID">
+                                                                                                                                                                <Annotation Term="UI.Hidden" Bool="true"/>
+                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>Draft_DraftUUID}"/>
+                                                                                                                                                                </Annotations>
+                                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/CreationDateTime">
+                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>Draft_CreationDateTime}"/>
+                                                                                                                                                                    </Annotations>
+                                                                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/CreatedByUser">
+                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>Draft_CreatedByUser}"/>
+                                                                                                                                                                        </Annotations>
+                                                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/DraftIsCreatedByMe">
+                                                                                                                                                                            <Annotation Term="UI.Hidden" Bool="true"/>
+                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>Draft_DraftIsCreatedByMe}"/>
+                                                                                                                                                                            </Annotations>
+                                                                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/LastChangeDateTime">
+                                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>Draft_LastChangeDateTime}"/>
+                                                                                                                                                                                </Annotations>
+                                                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/LastChangedByUser">
+                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>Draft_LastChangedByUser}"/>
+                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/InProcessByUser">
+                                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>Draft_InProcessByUser}"/>
+                                                                                                                                                                                        </Annotations>
+                                                                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.DraftAdministrativeData/DraftIsProcessedByMe">
+                                                                                                                                                                                            <Annotation Term="UI.Hidden" Bool="true"/>
+                                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>Draft_DraftIsProcessedByMe}"/>
+                                                                                                                                                                                            </Annotations>
+                                                                                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes_texts/locale">
+                                                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                                                                                                                                                                </Annotations>
+                                                                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes_texts/name">
+                                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.TransactionTypes_texts/descr">
+                                                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                                                                                                                        </Annotations>
+                                                                                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.Organizations_texts/locale">
+                                                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                                                                                                                                                                            </Annotations>
+                                                                                                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.Organizations_texts/name">
+                                                                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                                                                                                                                </Annotations>
+                                                                                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.Organizations_texts/descr">
+                                                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                                                    <Annotations Target="ac.finance.service.DocumentsService.Currencies_texts/locale">
+                                                                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>LanguageCode}"/>
+                                                                                                                                                                                                                        </Annotations>
+                                                                                                                                                                                                                        <Annotations Target="ac.finance.service.DocumentsService.Currencies_texts/name">
+                                                                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>Name}"/>
+                                                                                                                                                                                                                            </Annotations>
+                                                                                                                                                                                                                            <Annotations Target="ac.finance.service.DocumentsService.Currencies_texts/descr">
+                                                                                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>Description}"/>
+                                                                                                                                                                                                                                </Annotations>
+                                                                                                                                                                                                                                <Annotations Target="ac.finance.service.DocumentsService.Currencies_texts/code">
+                                                                                                                                                                                                                                    <Annotation Term="Common.Text" Path="name"/>
+                                                                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>CurrencyCode}"/>
+                                                                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                                                                </Schema>
+                                                                                                                                                                                                                            </edmx:DataServices>
+                                                                                                                                                                                                                        </edmx:Edmx>

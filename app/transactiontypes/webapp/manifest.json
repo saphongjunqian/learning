@@ -1,0 +1,156 @@
+{
+    "_version": "1.49.0",
+    "sap.app": {
+        "id": "acfinance.transactiontypes",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:lrop",
+            "version": "1.10.0",
+            "toolsId": "e26f9663-f398-4654-b106-393b3bef54be"
+        },
+        "dataSources": {
+            "mainService": {
+                "uri": "/odata/v4/documents/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "4.0"
+                }
+            }
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "acfinance-transactiontypes-inbound": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "TransactionType",
+                    "action": "maintain",
+                    "title": "{{flpTitle}}",
+                    "subTitle": "{{flpSubtitle}}",
+                    "icon": ""
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.128.1",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.ushell": {},
+                "sap.fe.templates": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "acfinance.transactiontypes.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true
+                }
+            },
+            "@i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "routing": {
+            "config": {},
+            "routes": [
+                {
+                    "pattern": ":?query:",
+                    "name": "TransactionTypesList",
+                    "target": "TransactionTypesList"
+                },
+                {
+                    "pattern": "TransactionTypes({key}):?query:",
+                    "name": "TransactionTypesObjectPage",
+                    "target": "TransactionTypesObjectPage"
+                }
+            ],
+            "targets": {
+                "TransactionTypesList": {
+                    "type": "Component",
+                    "id": "TransactionTypesList",
+                    "name": "sap.fe.templates.ListReport",
+                    "options": {
+                        "settings": {
+                            "entitySet": "TransactionTypes",
+                            "variantManagement": "Page",
+                            "navigation": {
+                                "TransactionTypes": {
+                                    "detail": {
+                                        "route": "TransactionTypesObjectPage"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TransactionTypesObjectPage": {
+                    "type": "Component",
+                    "id": "TransactionTypesObjectPage",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings": {
+                            "editableHeaderContent": false,
+                            "entitySet": "TransactionTypes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sap.fiori": {
+        "registrationIds": [],
+        "archeType": "transactional"
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "finance.service"
+    }
+}

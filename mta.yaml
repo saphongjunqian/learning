@@ -1,6 +1,6 @@
 _schema-version: 3.3.0
 ID: acfinance
-version: 1.0.1
+version: 1.0.2
 description: "Accounting service and the Fiori apps."
 parameters:
   deploy_mode: html5-repo
@@ -93,7 +93,15 @@ modules:
             - organizationsapp.zip
           name: organizationapp
           target-path: resources/
-  
+        - artifacts:
+            - transactiontypesapp.zip
+          name: transactiontypeapp
+          target-path: resources/
+        - artifacts:
+            - documentsapp.zip
+          name: documentapp
+          target-path: resources/
+
   - name: accountcategoryapp
     type: html5
     path: app/accountcategories
@@ -130,13 +138,37 @@ modules:
       supported-platforms:
         []
 
+  - name: transactiontypeapp
+    type: html5
+    path: app/transactiontypes
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+
+  - name: documentapp
+    type: html5
+    path: app/documents
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+
 resources:
   - name: fqm-btp-hana-hdi
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
       service-plan: hdi-shared
-  
+
   - name: ac-finance-auth
     type: org.cloudfoundry.managed-service
     parameters:

@@ -1,6 +1,6 @@
 {
   "name": "acfinance",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
@@ -43,6 +43,8 @@
   "sapux": [
     "app/accountcategories",
     "app/accounts",
-    "app/organizations"
+    "app/organizations",
+    "app/transactiontypes",
+    "app/documents"
   ]
 }

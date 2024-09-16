@@ -1,0 +1,5 @@
+TransactionType;locale;name;descr
+I0001;en;Wage;Salary
+I0001;zh;工资;工资
+O0001;en;Generic Output;Generic Output
+O0001;zh;通用支出;通用支出
