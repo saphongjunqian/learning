@@ -37,8 +37,14 @@ mta_archives/
 @cds-models
 
 app/*/dist/
+app/*/dist
 app/*/node_modules/
-resources/
+app/*/node_modules
+resources
+resources\
 */dist/
+*/dist
 */node_modules/
-
+*\dist\
+*\node_modules\
+resources/
