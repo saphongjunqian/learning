@@ -48,3 +48,7 @@ resources\
 *\dist\
 *\node_modules\
 resources/
+app/organizations/dist/
+app/accountcategories/dist/accountcategoriesapp.zip
+app/organizations/dist/organizationsapp.zip
+app/accounts/dist/accountsapp.zip
