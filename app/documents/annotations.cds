@@ -66,6 +66,7 @@ annotate service.Documents with @(
         Organization_ID,
         DocumentNumber,
         PostingDate,
+        Description,
     ],
     UI.LineItem : [
         {
@@ -80,6 +81,10 @@ annotate service.Documents with @(
             $Type : 'UI.DataField',
             Value : PostingDate,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : Description,
+        }
     ],
     HeaderInfo                  : {
         Title         : {
@@ -108,6 +113,10 @@ annotate service.Documents with @(
                 $Type : 'UI.DataField',
                 Value : PostingDate,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : Description,
+            }
         ],
     },
     UI.Facets : [
@@ -132,7 +141,8 @@ annotate service.DocumentItems with @(
         Account_ID,
         TransactionType_TransactionType,
         Amount,
-        Currency_code
+        Currency_code,
+        Description,
     ],
     UI.LineItem : [
         {
@@ -147,6 +157,18 @@ annotate service.DocumentItems with @(
             $Type : 'UI.DataField',
             Value : TransactionType_TransactionType,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : Amount,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Currency_code,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Description,
+        }
     ],
     UI.FieldGroup #GeneratedGroup1 : {
         $Type : 'UI.FieldGroupType',
@@ -163,6 +185,18 @@ annotate service.DocumentItems with @(
                 $Type : 'UI.DataField',
                 Value : TransactionType_TransactionType,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : Amount,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Currency_code,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Description,
+            }
         ],
     },
     UI.Facets : [

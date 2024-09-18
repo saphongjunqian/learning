@@ -37,7 +37,7 @@
                     "action": "maintain",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
-                    "icon": ""
+                    "icon": "course-book"
                 }
             }
         }

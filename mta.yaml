@@ -1,6 +1,6 @@
 _schema-version: 3.3.0
 ID: acfinance
-version: 1.0.2
+version: 1.0.3
 description: "Accounting service and the Fiori apps."
 parameters:
   deploy_mode: html5-repo
