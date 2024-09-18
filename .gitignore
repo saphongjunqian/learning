@@ -10,3 +10,4 @@ gen/
 mta_archives/
 node_modules/
 @cds-models/
+resources/
