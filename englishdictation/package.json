@@ -29,7 +29,6 @@
     "undeploy": "cf undeploy ac-learning --delete-services"
   },
   "sapux": [
-    "app/wordcollection",
     "app/wordcollection"
   ],
   "cds": {
