@@ -67,6 +67,7 @@
               "includePaths": ["node_modules", "src", "src/styles"]
             },
             "scripts": [
+              "node_modules/mathjax/es5/tex-svg.js"
             ],
             "vendorChunk": true,
             "extractLicenses": false,

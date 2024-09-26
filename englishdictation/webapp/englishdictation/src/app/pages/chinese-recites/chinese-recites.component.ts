@@ -390,7 +390,7 @@ export class ChineseRecitesComponent implements OnInit {
 
         // Final
         let finalp = document.createElement('p');
-        finalp.innerText = '_________________________T_H_E_____E_N_D_______________________________';
+        finalp.innerText = '______________________T_H_E_____E_N_D____________________________';
         finalp.style.paddingBottom = '20px';
         objdiv.appendChild(finalp);
         document.body.appendChild(objdiv);

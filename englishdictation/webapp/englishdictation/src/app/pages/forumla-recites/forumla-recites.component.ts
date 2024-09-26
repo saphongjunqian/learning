@@ -12,17 +12,21 @@ import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from "@angular/material/divider";
 import html2PDF from 'jspdf-html2canvas';
+declare const MathJax: any;
 
 import { Footer } from "../../shared/footer/footer";
 import {
     ForumlaReciteContent, ForumlaReciteDataFile,
 } from "../../interfaces";
+import { MathItem } from "../../shared/mathitem";
 
 @Component({
     selector: 'app-forumla-recite',
     standalone: true,
     imports: [Footer, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule,
-        MatIconModule, MatButtonModule, MatTableModule, MatCheckboxModule, MatDividerModule, MatProgressBarModule],
+        MatIconModule, MatButtonModule, MatTableModule, MatCheckboxModule, MatDividerModule, MatProgressBarModule,
+        MathItem
+    ],
     templateUrl: './forumla-recites.component.html',
     styleUrl: './forumla-recites.component.scss',
 })
@@ -30,32 +34,35 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
     allFiles: ForumlaReciteDataFile[] = [];
     selectedFile?: ForumlaReciteDataFile;
     countOfItems = 2;
-    // currentStatus: ChineseReciteStatus = {
-    //     status: ChineseReciteStatusEnum.NotStarted,
-    //     level: ChineseReciteLevelEnum.Normal,
-    //     correctCount: 0,
-    //     incorrectCount: 0,
-    //     totalCount: 0,
-    //     startTime: new Date(),
-    //     endTime: new Date(),
-    // };
     recitequeues: ForumlaReciteContent[] = [];
     queueidx: number = -1;  // Current Queue
     scriptElement?: HTMLScriptElement;
+    isPreviewInProgress = false;
+    dataSourcePreview: ForumlaReciteContent[] = [];
+    displayedColumns = [
+        'name',
+        'math',
+        'value'
+    ];
 
     get reciteContentCount(): number {
         return this.recitequeues.length;
     }
+    getReciteItemValue(originstr: string): string {
+        let mj = (window as any).MathJax;
+        const res = mj.tex2svg(originstr);
+        return res.children[0];
+    }
 
     constructor(private http: HttpClient) {
         // Constructor
+        // Load mathjax
     }
 
     ngOnInit(): void {
-        // Load mathjax
-        this.scriptElement = document.createElement('script');
-        this.scriptElement.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-        document.head.appendChild(this.scriptElement);
+        // this.scriptElement = document.createElement('script');
+        // this.scriptElement.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+        // document.head.appendChild(this.scriptElement);
 
         // Using Angular HTTPClient to fetch the data from the server
         const datafile$ = this.http.get<ForumlaReciteDataFile[]>('data/forumla.json');
@@ -93,7 +100,9 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
         });
     }
 
-    onStart() {
+    onPreview() {
+        this.isPreviewInProgress = true;
+        this.dataSourcePreview = this.recitequeues.slice();
         // if (this.recitequeues.length > this.countOfItems) {
         //     // Randomize the array `this.wordqueues`
         //     this.recitequeues = this.recitequeues.sort(() => Math.random() - 0.5);
@@ -119,7 +128,7 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
 
         let objdiv = document.createElement('div');
         objdiv.classList.add('w-full');
-        objdiv.style.fontSize = '30px';
+        objdiv.style.fontSize = '36px';
         objdiv.style.margin = '10px';
     
         // Selected the document
@@ -150,7 +159,7 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
             
             qdiv = document.createElement('div');
             qdiv.classList.add('w-full');
-            qdiv.innerText = '________________________';
+            qdiv.innerText = '________________________________________________';
             containdiv.appendChild(qdiv);
         }
 
@@ -172,12 +181,12 @@ export class ForumlaRecitesComponent implements OnInit, OnDestroy {
         for (let qidx = 0; qidx < printqueues.length; qidx++) {
             let qdiv = document.createElement('div');
             qdiv.classList.add('w-full');
+            qdiv.style.padding = '16px';
             if (printqueues[qidx].math) {
-                let mj = (window as any).MathJax;
-                const res = mj.tex2svg(printqueues[qidx].value);
+                const res = MathJax.tex2svg(printqueues[qidx].value);
                 qdiv.appendChild(res.children[0]);
             } else {
-                qdiv.innerText = printqueues[qidx].value;
+                qdiv.innerHTML = printqueues[qidx].value;
             }
             awrdiv.appendChild(qdiv);
         }

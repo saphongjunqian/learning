@@ -25,6 +25,7 @@
     "englishdictation": "file:",
     "howler": "^2.2.4",
     "jspdf-html2canvas": "^1.5.2",
+    "mathjax": "^3.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

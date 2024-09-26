@@ -88,5 +88,15 @@
         "name": "分式乘方",
         "math": true,
         "value": "(\\frac{a}{b})^n=\\frac{a^n}{b^n}"
+    },
+    {
+        "name": "多边形内角和",
+        "math": true,
+        "value": "(n-2) \\times 180 ^\\circ"
+    },
+    {
+        "name": "多边形外角和",
+        "math": true,
+        "value": "360 ^\\circ"
     }
 ]
