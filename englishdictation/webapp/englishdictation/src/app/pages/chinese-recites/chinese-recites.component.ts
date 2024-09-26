@@ -46,7 +46,10 @@ export class ChineseRecitesComponent implements OnInit {
         { value: ChineseReciteLevelEnum.Easy, label: 'Easy' },
         { value: ChineseReciteLevelEnum.Normal, label: 'Normal' },
         { value: ChineseReciteLevelEnum.Hard, label: 'Hard' },
+        { value: ChineseReciteLevelEnum.NormalWithTranslation, label: 'Normal (Translation)' },
+        { value: ChineseReciteLevelEnum.HardWithTranslation, label: 'Hard (Translation)' },
     ];
+    countOfInputableItems = 0; // Count of the items which allows for input.
 
     get isRecitingNotStarted(): boolean {
         return this.currentStatus.status === ChineseReciteStatusEnum.NotStarted;
@@ -106,6 +109,8 @@ export class ChineseRecitesComponent implements OnInit {
         switch(this.currentStatus.level) {
             case ChineseReciteLevelEnum.Easy: return 'Easy';
             case ChineseReciteLevelEnum.Normal: return 'Normal';
+            case ChineseReciteLevelEnum.NormalWithTranslation: return 'Normal (Translation)';
+            case ChineseReciteLevelEnum.HardWithTranslation: return 'Hard (Translation)';
             case ChineseReciteLevelEnum.Hard: 
             default: 
                 return 'Hard';
@@ -244,59 +249,113 @@ export class ChineseRecitesComponent implements OnInit {
     }
 
     adjustQueueByLevel(queues: ChineseReciteQueue[]) {
+        this.countOfInputableItems = 0;
+        
         for(let i = 0; i < queues.length; i++) {
-            // Group
+            // Groups
             for(let j = 0; j < queues[i].groups.length; j++) {
-                for(let l = 0; l < queues[i].groups[j].items.length; l++) {
-                    let needinput = false;
-                    if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
-                        needinput = Math.random() < 0.2;
-                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
-                        needinput = Math.random() < 0.5;
-                    } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
-                        needinput = true;
+                let nitemcounts = queues[i].groups[j].items.length;
+                let niteminput = 0;
+                let alliteminput = false;
+                if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
+                    niteminput = Math.floor(nitemcounts * 0.2);
+                    if (niteminput === 0) {
+                        niteminput = 1;
                     }
-
-                    if (needinput) {
+                    this.countOfInputableItems += niteminput;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal
+                    || this.currentStatus.level === ChineseReciteLevelEnum.NormalWithTranslation) {
+                    niteminput = Math.floor(nitemcounts * 0.5);
+                    if (niteminput === 0) {
+                        niteminput = 1;
+                    }
+                    this.countOfInputableItems += niteminput;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard
+                    || this.currentStatus.level === ChineseReciteLevelEnum.HardWithTranslation) {
+                    alliteminput = true;
+                    this.countOfInputableItems += nitemcounts;
+                }
+            
+                for(let l = 0; l < nitemcounts; l++) {
+                    if (alliteminput) {
                         queues[i].groups[j].items[l].inputted = '';
                         queues[i].groups[j].items[l].disabled = false;
+                    } else if(niteminput > 0) {
+                        let needinput = Math.random() < 0.5;
+
+                        if (needinput) {
+                            queues[i].groups[j].items[l].inputted = '';
+                            queues[i].groups[j].items[l].disabled = false;
+                            niteminput--;
+                        }
                     }
                 }
 
-                let allItemsNotEmpty = queues[i].groups[j].items.every((item) => item.inputted !== '');
-                if (allItemsNotEmpty) {
-                    // Handle the case where all items have non-empty inputted values
-                    // For example, proceed with the next step or take appropriate action
-                    let nidx = Math.floor(Math.random() * queues[i].groups[j].items.length);
-                    queues[i].groups[j].items[nidx].inputted = '';
-                    queues[i].groups[j].items[nidx].disabled = false;
+                if (niteminput > 0) {
+                    for(let l = 0; l < nitemcounts; l++) {
+                        if (queues[i].groups[j].items[l].inputted !== '') {
+                            queues[i].groups[j].items[l].inputted = '';
+                            queues[i].groups[j].items[l].disabled = false;                            
+                            niteminput--;
+
+                            if (niteminput <= 0) {
+                                break;
+                            }
+                        }
+                    }
                 }
             }
 
             // Items
-            for (let k = 0; k < queues[i].items.length; k++) {
-                let needinput = false;
+            if (queues[i].items.length > 0) {
+                let nitemcounts = queues[i].items.length;
+                let niteminput = 0;
+                let alliteminput = false;
                 if (this.currentStatus.level === ChineseReciteLevelEnum.Easy) {
-                    needinput = Math.random() <= 0.2;
-                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal) {
-                    needinput = Math.random() <= 0.5;
-                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard) {
-                    needinput = true;
+                    niteminput = Math.floor(nitemcounts * 0.2);
+                    if (niteminput === 0) {
+                        niteminput = 1;
+                    }
+                    this.countOfInputableItems += niteminput;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Normal
+                    || this.currentStatus.level === ChineseReciteLevelEnum.NormalWithTranslation) {
+                    niteminput = Math.floor(nitemcounts * 0.5);
+                    if (niteminput === 0) {
+                        niteminput = 1;
+                    }
+                    this.countOfInputableItems += niteminput;
+                } else if (this.currentStatus.level === ChineseReciteLevelEnum.Hard
+                    || this.currentStatus.level === ChineseReciteLevelEnum.HardWithTranslation) {
+                    alliteminput = true;
+                    this.countOfInputableItems += nitemcounts;
                 }
 
-                if (needinput) {
-                    queues[i].items[k].inputted = '';
-                    queues[i].items[k].disabled = false;
+                for (let k = 0; k < nitemcounts; k++) {
+                    if (alliteminput) {
+                        queues[i].items[k].inputted = '';
+                        queues[i].items[k].disabled = false;
+                    } else if(this.countOfInputableItems > 0) {
+                        let needinput = Math.random() < 0.5;
+
+                        if (needinput) {
+                            queues[i].items[k].inputted = '';
+                            queues[i].items[k].disabled = false;
+                            niteminput--;
+                        }
+                    }
                 }
-            }
-            if (queues[i].items.length > 0) {
-                let allItemsNotEmpty = queues[i].items.every((item) => item.inputted !== '');
-                if (allItemsNotEmpty) {
-                    // Handle the case where all items have non-empty inputted values
-                    // For example, proceed with the next step or take appropriate action
-                    let nidx = Math.floor(Math.random() * queues[i].items.length);
-                    queues[i].items[nidx].inputted = '';
-                    queues[i].items[nidx].disabled = false;
+
+                if (niteminput > 0) {
+                    for (let k = 0; k < nitemcounts; k++) {
+                        if (queues[i].items[k].inputted !== '') {
+                            queues[i].items[k].inputted = '';
+                            queues[i].items[k].disabled = false;
+                            niteminput--;
+                        }
+                        if (niteminput <= 0) {
+                            break;
+                        }
+                    }
                 }
             }
         }
@@ -316,26 +375,26 @@ export class ChineseRecitesComponent implements OnInit {
 
         let objdiv = document.createElement('div');
         objdiv.classList.add('w-full');
-        objdiv.style.fontSize = '20px';
+        objdiv.style.fontSize = '32px';
         objdiv.style.margin = '10px';
     
-        // Selected the document
-        let titlep = document.createElement('p');
-        titlep.innerText = this.selectedFile?.name!;
-        objdiv.appendChild(titlep);
-        // Level
-        let levelp = document.createElement('p');
-        levelp.innerText = this.getLevelString;
-        objdiv.appendChild(levelp);
-        // Count of items
-        let countp = document.createElement('p');
-        countp.innerText = `Count of items: ${printqueues.length}`;
-        objdiv.appendChild(countp);
-        // Date
-        let datep = document.createElement('p');
-        datep.innerText = new Date().toLocaleString();
-        datep.style.paddingBottom = '20px';
-        objdiv.appendChild(datep);
+         // Selected the document
+         let titlep = document.createElement('p');
+         titlep.innerText = this.selectedFile?.name!;
+         objdiv.appendChild(titlep);
+         // Level
+         let levelp = document.createElement('p');
+         levelp.innerText = this.getLevelString;
+         objdiv.appendChild(levelp);
+         // Count of items
+         let countp = document.createElement('p');
+         countp.innerText = `Count of items: ${printqueues.length}, blanks: ${this.countOfInputableItems}.`;
+         objdiv.appendChild(countp);
+         // Date
+         let datep = document.createElement('p');
+         datep.innerText = new Date().toLocaleString();
+         datep.style.paddingBottom = '20px';
+         objdiv.appendChild(datep);
     
         for(let qidx = 0; qidx < printqueues.length; qidx++) {
             let qdiv = document.createElement('div');
@@ -344,6 +403,7 @@ export class ChineseRecitesComponent implements OnInit {
             let subjectp = document.createElement('p');
             let authorp = document.createElement('p');
 
+            subjectp.style.fontWeight = 'bold';
             subjectp.innerText = "名称：" + printqueues[qidx].subject.original;
             authorp.innerText = "作者：" + printqueues[qidx].author.original;
 
@@ -355,11 +415,18 @@ export class ChineseRecitesComponent implements OnInit {
                 let subjectitem = document.createElement('p');
                 for(let itemidx = 0; itemidx < printqueues[qidx].items.length; itemidx++) {
                     let item = printqueues[qidx].items[itemidx];
+                    let inputcontent = '';
+
                     let itemspan = document.createElement('span');
                     if (item.disabled === true) {
                         itemspan.innerText = item.original + item.suffix;
                     } else {
-                        itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
+                        inputcontent = item.original.replace(/./g, '____');
+                        if (this.currentStatus.level === ChineseReciteLevelEnum.NormalWithTranslation || this.currentStatus.level === ChineseReciteLevelEnum.HardWithTranslation) {
+                            itemspan.innerText = inputcontent + '(' + inputcontent + inputcontent + ')' + item.suffix;    
+                        } else {
+                            itemspan.innerText = inputcontent + item.suffix;
+                        }
                     }
                     subjectitem.appendChild(itemspan);
                 }
@@ -374,10 +441,16 @@ export class ChineseRecitesComponent implements OnInit {
                     for(let itemidx = 0; itemidx < printqueues[qidx].groups[grpidx].items.length; itemidx++) {
                         let item = printqueues[qidx].groups[grpidx].items[itemidx];
                         let itemspan = document.createElement('span');
+                        let inputcontent = '';
                         if (item.disabled === true) {
                             itemspan.innerText = item.original + item.suffix;
                         } else {
-                            itemspan.innerText = item.original.replace(/./g, '____') + item.suffix;
+                            inputcontent = item.original.replace(/./g, '____');
+                            if (this.currentStatus.level === ChineseReciteLevelEnum.NormalWithTranslation || this.currentStatus.level === ChineseReciteLevelEnum.HardWithTranslation) {
+                                itemspan.innerText = inputcontent + '(' + inputcontent + inputcontent + ')' + item.suffix;    
+                            } else {
+                                itemspan.innerText = inputcontent + item.suffix;
+                            }
                         }
                         subjectitem.appendChild(itemspan);
                     }    
