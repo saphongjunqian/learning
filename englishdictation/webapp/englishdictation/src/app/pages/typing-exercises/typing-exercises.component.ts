@@ -218,6 +218,7 @@ export class TypingExercisesComponent {
     html2PDF(objdiv, {
       jsPDF: {
         format: 'a4',
+        
       },
       margin: {
         top: 10,
@@ -225,7 +226,10 @@ export class TypingExercisesComponent {
         bottom: 10,
         left: 10
       },
-      output: 'a4.pdf',
+      imageQuality: 0.98,
+      autoResize: true,
+      html2canvas:  { scale: 2, logging: true, },
+      output: 'a4.pdf'
     });
 
     document.body.removeChild(objdiv);

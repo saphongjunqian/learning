@@ -334,7 +334,7 @@ export class ChineseRecitesComponent implements OnInit {
                     if (alliteminput) {
                         queues[i].items[k].inputted = '';
                         queues[i].items[k].disabled = false;
-                    } else if(this.countOfInputableItems > 0) {
+                    } else if(niteminput > 0) {
                         let needinput = Math.random() < 0.5;
 
                         if (needinput) {
